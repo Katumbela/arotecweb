@@ -84,7 +84,7 @@ html,body {
 
 .card-hover:hover {
   transform: translateY(-10px);
-  animation: 2s anim infinite ease;
+/*   animation: 2s anim infinite ease; */
   box-shadow: -2px 3px 9px #0D6EFD;
 }
 .card-hover:hover > .corpo-curso  {
