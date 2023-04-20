@@ -20,13 +20,13 @@ function Footer() {
                             <i className="bi bi-facebook text-white"></i>
                         </a>
                         <a href="" className="navlink">
-                            <i className="bi bi-linkedin text-white"></i>
+                            <i className="bi mx-1 bi-linkedin text-white"></i>
                         </a>
                         <a href="" className="navlink">
                             <i className="bi bi-instagram text-white"></i>
                         </a>
                         <a href="" className="navlink">
-                            <i className="bi bi-youtube text-white"></i>
+                            <i className="bi ms-1 bi-youtube text-white"></i>
                         </a>
                     </div>
 
