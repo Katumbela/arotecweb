@@ -2,8 +2,6 @@ import React from 'react';
 import '../css/banner_loja.css'
 import { NavLink } from 'react-router-dom';
 import arobot from '../imgs/bann_kit.gif'
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const BannerLoja = () => {
     return (

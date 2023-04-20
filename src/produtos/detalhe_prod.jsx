@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import '../css/header.css';
 import '../css/destaque.css'
 import { NavLink, useParams } from 'react-router-dom';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import BannerPreto from '../components/banner_preto';

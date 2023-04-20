@@ -5,8 +5,6 @@ import peq_eng from '../imgs/banner-p.png';
 import arduino from '../imgs/arduino.jpeg';
 import eletronica from '../imgs/eletronica.jpeg';
 import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Destaque = () => {
     return (
