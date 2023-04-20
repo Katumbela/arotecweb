@@ -18,8 +18,18 @@
 }
 
 
-
 @media 
+(max-width: 389px) {
+    
+.row .cont {
+    position: absolute;
+    padding-top: 0rem;
+    top: 3em;
+}
+    
+}
+
+@media (min-width: 390px) and 
 (max-width: 450px) {
       
 .b_code {
