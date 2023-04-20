@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+  overflow-x: hidden!important;
+}
+
+.f-10 {
+  font-size: 10px;
+}
+.f-12 {
+  font-size: 12px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.f-16 {
+  font-size: 16px;
+}
+.f-18 {
+  font-size: 18px;
+}
+.f-20 {
+  font-size: 20px;
+}
+.f-22 {
+  font-size: 22px;
+}
+.f-24 {
+  font-size: 24px;
+}
+.f-26 {
+  font-size: 26px;
+}
+
+.cor {
+  color: #0D6EFD;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+
+.f-1 {
+  height: 1em;
+}
+.f-1-5 {
+  height: 1.5em;
+}
+
+.f-2 {
+  height: 2em;
+}
+
+.f-3 {
+  height: 3em;
+}
+
+
+@media (max-width: 450px) {
+    .bb {
+      font-size: 11px !important;
+    }
+}
+
+.accordion {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+
+.accordion h5 {
+  cursor: pointer;
+}
+
+.accordion .arrow {
+  float: right;
+  margin-top: 5px;
+}
+
+.accordion .arrow-down {
+  transform: rotate(180deg);
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  animation: 2s anim infinite ease;
+  box-shadow: -2px 3px 9px #0D6EFD;
+}
+.card-hover:hover > .corpo-curso  {
+  background: #0D6EFD!important;
+  transition: .2s!important;
+}
+
+.card-hover:hover > .corpo-curso .spa1  {
+  color: white!important;
+  transition: .2s!important;
+}
+
+.card-hover:hover > .corpo-curso .b {
+  color: white!important;
+  transition: .2s!important;
+}
+
+.card-hover:hover .corpo-curso .spa  {
+  color: white!important;
+  transition: .2s!important;
+}
+
+.card-hover:hover .corpo-curso .preco  {
+  color: white!important;
+  transition: .1s!important;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(12px);
+  }
+}
+
