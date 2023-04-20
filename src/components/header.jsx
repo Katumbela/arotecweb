@@ -35,7 +35,7 @@ const Header = (props) => {
         </div>
         <div className="text-white">
             <NavLink className='text-white link' to="/login">Login / </NavLink>
-            <NavLink className='text-white link' to="/criar_conta">Criar Contaaaa</NavLink>
+            <NavLink className='text-white link' to="/criar_conta">Criar Conta</NavLink>
         </div>
     </div>
  </div>
