@@ -9,8 +9,9 @@ const CardCurso = ({ c }) => {
 const {id, curso, preco, duracao, lastUpdate, img} = c;
 
     return (
-        <div className="col-12 text-center col-sm-6 col-md-4 col-lg-3">
-                
+        <div className="col-12  col-sm-6 col-md-4 col-lg-3">
+          <center>
+           
             <NavLink  className="item mx-auto navlink col-12 col-sm-6 col-md-4 col-lg-3"  to={"/academia/curso/arotec/"+ id }>
             <div className="">
                 <div className="card_cursos card-hover">
@@ -28,6 +29,8 @@ const {id, curso, preco, duracao, lastUpdate, img} = c;
                 </div>
             </div>
             </NavLink>
+        </center>
+           
 
     </div>
 
