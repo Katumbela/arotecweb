@@ -30,8 +30,12 @@
 .row .cont {
     position: absolute;
     padding-top: 0rem;
-    top: 8em;
+    top: 6em;
 }
+    
+    .gap-3, .gap-2 {
+        margin: 2px;
+    }
 
 .emp {
     background: url(../imgs/img1.png);
