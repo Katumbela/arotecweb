@@ -20,11 +20,16 @@
 
 @media 
 (max-width: 389px) {
+     
+.b_code {
+    background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(../imgs/unitel1.jpg) center center; 
+    background-size: cover;
+}
     
 .row .cont {
     position: absolute;
     padding-top: 0rem;
-    top: 3em;
+    top: 2em;
 }
     
 }
