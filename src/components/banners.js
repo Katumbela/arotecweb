@@ -14,7 +14,7 @@ function Banners() {
             <h3>UNITEL CODE ROBOTICA</h3>
             <p className='w-lg-75 pe-sm-2'>Está de volta a terceira edição do Unitel Code Robótica, para Luanda, Cabinda, Benguela, Uíge, Bengo Kwanza Sul, Kwanza Norte.</p>
             <br />
-            <button className="btn bb btn-outline-white">Inscrever-se</button>
+            <NavLink to="/unitel_code_robotica_inscricao" className="btn bb btn-outline-white">Inscrever-se</NavLink>
           </div>
         </div>
         <div className="col-12 col-lg-6">
