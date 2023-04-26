@@ -19,9 +19,9 @@ const Destaque = () => {
    <br />
     </div>
         <div className="mt-4">
-            <OwlCarousel className='owl-theme ' navClass={['owl-prev','owl-next']} margin={15} responsiveClass={false} controlsClass='owl-controls' dots={true} autoWidth={true} nav={true}>
+            <OwlCarousel className='owl-theme owl-carousel' navClass={['owl-prev','owl-next']} margin={1} responsiveClass={true} controlsClass='owl-controls' dots={true} autoWidth={false} nav={true}>
 
-                <div className="item my-2">
+                     <div className="">
                     <div className="card_curso card-hover">
                         <div className="card-header">
                             <img src={peq_eng} alt="pequeno engenheiro" />
@@ -36,8 +36,9 @@ const Destaque = () => {
                         </div>
                     </div>
                 </div>
+               
                 
-                <div className="item my-2">
+                <div className=" ">
                     <div className="card_curso card-hover">
                         <div className="card-header">
                             <img src={arduino} alt="pequeno engenheiro" />
@@ -53,7 +54,7 @@ const Destaque = () => {
                     </div>
                 </div>
                 
-                <div className="item my-2">
+                {/* <div className="item my-2">
                     <div className="card_curso card-hover">
                         <div className="card-header">
                             <img src={eletronica} alt="pequeno engenheiro" />
@@ -67,7 +68,7 @@ const Destaque = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 
             </OwlCarousel>
         </div>
