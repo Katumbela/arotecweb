@@ -1,6 +1,8 @@
 import './App.css';
 // Bootstrap CSS
 // Bootstrap Bundle JS
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Rotas from './pages/rotas';
 import React, { useState } from 'react';
 
@@ -16,12 +18,13 @@ function App() {
       setCart(
         cart.map((x)=> x.id === item.id ? {...existe, qty: existe.qty + 1} : x)
       )
-      console.log(cart);
     }
     else {
 
       setCart([...cart, {...item, qty: 1}]);
-      console.log(cart);
+
+      toast.success('Seu produto foi adicionado com sucesso!')
+      
     }
   }
 
@@ -37,7 +40,9 @@ function App() {
     else {
       setCart(
         cart.map((x)=> x.id === item.id ? {...existe, qty: existe.qty - 1} : x)
+       
        )
+       toast.success('Seu produto foi removido com sucesso!')
     }
   }
 
@@ -60,7 +65,7 @@ function App() {
 
   return (
     <React.Fragment>
-      
+      <ToastContainer />
       <Rotas adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
 
     </React.Fragment>

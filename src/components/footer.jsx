@@ -1,8 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import '../css/footer.css'
+import '../css/footer.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Footer() {
+
+    const NewsLetter = () => {
+        toast.success('Seu email foi adicionado à nossa newsletter com sucesso');
+    }
     return (
         <div className='bg-dark'>
         <div className='container-lg'>
@@ -54,7 +60,7 @@ function Footer() {
                         <br />
                         <div className="d-flex">
                             <input type="email" name="" placeholder='Seu email' id="" className="form-control letter" />
-                            <button className="btn btn-primary">
+                            <button onClick={()=> NewsLetter()} className="btn btn-primary">
                                 <i className="bi bi-send"></i>
                             </button>
                         </div>

@@ -19,10 +19,7 @@ function DetalheCurso ({cart}) {
     
   < Header cart={cart} />
         <BannerPreto >
-            <br />
             {cc[0].curso}
-            <br />
-            <br />
         </BannerPreto>
         <br />
         <br />
@@ -129,7 +126,7 @@ function DetalheCurso ({cart}) {
               <br />
               <p className="text-secondary f-14">Compartilhe este curso</p>
               <div className="d-flex gap-2">
-                <a className='rounded-circle' href="#" style={{background: '#0066be', height: '2em', width: '2em', color: 'white', display: 'grid', placeItems: 'center'}}>
+                <a className='rounded-circle' href={'https://www.facebook.com/sharer/sharer.php?u=https://arotec.ao/academia/curso/arotec/'+id} style={{background: '#0066be', height: '2em', width: '2em', color: 'white', display: 'grid', placeItems: 'center'}}>
                     <i className="bi bi-facebook"></i>
                 </a>
                 <a className='rounded-circle' href="#" style={{background: '#0066be', height: '2em', width: '2em', color: 'white', display: 'grid', placeItems: 'center'}}>
