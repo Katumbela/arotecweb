@@ -56,19 +56,19 @@ const Empresas = ({cart}) => {
           </div>
           <div className="col-12 col-sm-6">
             <p className="d-flex gap-2">
-              <div className="bg-light rounded-circle " style={{display: 'grid', placeContent: 'center'}}>
+              <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
               <b className="f-16 my-auto">Responsabilidade social empresas</b>
             </p>
             <p className="d-flex gap-2">
-              <div className="bg-light rounded-circle " style={{display: 'grid', placeContent: 'center'}}>
+              <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
               <b className="f-16 my-auto">Aulas de robótica para escolas</b>
             </p>
             <p className="d-flex gap-2">
-              <div className="bg-light rounded-circle " style={{display: 'grid', placeContent: 'center'}}>
+              <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
               <b className="f-16 my-auto">Consultoria e criação de laboratórios</b>
@@ -92,7 +92,7 @@ const Empresas = ({cart}) => {
             A arotec oferece formações especializadas para as áreas de responsabilidades das empresas. Formações nas áreas de ctem (ciência, tecnologia, engenharia e matemática).
             </p>
             <br />
-            <img src={un} className='' style={{width: '6rem'}} alt="unitel" />
+            <img src={un} className='' style={{width: '6rem', height:''}} alt="unitel" />
             </div>
           </div>
 
@@ -107,8 +107,8 @@ const Empresas = ({cart}) => {
             </p>
             <br />
             <div className="d-flex gap-3">
-            <img src={cat1} className='rounded-pill' style={{width: '5rem'}} alt="unitel" />
-            <img src={sfa} className='rounded' style={{width: '5rem'}} alt="unitel" />
+            <img src={cat1} className='rounded-pill' style={{width: '5rem', height:'4em'}} alt="unitel" />
+            <img src={sfa} className='rounded' style={{width: '5rem', height:'4em'}} alt="unitel" />
             </div>
             </div>
           </div>

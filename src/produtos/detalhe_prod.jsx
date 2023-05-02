@@ -41,13 +41,14 @@ function Arobot (props) {
         <NavLink to={'/loja'}><i className="bi bi-arrow-left"></i> Voltar</NavLink>
         </div>
         <br />
+        <br />
         
 <div className="container">
 
      
         <div className="row prods-set">
             <div className="col-12 text-start py-3 col-sm-6 col-md-8 col-lg-6">
-                <h2 style={{textTransform: 'uppercase'}}> {pp[0].tit} &middot; AROTEC</h2>
+                <h3 style={{textTransform: 'uppercase'}}> {pp[0].tit} &middot; AROTEC</h3>
                 <p className="text-secondary">
                 {pp[0].desc} 
                 </p>
