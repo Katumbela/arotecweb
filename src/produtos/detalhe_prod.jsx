@@ -62,9 +62,9 @@ function Arobot (props) {
                         </button>
                     </div>
                     <div className="my-2 col-12 col-md-6">
-                        <button className="btn btn-outline-primary" >
+                        <NavLink to={'/comprar_agora/'+id} className="btn btn-outline-primary" >
                         Comprar agora <i className="bi ms-2 bi-cart"></i>
-                        </button>
+                        </NavLink>
                     </div>
               </div>
             </div>

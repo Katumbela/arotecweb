@@ -19,6 +19,7 @@ import UnitelCode from "./unitelcode";
 import { useEffect, useState } from "react";
 import Search from "./search";
 import LoginPage from "./eg_login";
+import BuyNow from "./comprar_agora";
 
 
 const Rotas = (props) => {
@@ -42,6 +43,7 @@ const Rotas = (props) => {
                 <Route element = { <UnitelCode cart={cart} /> }  path="/unitel_code_robotica_inscricao" exact/>
                 <Route element = { <Login /> }  path="/login" exact/>
                 <Route element = { <LoginPage /> }  path="/loginn" exact/>
+                <Route element = { <BuyNow cart={cart} handleClick={handleClick} /> }  path="/comprar_agora/:id" exact/>
                 <Route element = { <CriarConta /> }  path="/criar_conta" exact/>
                 <Route element = { <Search adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart} /> }  path="/s/" exact/>
                 <Route element = { <Politicas cart={cart} /> }  path="/politicas_de_privacidade" exact/>

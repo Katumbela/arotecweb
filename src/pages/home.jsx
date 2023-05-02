@@ -14,7 +14,7 @@ const Home = ({cart}) => {
       
       < Header cart={cart} />
       <div className="s">
-         < Banners />
+      < Banners />
       <br />
       <br />
       <Destaque />
