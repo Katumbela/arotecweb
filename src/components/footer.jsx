@@ -16,17 +16,17 @@ function Footer() {
                         <li>E-mail: info@rotec.ao</li>
                     </ul>
                     <div className="d-flex gap-3 ms-4">
-                        <a href="" className="navlink">
+                        <a href="https://www.facebook.com/Arotec1/" className="navlink">
                             <i className="bi bi-facebook text-white"></i>
                         </a>
-                        <a href="" className="navlink">
-                            <i className="bi bi-linkedin text-white"></i>
+                        <a href="https://www.linkedin.com/company/arotecangola" className="navlink">
+                            <i className="bi mx-1 bi-linkedin text-white"></i>
                         </a>
-                        <a href="" className="navlink">
+                        <a href="https://www.instagram.com/arotec_ao/" className="navlink">
                             <i className="bi bi-instagram text-white"></i>
                         </a>
-                        <a href="" className="navlink">
-                            <i className="bi bi-youtube text-white"></i>
+                        <a href="https://www.youtube.com/channel/UCL9FnK9VQGhVowB59P72CjA" className="navlink">
+                            <i className="bi ms-1 bi-youtube text-white"></i>
                         </a>
                     </div>
 

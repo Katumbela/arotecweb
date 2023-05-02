@@ -78,12 +78,12 @@ const Header = (props) => {
             <li><NavLink className="link d-flex justify-content-between" to="/empresas" style={({ isActive }) =>isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}>Empresas <i className="bi bi-arrow-right-short"></i></NavLink></li>
         </ul>
         <div className="btns gap-3 ms-4 justify-content-between d-flex">
-            <NavLink className={'w-100'}>
+            <NavLink to={'/login'} className={'w-100'}>
                 <button  className="btn w-100 btn-outline-primary">
                     Entrar
                 </button>
             </NavLink>
-            <NavLink className=" w-100 ">
+            <NavLink  to={'/criar_conta'} className=" w-100 ">
                 <button  className="btn w-100 btn-primary">
                     Cadastro
                 </button>

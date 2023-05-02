@@ -18,8 +18,23 @@
 }
 
 
-
 @media 
+(max-width: 389px) {
+     
+.b_code {
+    background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(../imgs/unitel1.jpg) center center; 
+    background-size: cover;
+}
+    
+.row .cont {
+    position: absolute;
+    padding-top: 0rem;
+    top: 2em;
+}
+    
+}
+
+@media (min-width: 390px) and 
 (max-width: 450px) {
       
 .b_code {
@@ -30,8 +45,12 @@
 .row .cont {
     position: absolute;
     padding-top: 0rem;
-    top: 12.5em;
+    top: 6em;
 }
+    
+    .gap-3, .gap-2 {
+        margin: 2px;
+    }
 
 .emp {
     background: url(../imgs/img1.png);
