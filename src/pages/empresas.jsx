@@ -80,9 +80,9 @@ const Empresas = ({cart}) => {
 
       <div className="deved">
         <h3 className='text-primary'>Soluções Desenvolvidas</h3>
-        <br />
+      
         <div className="row">
-          <div className="col-12 col-sm-4">
+          <div className="col-12 my-4 col-sm-4">
             <div className="mx-"   >
             <img src={un1}  className='w-100' alt="" />
             <h4 className="mt-2 text-primary">
@@ -96,7 +96,7 @@ const Empresas = ({cart}) => {
             </div>
           </div>
 
-          <div className="col-12 col-sm-4">
+          <div className="col-12 my-4 col-sm-4">
             <div className="mx-"   >
             <img src={cat}  className='w-100' alt="" />
             <h4 className="mt-2 text-primary">
@@ -113,7 +113,7 @@ const Empresas = ({cart}) => {
             </div>
           </div>
 
-          <div className="col-12 col-sm-4">
+          <div className="col-12 my-4 col-sm-4">
             <div className="mx-"   >
             <img src={r} className='w-100' alt="" />
             <h4 className="mt-2 text-primary">

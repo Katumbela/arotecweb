@@ -41,19 +41,19 @@ const RoboticSchool = ({cart}) => {
           <label htmlFor="" className="f-12 text-secondary">
             Contacto <span className="text-danger">*</span>
           </label>
-          <input type="tel" placeholder='900000000' className="form-control" />
+          <input type="tel" placeholder='912345678' className="form-control" />
         </div>
         <div className="campo my-3"> 
           <label htmlFor="" className="f-12 text-secondary">
             E-mail <span className="text-danger">*</span>
           </label>
-          <input type="email" placeholder='Ex.gonkside10@gmail.com' className="form-control" />
+          <input type="email" placeholder='Ex: exemplo@mail.com' className="form-control" />
         </div>
         <div className="campo my-3"> 
           <label htmlFor="" className="f-12 text-secondary">
             Localizaçāo <span className="text-danger">*</span>
           </label>
-          <input type="text" placeholder='Bairro' className="form-control" />
+          <input type="text" placeholder='Endereço da Instituição' className="form-control" />
         </div>
         <div className="campo my-3"> 
           <label htmlFor="" className="f-12 text-secondary">
@@ -69,6 +69,9 @@ const RoboticSchool = ({cart}) => {
         </div>
         <br />
         <button className="btn btn-outline-primary w-100">Enviar</button>
+        <br />
+        <br />
+        <br />
         <br />
         <br />
       </div>
