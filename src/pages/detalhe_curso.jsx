@@ -84,17 +84,14 @@ function DetalheCurso ({cart}) {
                 <br />
                 <fieldset >
                 <div>
-                  <Accordion title=" Há descontos em algum curso ?">
-                    <p>Infelizmente não há descontos nos cursos, a</p>
+                  <Accordion title=" Qual a duração do curso ?">
+                    <p>O curso de {cc[0].curso} tem a duração de {cc[0].duracao}.</p>
                   </Accordion>
-                  <Accordion title="É necessario fazer um teste de admissão ? ">
-                    <p>Conteúdo do segundo accordion</p>
+                  <Accordion title="Os materiais são por minha conta ? ">
+                    <p>Não, os materiais a ser usado nos cursos que lecionamos não são por conta do estudante, todo material a ser utilizado durante a formação o formando já encontra na academia, ou seja, é por conta da academia.</p>
                   </Accordion>
-                  <Accordion title="Posso me matricular como estudante de outra provincia ? ">
-                    <p>Conteúdo do segundo accordion</p>
-                  </Accordion>
-                  <Accordion title="Onde estão localizados ? ">
-                    <p>Conteúdo do segundo accordion</p>
+                  <Accordion title="Recebo uma certificação depois do curso? ">
+                    <p>Sim, depois da finalização do curso o formando terá direito à um certificado de aproveitamento.</p>
                   </Accordion>
                 </div>
                 </fieldset>
