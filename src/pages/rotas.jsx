@@ -20,6 +20,7 @@ import { useEffect, useState } from "react";
 import Search from "./search";
 import LoginPage from "./eg_login";
 import BuyNow from "./comprar_agora";
+import Aplicar from "./aplicar_curso";
 
 
 const Rotas = (props) => {
@@ -44,6 +45,7 @@ const Rotas = (props) => {
                 <Route element = { <Login /> }  path="/login" exact/>
                 <Route element = { <LoginPage /> }  path="/loginn" exact/>
                 <Route element = { <BuyNow cart={cart} handleClick={handleClick} /> }  path="/comprar_agora/:id" exact/>
+                <Route element = { <Aplicar cart={cart} handleClick={handleClick} /> }  path="/aplicar/:id" exact/>
                 <Route element = { <CriarConta /> }  path="/criar_conta" exact/>
                 <Route element = { <Search adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart} /> }  path="/s/" exact/>
                 <Route element = { <Politicas cart={cart} /> }  path="/politicas_de_privacidade" exact/>

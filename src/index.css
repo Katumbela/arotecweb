@@ -34,6 +34,22 @@ html,body {
   font-size: 26px;
 }
 
+.f-30 {
+  font-size: 30px;
+}
+
+.f-40 {
+  font-size: 40px;
+}
+
+.f-35 {
+  font-size: 35px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
 .cor {
   color: #0D6EFD;
 }

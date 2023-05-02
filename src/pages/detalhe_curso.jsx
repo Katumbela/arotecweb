@@ -66,7 +66,7 @@ function DetalheCurso ({cart}) {
                     {cc[0].desc}
                   </p>
                   <br />
-                  <button  className="btn btn-primary w-100">APLICAR NESTE CURSO</button>
+                  <NavLink to={'/aplicar/'+id} className="btn btn-primary w-100">APLICAR NESTE CURSO</NavLink>
                   <br />
                   <br />
                   <b>Materiais do Curso</b>
@@ -102,7 +102,7 @@ function DetalheCurso ({cart}) {
               </div>
             </div>
             <div className="col-12 col-sm-4 col-md-3">
-              <button className="btn btn-primary w-100">APLICAR</button>
+              <NavLink to={'/aplicar/'+id} className="btn btn-primary w-100">APLICAR</NavLink>
               <br />
               <br />
               <b style={{borderLeft: '3px solid #0066be', paddingLeft: '.5rem'}}>Detalhes do curso</b>
