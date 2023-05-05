@@ -56,12 +56,12 @@ const Header = (props) => {
        
  {
 
-use.name != '' ?
- <div className="">
-            <span>(+244) 938 811 659</span> 
-            <span>  | info@arotec.ao</span>
-        </div>
-: " "}
+use.name != '' ?" "
+: 
+<div className="">
+           <span>(+244) 938 811 659</span> 
+           <span>  | info@arotec.ao</span>
+       </div>}
        {
 
 use.name != '' ?
