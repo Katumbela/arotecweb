@@ -56,7 +56,7 @@ const Header = (props) => {
        
  {
 
-use.name != '' ?<div></div>
+use.name != '' ?<div><i className="bi bi-check2-circle text-white"></i></div>
 : 
 <div className="">
            <span>(+244) 938 811 659</span> 
