@@ -11,12 +11,22 @@ const Destaque = () => {
     const [use, setUser] = useState([]);
 
     useEffect(() => {
-      // Obtém o valor de 'user' do local storage quando o componente for montado
-      const userString = localStorage.getItem('user');
-      const user = JSON.parse(userString);
-      setUser(user);
-    }, []);
-
+        // Obtém o valor de 'user' do local storage quando o componente for montado
+        const userString = localStorage.getItem('user');
+        if(userString) {
+          const user = JSON.parse(userString);
+        setUser(user);
+        }
+        else {
+          const userData = {
+              name: '',
+              email: '',
+              pictureUrl: '',
+              tel: '',
+            }
+          setUser(userData);
+        }
+      }, []);
     return (
         <div className='destaque container text-center'>
             <div className="text-start">

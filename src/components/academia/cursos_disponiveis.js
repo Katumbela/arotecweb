@@ -10,10 +10,20 @@ const Cursos = () => {
   useEffect(() => {
     // Obtém o valor de 'user' do local storage quando o componente for montado
     const userString = localStorage.getItem('user');
-    const user = JSON.parse(userString);
+    if(userString) {
+      const user = JSON.parse(userString);
     setUser(user);
+    }
+    else {
+      const userData = {
+          name: '',
+          email: '',
+          pictureUrl: '',
+          tel: '',
+        }
+      setUser(userData);
+    }
   }, []);
-
     return (
   <div className='cursos container text-center'>
     <div className="">
