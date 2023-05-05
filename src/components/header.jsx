@@ -46,7 +46,7 @@ const Header = (props) => {
 
        {
 
-use != '' ?
+use.name != '' ?
 <span> {use.name} &middot; <NavLink to={'/login'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
  :
 

@@ -65,7 +65,15 @@ const Login = ({setNomee, setEmaill}) => {
 
                 setEmaill('')
                 setNomee('')
-                localStorage.removeItem('user'); // Remove o item userData do localStorage
+                const userData = {
+                    name: '',
+                    email: '',
+                    pictureUrl: '',
+                    tel: '',
+                  }
+
+                localStorage.setItem('user', JSON.stringify(userData));
+                
             })
             .catch((error) => {
                 console.log(error);
