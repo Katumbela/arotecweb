@@ -8,7 +8,7 @@ import CardCurso from '../components/academia/card_curso';
 
 const Search = (props) => {
 
- const {cart, adicionar, remover, handleClick} = props;
+ const {cart, nomee, emaill, adicionar, remover, handleClick} = props;
  const [searchTerm, setSearchTerm] = useState('');
  function handleSearchInputChange(e) {
   setSearchTerm(e.target.value);
@@ -20,7 +20,7 @@ const filteredCursos = cursos.filter(curso => curso.curso.toString().toLowerCase
 
     return (
       <div className='bg-light'>
-      <Header cart={cart} />
+      <Header   nomee={nomee} emaill={emaill} cart={cart} />
       <div className="container">
         <br />
         <h4 className='mb-3'>Procura por algo ?</h4>

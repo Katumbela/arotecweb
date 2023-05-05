@@ -17,12 +17,12 @@ import sfa from '../imgs/sfa.png'
 import hub from '../imgs/hub.jpeg'
 import rema from '../imgs/rema.jpeg'
 
-const Empresas = ({cart}) => {
+const Empresas = ({nomee, emaill, cart}) => {
     document.title='Empresas | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         PARA EMPRESAS
       </BannerPreto>

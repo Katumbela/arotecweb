@@ -9,12 +9,12 @@ import { NavLink } from 'react-router-dom';
 import BannerPreto from '../components/banner_preto';
 import ProjectosDiy from '../components/projetos_diy';
 
-function Projectos({cart}) {
+function Projectos({nomee, emaill, cart}) {
     document.title='Projectos DIY | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         PROJECTOS DIY | AROTEC
       </BannerPreto>
@@ -30,7 +30,7 @@ function Projectos({cart}) {
             <div className="col-9 col-sm-9 py-1">
               <b className="proj-tit">Serviço de impressão 3D</b><br />
               <p className="text-secondary proj-f">Crie os seus projectos com AROTEC, consulte o orçamento para o seu projeto clicando no botão abaixo.</p> 
-              <button className="btn bt-p btn-outline-primary proj-f">Solicitar orçamento</button>
+              <NavLink to={'/contactar'} className="btn  btn-outline-primary proj-f">Solicitar orçamento</NavLink>
             </div>
             
           </div>

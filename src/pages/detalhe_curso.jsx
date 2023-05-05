@@ -9,7 +9,7 @@ import cursos from './lista_cursos';
 import logo from '../imgs/icone.png';
 import Accordion from '../components/accordion';
 
-function DetalheCurso ({cart}) {
+function DetalheCurso ({nomee, emaill,cart}) {
     const {id} = useParams();
     const cc = cursos.filter(p => p.id == id);
     console.log(cc);
@@ -17,7 +17,7 @@ function DetalheCurso ({cart}) {
         <>
   <div className='destaque '>
     
-  < Header cart={cart} />
+  < Header  nomee={nomee} emaill={emaill} cart={cart} />
         <BannerPreto >
             {cc[0].curso}
         </BannerPreto>

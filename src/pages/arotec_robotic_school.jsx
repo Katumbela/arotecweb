@@ -6,12 +6,12 @@ import Footer from '../components/footer';
 import Banners from '../components/banners';
 import BannerPreto from '../components/banner_preto';
 
-const RoboticSchool = ({cart}) => {
+const RoboticSchool = ({nomee, emaill,cart}) => {
     document.title='Arotec Robotic School | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         AROTEC ROBOTIC SCHOOL
       </BannerPreto>

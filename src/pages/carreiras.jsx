@@ -7,12 +7,12 @@ import Banners from '../components/banners';
 import BannerPreto from '../components/banner_preto';
 import { NavLink } from 'react-router-dom';
 
-const Carreiras = ({cart}) => {
+const Carreiras = ({emaill, nomee, cart}) => {
     document.title='Carreiras & Estagios | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto >
         CARREIRAS & ESTÁGIOS
       </BannerPreto>

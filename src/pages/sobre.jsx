@@ -19,12 +19,12 @@ import BannerPreto from '../components/banner_preto';
 import OwlCarousel from 'react-owl-carousel';
 import { NavLink } from 'react-router-dom';
 
-const Sobre = ({cart}) => {
+const Sobre = ({cart, nomee, emaill}) => {
     document.title='Sobre a AROTEC & Equipa | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         Sobre a AROTEC
       </BannerPreto>

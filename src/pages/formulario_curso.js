@@ -5,12 +5,12 @@ import Header from '../components/header';
 import mascote from '../imgs/r2.png'
 import '../css/form.css'
 
-export default function Formulario({cart}) {
+export default function Formulario({emaill, nomee,cart}) {
 
 
     return (
       <>
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <br />
       <br />
       <br />

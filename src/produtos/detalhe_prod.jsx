@@ -11,7 +11,7 @@ import '../css/detalhe.css';
 
 function Arobot (props) {
     const {id} = useParams();
-    const {cart, handleClick, adicionar, remover} = props;
+    const {cart,nomee, emaill, handleClick, adicionar, remover} = props;
 
     const pp = produtos.filter((p) => p.id == id);
     const [hoveredImage, setHoveredImage] = useState(null);
@@ -30,7 +30,7 @@ function Arobot (props) {
         <>
   <div className='destaque '>
     
-  < Header cart={cart} />
+  < Header  nomee={nomee} emaill={emaill} cart={cart} />
         <BannerPreto >
             {pp[0].tit}
         </BannerPreto>

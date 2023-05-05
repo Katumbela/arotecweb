@@ -5,12 +5,12 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Banners from '../components/banners';
 
-const Politicas = ({cart}) => {
+const Politicas = ({emaill, nomee, cart}) => {
     document.title='Políticas de Privacidade & Termos de uso | AROTEC';
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
 
       < Footer />
       

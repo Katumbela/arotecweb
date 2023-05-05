@@ -10,7 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/loader';
 
-const Contactar = ({ cart }) => {
+const Contactar = ({emaill,nomee, cart }) => {
   document.title = 'Formulario de Contacto | AROTEC';
   
   const [nomeCompleto, setNC] = useState('');
@@ -47,7 +47,7 @@ const Contactar = ({ cart }) => {
     <div className="w-100">
       <ToastContainer />
 
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         CONTACTAR AROTEC
       </BannerPreto>

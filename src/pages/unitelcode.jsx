@@ -11,7 +11,7 @@ import { useState } from 'react';
 import Loader from '../components/loader';
 import { NavLink } from 'react-router-dom';
 
-const UnitelCode = ({ cart }) => {
+const UnitelCode = ({nomee, emaill,  cart }) => {
   document.title = 'Unitel Code Robotica Inscricao | AROTEC';
 
 
@@ -58,7 +58,7 @@ const UnitelCode = ({ cart }) => {
   return (
     <div className="w-100">
 
-      < Header cart={cart} />
+      < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
         Unitel Code Robotica III edição
       </BannerPreto>

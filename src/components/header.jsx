@@ -1,12 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import logo from '../imgs/icone.png';
 import cart from '../imgs/carrinho.png';
 import '../css/header.css';
 import { NavLink } from 'react-router-dom';
+import { UserContext } from '../pages/userContext';
 
 
 const Header = (props) => {
-    const {cart} = props;
+    const [use, setUser] = useState([]);
+
+    useEffect(() => {
+      // Obtém o valor de 'user' do local storage quando o componente for montado
+      const userString = localStorage.getItem('user');
+      const user = JSON.parse(userString);
+      setUser(user);
+    }, []);
+  const { user, handleLogout, push } = useContext(UserContext);
+    const { nomee, emaill,cart} = props;
     let preco = 0 ;
     let qnt = 0 ;
     cart.map((item) => (preco +=  item.preco * item.qty));
@@ -33,10 +43,19 @@ const Header = (props) => {
             <span>(+244) 938 811 659</span> 
             <span>  | info@arotec.ao</span>
         </div>
-        <div className="text-white">
+
+       {
+
+use != '' ?
+<span> {use.name} &middot; <NavLink to={'/login'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
+ :
+
+ <div className="text-white">
             <NavLink className='text-white link' to="/login">Login / </NavLink>
-            <NavLink className='text-white link' to="/criar_conta">Criar Conta</NavLink>
+            <NavLink className='text-white link' to="/criar_conta">Criar Conta {use.emal}</NavLink>
         </div>
+       }
+       
     </div>
  </div>
     <div className="nav pt-3 pb-1 container d-flex justify-content-between ">

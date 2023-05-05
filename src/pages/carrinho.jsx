@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 const Cart = (props) => {
 
   const [preco, setPreco] = useState(0);
- const {cart, adicionar, remover, handleClick} = props;
+ const {cart, nomee, emaill, adicionar, remover, handleClick} = props;
 let qnt = 0 ;
 
 
@@ -24,7 +24,7 @@ cart.map((item) => (qnt +=  item.qty ));
 
     return (
       <div className='bg-white'>
-      <Header cart={cart} />
+      <Header  nomee={nomee} emaill={emaill} cart={cart} />
       <div className="container">
         <br />
         <br />

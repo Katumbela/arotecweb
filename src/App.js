@@ -10,6 +10,11 @@ function App() {
 
   const [cart, setCart] = useState([]);
 
+  const [nomee, setNomee] = useState('');
+
+  const [emaill, setEmaill] = useState('');
+  const [tell, setTell] = useState('');
+
   const handleClick = (item) => {
     
     const existe = cart.find((x) => x.id === item.id);
@@ -66,7 +71,7 @@ function App() {
   return (
     <React.Fragment>
       <ToastContainer />
-      <Rotas adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
+      <Rotas emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
 
     </React.Fragment>
   

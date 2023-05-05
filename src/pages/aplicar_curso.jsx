@@ -10,13 +10,16 @@ import cursos from './lista_cursos';
 import logo from '../imgs/icone.png';
 import Accordion from '../components/accordion';
 
-function Aplicar({ cart }) {
+function Aplicar({emaill, nomee, cart }) {
     const { id } = useParams();
     const cc = cursos.filter(p => p.id == id);
     console.log(cc);
 
     const [showPassword, setShowPassword] = useState(false);
     const [password, setPassword] = useState("");
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
 
     const handlePasswordChange = event => {
         setPassword(event.target.value);
@@ -26,11 +29,25 @@ function Aplicar({ cart }) {
         setShowPassword(!showPassword);
     };
 
+
+    const [use, setUser] = useState([]);
+
+    useEffect(() => {
+      // Obtém o valor de 'user' do local storage quando o componente for montado
+      const userString = localStorage.getItem('user');
+      const user = JSON.parse(userString);
+      setUser(user);
+      setNome(user.name)
+      setEmail(user.email)
+      setTel(user.tel)
+    }, []);
+
+
     return (
         <>
             <div className='destaque '>
 
-                < Header cart={cart} />
+                < Header  nomee={nomee} emaill={emaill} cart={cart} />
                 <BannerPreto >
                     {cc[0].curso}
                 </BannerPreto>
@@ -42,10 +59,14 @@ function Aplicar({ cart }) {
 
                 <div className="container">
 
+{
+ use.name != '' ?
+ <h3 className='text-primary'>Aplique para este curso {use.name}!</h3>
+:
+<h3 className='text-primary'>Aplicar para este curso</h3>
 
-                    <h3 className='text-primary'>Aplicar para este curso</h3>
-
-                    <hr />
+}
+         <hr />
                     <div className="">
 
                         <b className="text-dark">Preencha o formulário abaixo</b>
@@ -53,15 +74,15 @@ function Aplicar({ cart }) {
                             <div className="col-12 col-md-6">
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary  f-12">Nome <span className="text-danger">*</span></label>
-                                    <input type="text" placeholder='Nome completo' className="form-control" />
+                                    <input value={nome} type="text" placeholder='Nome completo' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Telefone  <span className="text-danger">*</span></label>
-                                    <input type="text" placeholder='900 000 000' className="form-control" />
+                                    <input value={tel} type="text" placeholder='900 000 000' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Email <span className="text-danger">*</span></label>
-                                    <input type="text" placeholder='Seu email' className="form-control" />
+                                    <input value={email} type="text" placeholder='Seu email' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Endereço </label>

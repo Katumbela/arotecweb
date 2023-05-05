@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/destaque.css'
 import { NavLink } from 'react-router-dom';
 import peq_eng from '../imgs/banner-p.png';
@@ -7,12 +7,22 @@ import eletronica from '../imgs/eletronica.jpeg';
 import OwlCarousel from 'react-owl-carousel';
 
 const Destaque = () => {
+
+    const [use, setUser] = useState([]);
+
+    useEffect(() => {
+      // Obtém o valor de 'user' do local storage quando o componente for montado
+      const userString = localStorage.getItem('user');
+      const user = JSON.parse(userString);
+      setUser(user);
+    }, []);
+
     return (
         <div className='destaque container text-center'>
             <div className="text-start">
 
                 <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
-                <p className='text-secondary'>Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
+                <p className='text-secondary'>{use.name.split(" ")[0]+' veja os'} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
                 <NavLink to="/academia" className="navlink">
                     <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
                 </NavLink>

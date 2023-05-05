@@ -9,9 +9,12 @@ import Banners from '../components/banners';
 import Destaque from '../components/cursos_destaque';
 import BannerLoja from '../components/banner_loja';
 import CookieConsent from 'react-cookie-consent';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { UserContext } from './userContext';
 
-const Home = ({cart}) => {
+const Home = ({cart, nomee, emaill}) => {
+
+  const { user, handleLogout } = useContext(UserContext);
   document.title='Inicial | AROTEC';
   
   const [showModal, setShowModal] = useState(false);
@@ -34,13 +37,14 @@ const Home = ({cart}) => {
   return (
     <div className="w-100">
       
-      < Header cart={cart} />
+      < Header nomee={nomee} emaill={emaill} cart={cart} />
       <div className="s">
       < Banners />
       <br />
       <br />
       <Destaque />
       <br />
+      
       <br />
       <BannerLoja />
       < Footer />
