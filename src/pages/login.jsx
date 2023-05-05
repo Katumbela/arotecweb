@@ -65,6 +65,7 @@ const Login = ({setNomee, setEmaill}) => {
 
                 setEmaill('')
                 setNomee('')
+                localStorage.removeItem('user'); // Remove o item userData do localStorage
             })
             .catch((error) => {
                 console.log(error);
@@ -86,7 +87,7 @@ const Login = ({setNomee, setEmaill}) => {
 
                         <br />
                         <center>
-                            <b>Faça login com Google</b>
+                            <b className='text-secondary'>Faça login com Google</b>
                             <br />
                             <br />   {user ? (
                                 <div>
@@ -95,13 +96,18 @@ const Login = ({setNomee, setEmaill}) => {
                                     <button className='btn btn-danger' onClick={handleLogout}>Sair</button>
                                 </div>
                             ) : (
-                                <button className='d-flex btn btn-outline-primary' onClick={handleLoginWithGoogle}>
+                                <button className='d-flex btn-google btn btn-outline-primary' onClick={handleLoginWithGoogle}>
                                     <i className="bi bi-google text- me-2"> </i><span>Login com o Google</span>
                                 </button>
                             )}
                         </center>
 
                     </div>
+                    <br />
+<center>
+
+<NavLink className={'btn btn-outline-secondary'} to={'/'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
+</center>
                 </div>
             </div>
         </div>

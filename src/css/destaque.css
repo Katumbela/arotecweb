@@ -40,3 +40,28 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.btn-google {
+    background-color: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .btn-google:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .btn-google img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
