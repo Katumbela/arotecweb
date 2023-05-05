@@ -12,9 +12,21 @@ const Header = (props) => {
     useEffect(() => {
       // Obtém o valor de 'user' do local storage quando o componente for montado
       const userString = localStorage.getItem('user');
-      const user = JSON.parse(userString);
+      if(userString) {
+        const user = JSON.parse(userString);
       setUser(user);
+      }
+      else {
+        const userData = {
+            name: '',
+            email: '',
+            pictureUrl: '',
+            tel: '',
+          }
+        setUser(userData);
+      }
     }, []);
+
   const { user, handleLogout, push } = useContext(UserContext);
     const { nomee, emaill,cart} = props;
     let preco = 0 ;
