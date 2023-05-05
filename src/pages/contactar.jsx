@@ -6,6 +6,9 @@ import Footer from '../components/footer';
 import BannerPreto from '../components/banner_preto';
 import { db } from './firebase';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Loader from '../components/loader';
 
 const Contactar = ({ cart }) => {
   document.title = 'Formulario de Contacto | AROTEC';
@@ -18,6 +21,7 @@ const Contactar = ({ cart }) => {
 
   
   const salvar = () => {
+    setLoad(true)
     db.collection('mensagens').add({
       nomeCompleto: nomeCompleto,
       telefone: telefone,
@@ -26,15 +30,22 @@ const Contactar = ({ cart }) => {
       dataEnvio: new Date(),
     })
     .then(() => {
-      alert('Mensagem enviada com sucesso!');
+      setEmail('');
+      setTel('');
+      setNC('');
+      setMsg('');
+      setLoad(false);
+      toast.success('Recebemos a sua mensagem com sucesso!');
     })
     .catch((error) => {
-      alert('Erro ao enviar mensagem:', error);
+      setLoad(false);
+      toast.error('Erro ao enviar mensagem:');
     });
   }
   
   return (
     <div className="w-100">
+      <ToastContainer />
 
       < Header cart={cart} />
       <BannerPreto>
@@ -74,7 +85,7 @@ const Contactar = ({ cart }) => {
                   <textarea value={mensagem} onChange={(e)=> setMsg(e.target.value)}  type="text" name="" placeholder="Seu email" id="" className="form-control" ></textarea>
                 </div>
                   <div className="col-12 my-3">
-                     <button disabled={!nomeCompleto || !email || !telefone} onClick={()=> salvar()} className="btn btn-primary w-100">Envar <i className="bi bi-send ms-2"></i></button>
+                     <button disabled={!nomeCompleto || !mensagem || !email || !telefone} onClick={()=> salvar()} className="btn btn-primary w-100"> {load == false ? <span>Envar <i className="bi bi-send ms-2"></i></span> : <Loader/>} </button>
                   </div>
               </div>
             </div>
