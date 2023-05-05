@@ -19,23 +19,23 @@ const Cursos = () => {
     <div className="">
 
     <h1 className='text-primary'>Nossos Cursos </h1>
- <p className='text-secondary f-12'>{use.name +' veja os'} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
+ <p className='text-secondary f-12'>{use.name != '' ? use.name +' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
  
     </div>
+<center>
 
-
-        <div className="mt-4">
-            <div className='row mx-auto'>
+<div className=' row me-1 me-md-0'>
                
-            {
-            cursos.map((course) => (
-                <CardCurso key={course.id} c={course}/>
-                )
-            )
-          }
-               
-            </div>
-        </div>
+               {
+               cursos.map((course) => (
+                   <CardCurso key={course.id} c={course}/>
+                   )
+               )
+             }
+                  
+              
+           </div>
+</center>
 
   </div>
 )

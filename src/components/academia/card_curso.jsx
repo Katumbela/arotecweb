@@ -19,7 +19,7 @@ const CardCurso = ({ c }) => {
                                 <b className='b'>{curso}</b><br />
                                 <span className="spa"><i className="bi bi-watch"></i> {duracao}</span>
                                 <p className='preco'>
-                                    <b><i className="bi bi-cash"></i> {preco}</b>
+                                    <b> {preco}</b>
                                 </p>
                             </div>
                         </div>

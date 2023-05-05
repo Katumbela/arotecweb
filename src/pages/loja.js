@@ -11,7 +11,7 @@ const Loja = ({handleClick,nomee, emaill, cart}) => {
     document.title='Loja Arotec | AROTEC';
   
     return (
-    <div className="w-100 bg-light">
+    <div className=" bg-light">
       
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>

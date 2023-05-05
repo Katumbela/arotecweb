@@ -81,8 +81,8 @@ const Login = ({setNomee, setEmaill}) => {
     };
 
     return (
-        <div className="c body">
-            <div className="row w-100">
+        <div className="c mx-auto body">
+            <div className="row ">
                 <div className="col-12 autoo col-md-6 col-xl-6 col-xxl-6 luanda">
                     <div className="">
                         <img src={logo} style={{ height: '5em' }} alt="Logo Arotec" /> <br />
