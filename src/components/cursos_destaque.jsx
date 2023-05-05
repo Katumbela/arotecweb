@@ -22,7 +22,7 @@ const Destaque = () => {
             <div className="text-start">
 
                 <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
-                <p className='text-secondary'>{use.name.split(" ")[0]+' veja os'} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
+                <p className='text-secondary'>{use.name+' veja os'} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
                 <NavLink to="/academia" className="navlink">
                     <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
                 </NavLink>

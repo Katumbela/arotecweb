@@ -59,6 +59,8 @@ function Aplicar({emaill, nomee, cart }) {
 
                 <div className="container">
 
+                    <div className="alert alert-warning"> <i className="bi bi-exclamation-triangle me-2"></i> Algumas funcionalidades ainda estão sob manutenção!</div>
+
 {
  use.name != '' ?
  <h3 className='text-primary'>Aplique para este curso {use.name}!</h3>
@@ -99,7 +101,7 @@ function Aplicar({emaill, nomee, cart }) {
                                 </div>
                                 <div className="my-4">
                                     
-                                    <button className="btn w-100 btn-outline-primary">
+                                    <button disabled className="btn w-100 btn-outline-primary">
                                         Enviar
                                     </button>
                                     
