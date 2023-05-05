@@ -77,7 +77,7 @@ const Login = ({setNomee, setEmaill}) => {
             <div className="row w-100">
                 <div className="col-12 autoo col-md-6 col-xl-6 col-xxl-6 luanda">
                     <div className="">
-                        <img src={logo} style={{ height: '3em' }} alt="Logo Arotec" /> <br />
+                        <img src={logo} style={{ height: '5em' }} alt="Logo Arotec" /> <br />
                         <span className="text-white">Angola Robotica e Tecnologia</span>
                     </div>
                 </div>
@@ -87,19 +87,27 @@ const Login = ({setNomee, setEmaill}) => {
 
                         <br />
                         <center>
-                            <b className='text-secondary'>Faça login com Google</b>
-                            <br />
-                            <br />   {user ? (
+                               {user ? (
                                 <div>
-                                    <p className='text-primary'>Você já está logado como {user.displayName}</p>
+                                    <p className='text-primary'>Você já está logado como <b> {user.displayName}</b> <br />
+                                    
+                                   <span className="text-secondary">
+                                   Email: {user.email}
+                                   </span>
+                                   </p>
 
                                     <button className='btn btn-danger' onClick={handleLogout}>Sair</button>
                                 </div>
                             ) : (
+<>
+                            <b className='text-secondary'>Faça login com Google</b>
+                            <br />
+                            <br />
                                 <button className='d-flex btn-google btn btn-outline-primary' onClick={handleLoginWithGoogle}>
                                     <i className="bi bi-google text- me-2"> </i><span>Login com o Google</span>
                                 </button>
-                            )}
+                           
+</> )}
                         </center>
 
                     </div>
