@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import '../css/footer.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { db } from '../pages/firebase';
+import Swal from 'sweetalert';
+import Loader from './loader';
 
 function Footer() {
-
-    const NewsLetter = () => {
-        toast.success('Seu email foi adicionado à nossa newsletter com sucesso');
+    const [email, setEmail] = useState('');
+    const [load, setLoad] = useState(false);
+  
+  
+    const alert = (t) => {
+        Swal.fire({
+            title: 'NewsLetter',
+            text: t,
+            icon: 'success',
+            confirmButtonText: 'Ok'
+          });
     }
+
+  const NewsLetter = () => {
+    setLoad(true)
+    db.collection('newsletter').add({
+      email: email,
+      dataEnvio: new Date(),
+    })
+    .then(() => {
+      setEmail('');
+      setLoad(false);
+      toast.success('Seu email foi adicionado a nossa newsletter com sucesso, obrigado!');
+    })
+    .catch((error) => {
+      setLoad(false);
+      toast.error('Erro ao enviar mensagem:' + error);
+    });
+  }
+  
     return (
         <div className='bg-dark'>
         <div className='container-lg'>
@@ -59,9 +88,9 @@ function Footer() {
                         <br />
                         <br />
                         <div className="d-flex">
-                            <input type="email" name="" placeholder='Seu email' id="" className="form-control letter" />
-                            <button onClick={()=> NewsLetter()} className="btn btn-primary">
-                                <i className="bi bi-send"></i>
+                            <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}  name="" placeholder='Seu email' id="" className="form-control letter" />
+                            <button disabled={!email} onClick={()=> NewsLetter()} className="btn btn-primary">
+                               {load == false ?  <i className="bi bi-send"></i> : <Loader />}
                             </button>
                         </div>
                     </div>
