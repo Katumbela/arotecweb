@@ -4,10 +4,34 @@ import '../App.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import BannerPreto from '../components/banner_preto';
-
+import { db } from './firebase';
 
 const Contactar = ({ cart }) => {
   document.title = 'Formulario de Contacto | AROTEC';
+  
+  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const nomeCompleto = event.target.nomeCompleto.value;
+    const telefone = event.target.telefone.value;
+    const email = event.target.email.value;
+    const mensagem = event.target.mensagem.value;
+  
+    db.collection('mensagens').add({
+      nomeCompleto: nomeCompleto,
+      telefone: telefone,
+      email: email,
+      mensagem: mensagem,
+      dataEnvio: new Date(),
+    })
+    .then(() => {
+      console.log('Mensagem enviada com sucesso!');
+    })
+    .catch((error) => {
+      console.error('Erro ao enviar mensagem:', error);
+    });
+  }
+  
   return (
     <div className="w-100">
 
