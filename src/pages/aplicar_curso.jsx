@@ -63,7 +63,7 @@ function Aplicar({emaill, nomee, cart }) {
 
 {
  use.name != '' ?
- <h3 className='text-primary'>Aplique para este curso {use.name}!</h3>
+ <h3 className='text-primary'>Aplique para este curso !</h3>
 :
 <h3 className='text-primary'>Aplicar para este curso</h3>
 
