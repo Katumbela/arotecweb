@@ -51,11 +51,17 @@ const Header = (props) => {
   <header className='bg-white w-100 position-relative'>
  <div className=" bg-primary ">
  <div className="d-flex dados py-2 container justify-content-between f-12 text-white">
-        <div className="">
+       
+       
+       
+ {
+
+use.name != '' ?
+ <div className="">
             <span>(+244) 938 811 659</span> 
             <span>  | info@arotec.ao</span>
         </div>
-
+: " "}
        {
 
 use.name != '' ?
