@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 
-import { useHistory } from 'react-router-dom';
 import { UserContext } from './userContext';
 
 
