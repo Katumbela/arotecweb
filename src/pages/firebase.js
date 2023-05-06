@@ -10,7 +10,7 @@ import 'firebase/compat/firestore';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyBo-Xg_nqEHG7YsR4BUP6jPLW7Pe_66-m8",
-  authDomain: "arotec.",
+  authDomain: "arotec-374911.firebaseapp.com",
   projectId: "arotec-374911",
   storageBucket: "arotec-374911.appspot.com",
   messagingSenderId: "318225936907",
