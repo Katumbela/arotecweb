@@ -71,24 +71,24 @@ function Footer() {
                     <h5 className="text-white">Quick Links </h5>
                     <ul>
                         <li><NavLink className="footerlink" to="/en/academia">Academy</NavLink></li>
-                        <li><NavLink className="footerlink" to="/en/store">Loja</NavLink></li>
-                        <li><NavLink className="footerlink" to="/en/companies">Empresas</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/store">Store</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/companies">Companies</NavLink></li>
                         <li><NavLink className="footerlink" to="/en/arotec_robotic_school">Arotec Robotic School</NavLink></li>
-                        <li><NavLink className="footerlink" to="/en/unitel_code_robotica_inscricao">Unitel Code Robótica</NavLink></li>
-                        <li><NavLink className="footerlink" to="/carreiras">Carreiras e Estagios</NavLink></li>
-                        <li><NavLink className="footerlink" to="/sobre">Sobre a AROTEC</NavLink></li>
-                        <li><NavLink className="footerlink" to="/contactar">Contactar</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/unitel_code_robotica_inscricao">Unitel Code Robotic</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/carreers">Careers and Internships</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/about">About AROTEC</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/contact">Contact</NavLink></li>
                     </ul> 
                 </div>
                 <div className="col-12 my-2 my-md-1 col-sm-4 col-md-4 text-start">
                     <h5 className="text-white">Newsletter</h5>
                     <div className="span">
-                           <span> Subscreva para receber mais informações e novidades da arotec</span>
+                           <span> Subscribe to receive more information and news from arotec.</span>
                         
                         <br />
                         <br />
                         <div className="d-flex">
-                            <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}  name="" placeholder='Seu email' id="" className="form-control letter" />
+                            <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)}  name="" placeholder='Your Email' id="" className="form-control letter" />
                             <button disabled={!email} onClick={()=> NewsLetter()} className="btn btn-primary">
                                {load == false ?  <i className="bi bi-send"></i> : <Loader />}
                             </button>
@@ -103,7 +103,7 @@ function Footer() {
                     <span className=''>&copy; 2023 - AROTEC SU </span>
                 </div>
                 <div className="d1 col-6 col-md-6  text-end">
-                    <span className=''> <NavLink className="link copy" to="/sobre">Sobre</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/politicas_de_privacidade">Políticas de Privacidade</NavLink></span>
+                    <span className=''> <NavLink className="link copy" to="/sobre">About</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/politicas_de_privacidade">Privacy Policy</NavLink></span>
                 </div> 
             </div>
         </div>

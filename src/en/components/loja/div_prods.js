@@ -13,7 +13,7 @@ const DivLoja = ({handleClick, cart}) => {
             <img src={mascote} alt="" />
     </div>
     
- <p className='text-secondary f-12'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
+ <p className='text-secondary f-12'>Devices and electronics available for project development and support. From electronic components to assembled devices.</p>
    <hr />
    </div>
 

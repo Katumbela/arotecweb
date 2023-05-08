@@ -13,14 +13,14 @@ const produtos = [
         tit: "Arduino Nano",
         preco: 8000,
         img: ard_nano,
-        desc: "O Arduino Nano é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um microcontrolador Atmel AVR com circuitos de entrada/saída embutido que podem ser facilmente conectados à um computador e programada via IDE (Integrated Development Environment, ou Ambiente de Desenvolvimento"
+        desc: "The Arduino Nano is a single-board, open-source electronics prototyping platform designed with an Atmel AVR microcontroller with built-in input/output circuitry that can be easily connected to a computer and programmed via the Integrated Development Environment (IDE). Development"
     },
     {
         id: 2,
         tit: "Sensor Ultrasonico",
         preco: 4000,
         img: su,
-        desc: "Os sensores ultrassônicos são ideais para detecção de líquidos, sejam transparentes ou turvos. Amarelo, roxo ou vermelho? Os sensores ultrassônicos detectam qualquer cor, com a mesma distância. Mais vantajoso em relação aos sensores fotoelétricos por difusão que não são imunes as cores dos objetos detectados."
+        desc: "Ultrasonic sensors are ideal for detecting liquids whether they are clear or cloudy. Yellow, purple or red? Ultrasonic sensors detect any color at the same distance. More advantageous compared to diffusion photoelectric sensors that are not immune to the colors of detected objects."
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ const produtos = [
         tit: "Jumpers (M/F)",
         preco: 400,
         img: jump,
-        desc: "Os jumpers são chaves elétricas utilizadas em placas e alguns dispositivos, como discos rígidos para ativar, regular ou desativar funções específicas do sistema que não são acessíveis via software."
+        desc: "Jumpers are electrical switches used on boards and some devices, such as hard drives, to enable, regulate, or disable specific system functions that are not accessible via software."
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const produtos = [
         tit: "Rodas",
         preco: 800,
         img: roda,
-        desc: "Sabemos que os pneus e rodas são essenciais para locomoções de quase todo tipo de  meio de transporte desde de um simples carrinho de supermercado até um avião."
+        desc: "We know that tires and wheels are essential for moving almost every type of transport from a simple supermarket trolley to an airplane."
 
     },
     {
@@ -55,14 +55,14 @@ const produtos = [
         tit: "Sensor IR",
         preco: 8.000,
         img: sensor_r,
-        desc: "O Sensor de Obstáculo Infravermelho IR, é um sensor capaz de detectar a presença de objetos através de um receptor e um emissor IR, enviando e recebendo luzes infravermelhas e trabalhando em conjunto com o C.I comparador LM393."
+        desc: "The IR Infrared Obstacle Sensor is a sensor capable of detecting the presence of objects through an IR receiver and an IR emitter, sending and receiving infrared lights and working together with the LM393 comparator C.I."
     },
     {
         id: 8,
         tit: "Arduino UNO",
         preco: 12000,
         img: uno,
-        desc: "O Arduino Uno R3 é uma placa baseada no microcontrolador Tmega328 (datasheet). Ele tem 14 pinos de entrada/saída digital (dos quais 6 podem ser usados como saídas PWM), 6 entradas analógicas, um cristal oscilador de 16MHz, uma conexão USB, uma entrada de alimentação uma conexão ICSP e um botão de reset."
+        desc: "The Arduino Uno R3 is a board based on the Tmega328 microcontroller (datasheet). It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16MHz crystal oscillator, a USB connection, a power input, an ICSP connection and a reset button."
     },
 ];
 

@@ -38,7 +38,7 @@ function Arobot (props) {
         <br />
         <div className="container text-start">
 
-        <NavLink to={'/loja'}><i className="bi bi-arrow-left"></i> Voltar</NavLink>
+        <NavLink to={'/en/store'}><i className="bi bi-arrow-left"></i> Back</NavLink>
         </div>
         <br />
         <br />
@@ -56,15 +56,15 @@ function Arobot (props) {
               <div className="row">
                     <div className="d-flex my-2 col-12 col-md-6">
                         <button  style={{borderRight: '1px solid white'}} className="btn btn-dark">
-                        {pp[0].preco} Kz
+                        {pp[0].preco} AOA
                         </button>
                         <button onClick={() => handleClick(pp[0])} className="btn btn-dark" style={{borderLeft: '1px solid white'}}>
-                        Adicionar <i className="bi ms-2 bi-cart"></i>
+                        Add to cart<i className="bi ms-2 bi-cart"></i>
                         </button>
                     </div>
                     <div className="my-2 col-12 col-md-6">
                         <NavLink to={'/comprar_agora/'+id} className="btn btn-outline-primary" >
-                        Comprar agora <i className="bi ms-2 bi-cart"></i>
+                        Buy now <i className="bi ms-2 bi-cart"></i>
                         </NavLink>
                     </div>
               </div>

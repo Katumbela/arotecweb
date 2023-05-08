@@ -8,14 +8,14 @@ import BannerPreto from '../components/banner_preto';
 
 const Loja = ({handleClick,nomee, emaill, cart}) => {
 
-    document.title='Loja Arotec | AROTEC';
+    document.title=' Arotec Store | AROTEC';
   
     return (
     <div className=" bg-light">
       
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
-        LOJA AROTEC
+         AROTEC STORE
       </BannerPreto>
       <br />
       <br />

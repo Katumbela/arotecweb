@@ -8,10 +8,10 @@ const BannerLoja = () => {
   <div className='destaque_loja container text-center'>
     <div className="text-start">
 
-    <h1 className='text-dark'>Loja Arotec </h1>
- <p className='text-secondary'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
- <NavLink to="/loja" className="navlink">
- <button className="btn bb btn-outline-primary"> <i className="bi bi-shop"></i> Ver Todos Produtos</button>
+    <h1 className='text-dark'> AROTEC STORE </h1>
+ <p className='text-secondary'>Devices and electronics available for project development and support. From electronic components to assembled devices.</p>
+ <NavLink to="/en/store" className="navlink">
+ <button className="btn bb btn-outline-primary"> <i className="bi bi-shop"></i> View All Products</button>
  </NavLink>
     </div>
 
@@ -25,7 +25,7 @@ const BannerLoja = () => {
                             <img src={arobot} alt="pequeno engenheiro" />
                         </div>
                         <div className="corpo-loja text-start">
-                            <b className='b'>Kit AROBOT</b>
+                            <b className='b'> AROBOT KIT</b>
                             <div className="d-flex">
                                 <i className="bi bi-star-fill text-warning"></i>
                                 <i className="bi bi-star-fill text-warning"></i>

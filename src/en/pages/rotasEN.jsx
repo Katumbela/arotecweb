@@ -38,22 +38,22 @@ const RotasEN = (props) => {
                     <Route element={<Projectos  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/projects" exact />
                     <Route element={<Empresas  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/companies" exact />
                     <Route element={<Loja  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/store" exact />
-                    <Route element={<Arobot nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/produtos/store/:id" exact />
+                    <Route element={<Arobot nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/products/store/:id" exact />
                     <Route element={<Cart  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/cart" exact />
-                    <Route element={<RoboticSchool  nomee={nomee} emaill={emaill} cart={cart} />} path="/arotec_robotic_school" exact />
-                    <Route element={<Contactar  nomee={nomee} emaill={emaill} cart={cart} />} path="/contactar" exact />
-                    <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/sobre" exact />
-                    <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/carreiras" exact />
-                    <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/unitel_code_robotica_inscricao" exact />
-                    <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/login" exact />
+                    <Route element={<RoboticSchool  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/arotec_robotic_school" exact />
+                    <Route element={<Contactar  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/contact" exact />
+                    <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/about" exact />
+                    <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/en/carreers" exact />
+                    <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/unitel_code_robotica_inscricao" exact />
+                    <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/en/signin" exact />
                     <Route element={<LoginPage />} path="/loginn" exact />
                     <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />
                     <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/aplicar/:id" exact />
-                    <Route element={<CriarConta />} path="/criar_conta" exact />
+                    <Route element={<CriarConta />} path="/signup" exact />
                     <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/s/" exact />
                     <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />
-                    <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/formulario/curso/:id" exact />
-                    <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/application/submit/:id" exact />
+                    <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/formulario/curso/:id" exact />
+                    <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/application/submit/:id" exact />
                     <Route element={<DetalheCurso  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/academy/course/arotec/:id" exact />
 
                 </Routes>

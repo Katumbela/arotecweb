@@ -10,13 +10,13 @@ import BannerPreto from '../components/banner_preto';
 import ProjectosDiy from '../components/projetos_diy';
 
 function Projectos({nomee, emaill, cart}) {
-    document.title='Projectos DIY | AROTEC';
+    document.title=' DIY Projects | AROTEC';
   return (
     <div className="w-100">
       
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
-        PROJECTOS DIY | AROTEC
+      DIY PROJECTS | AROTEC
       </BannerPreto>
 
       <div className="container">
@@ -28,9 +28,9 @@ function Projectos({nomee, emaill, cart}) {
               <img src={printt} alt="printing pub" className="w-100"  />
             </div>
             <div className="col-9 col-sm-9 py-1">
-              <b className="proj-tit">Serviço de impressão 3D</b><br />
-              <p className="text-secondary proj-f">Crie os seus projectos com AROTEC, consulte o orçamento para o seu projeto clicando no botão abaixo.</p> 
-              <NavLink to={'/contactar'} className="btn  btn-outline-primary proj-f">Solicitar orçamento</NavLink>
+              <b className="proj-tit">3D printing service</b><br />
+              <p className="text-secondary proj-f">Create your projects with AROTEC, consult the budget for your project by clicking on the button below.</p> 
+              <NavLink to={'/en/contact'} className="btn  btn-outline-primary proj-f">Request Quote</NavLink>
             </div>
             
           </div>
@@ -38,8 +38,8 @@ function Projectos({nomee, emaill, cart}) {
       <br />
       <br /><br />
       <div className="d-flex justify-content-between container" >
-        <p className="text-secondary f-14"> Você tambem pode adicionar seu projecto aqui</p>
-        <NavLink className="f-14" to="/login">Faça login para adicionar</NavLink>
+        <p className="text-secondary f-14"> You can also add your project here</p>
+        <NavLink className="f-14" to="/login">Login to add</NavLink>
       </div>
       
       <ProjectosDiy />

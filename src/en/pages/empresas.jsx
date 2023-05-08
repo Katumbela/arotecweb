@@ -18,13 +18,13 @@ import hub from '../imgs/hub.jpeg'
 import rema from '../imgs/rema.jpeg'
 
 const Empresas = ({nomee, emaill, cart}) => {
-    document.title='Empresas | AROTEC';
+    document.title='Companies | AROTEC';
   return (
     <div className="w-100">
       
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
-        PARA EMPRESAS
+      FOR BUSINESSES
       </BannerPreto>
 <br /><br />
 
@@ -33,10 +33,9 @@ const Empresas = ({nomee, emaill, cart}) => {
 <div className="row border bg-light">
         <div  style={{display: 'grid', placeContent: 'center'}} className="col-12 col-xl-6 py-4 col-lg-7 col-sm-7">
           <div className='my-auto px-2'>
-            <h1>Desde dispositivos inteligentes, softwares e IA</h1>
+            <h1>From smart devices, software and AI</h1>
             <p className='f-14'>
-            A Arotec é composta por engenheiros especialistas em hardware e softwares inteligentes. Oferecemos soluções para design, fabricação e desenvolvimento de hardware e softwares.
-            </p>
+            Arotec is made up of engineers who are experts in intelligent hardware and software. We offer solutions for design, manufacture and development of hardware and software.  </p>
           </div>
         </div>
         <div className="col-12 col-sm-5 col-xl-6 col-lg-5 p-2">
@@ -48,7 +47,7 @@ const Empresas = ({nomee, emaill, cart}) => {
       <div className="">
         <div className="row">
           <div className="col-12 col-sm-6">
-            <h5>A AROTEC oferece soluções educacionais personalizados</h5>
+            <h5>AROTEC offers customized educational solutions</h5>
 
             <p className='text-secondary f-14'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate doloribus dolores rem tenetur numquam exercitationem laborum consectetur.
@@ -59,19 +58,19 @@ const Empresas = ({nomee, emaill, cart}) => {
               <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
-              <b className="f-16 my-auto">Responsabilidade social empresas</b>
+              <b className="f-16 my-auto">Corporate social responsibility</b>
             </p>
             <p className="d-flex gap-2">
               <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
-              <b className="f-16 my-auto">Aulas de robótica para escolas</b>
+              <b className="f-16 my-auto">Robotics classes for schools</b>
             </p>
             <p className="d-flex gap-2">
               <div className="bg-light rounded-circle " style={{display: 'grid', height:'2em', width:'2em', placeContent: 'center'}}>
                  <i className="bi my-auto bi-check f-26 mx-1 text-primary"></i>
               </div>
-              <b className="f-16 my-auto">Consultoria e criação de laboratórios</b>
+              <b className="f-16 my-auto">Consultancy and creation of laboratories</b>
             </p>
           </div>
         </div>
@@ -79,18 +78,16 @@ const Empresas = ({nomee, emaill, cart}) => {
       <br /><br />
 
       <div className="deved">
-        <h3 className='text-primary'>Soluções Desenvolvidas</h3>
+        <h3 className='text-primary'>Developed Solutions</h3>
       
         <div className="row">
           <div className="col-12 my-4 col-sm-4">
             <div className="mx-"   >
             <img src={un1}  className='w-100' alt="" />
             <h4 className="mt-2 text-primary">
-            Responsabilidade social empresas
-            </h4>
+            Corporate social responsibility </h4>
             <p className="text-secondary f-14">
-            A arotec oferece formações especializadas para as áreas de responsabilidades das empresas. Formações nas áreas de ctem (ciência, tecnologia, engenharia e matemática).
-            </p>
+            arotec offers specialized training for the areas of responsibility of companies. Training in the areas of ctem (science, technology, engineering and mathematics).  </p>
             <br />
             <img src={un} className='' style={{width: '6rem', height:''}} alt="unitel" />
             </div>
@@ -100,10 +97,10 @@ const Empresas = ({nomee, emaill, cart}) => {
             <div className="mx-"   >
             <img src={cat}  className='w-100' alt="" />
             <h4 className="mt-2 text-primary">
-            Aulas de robótica para escolas
+            Robotics classes for schools
             </h4>
             <p className="text-secondary f-14">
-            Oferecemos tutores e programas para ensino de robótica nas escolas, programas extras curriculares e inserção da robótica no currículo escolar.
+            We offer tutors and programs for teaching robotics in schools, extra curricular programs and insertion of robotics in the school curriculum.
             </p>
             <br />
             <div className="d-flex gap-3">
@@ -117,10 +114,11 @@ const Empresas = ({nomee, emaill, cart}) => {
             <div className="mx-"   >
             <img src={r} className='w-100' alt="" />
             <h4 className="mt-2 text-primary">
-            Consultoria e criação de laboratórios
+            Consultancy and creation of laboratories
             </h4>
             <p className="text-secondary f-14">
-            Consultoria e criação de laboratórios nas áreas de ctem (ciência, tecnologia, engenharia e matemática). Oferecemos desde a concepção, fornecimento de equipamentos instalação e treinamentos dos devidos técnicos.</p>
+            Consultancy and creation of laboratories in the areas of ctem (science, technology, engineering and mathematics). We offer everything from design, supply of equipment, installation and training of the appropriate technicians.
+            </p>
             </div>
           </div>
         </div>
@@ -130,7 +128,7 @@ const Empresas = ({nomee, emaill, cart}) => {
 <hr />
 <br /><br />
 <div className="">
-  <h3 className="text-primary">Parceiros</h3>
+  <h3 className="text-primary">Partners</h3>
   <br />
        <div className="row mt-4">
         <div className="col-6 my-2 text-center col-sm-4 col-md-3 col-lg-2">
