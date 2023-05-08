@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Rotas from './pages/rotas';
 import React, {  useEffect, useState } from 'react';
 import RotasPT from './pages/rotas';
-import RotasEN from './pages/rotasEN';
+import RotasEN from './en/pages/rotasEN';
 import {useHistory} from 'react-router-dom';
 function App() {
 
@@ -78,24 +78,34 @@ function App() {
       .catch(error => console.error(error));
   }, []);
 
-  useEffect(() => {
-    const redirectToLanguage = () => {
-      const currentPath = window.location.pathname;
-      const isEnglish = currentPath.startsWith('/en');
-      const isPortuguese = currentPath.startsWith('/');
+  // useEffect(() => {
+  //   const redirectToLanguage = () => {
+  //     const currentPath = window.location.pathname;
+  //     const isEnglish = currentPath.startsWith('/en');
+  //     const isPortuguese = currentPath.startsWith('/');
 
-      if (country != 'Angola' && !isEnglish) {
-        window.location.href = '/en' // redireciona para a versão em inglês
-      } 
-       if (country === 'Angola' && !isEnglish || country === 'Angola' && !isPortuguese) {
-        window.location.href = '/' // redireciona para a versão em português
-      }
+  //     if (country !== 'Angola' && !isEnglish) {
+  //       window.location.href = '/en' // redireciona para a versão em inglês
+  //     } 
+  //   }
+
+  //   redirectToLanguage(); // apenas na primeira renderização
+
+  // }, [])
+
+  const redirectToLanguage = () => {
+    const currentPath = window.location.pathname;
+    const isEnglish = currentPath.startsWith('/en');
+    const isPortuguese = currentPath.startsWith('/pt');
+  
+    if (country !== 'Angola' && !isEnglish) {
+      window.history.pushState(null, null, '/en');
+    } else if (country === 'Angola' && !isPortuguese) {
+      window.history.pushState(null, null, '/');
     }
-
-    redirectToLanguage(); // apenas na primeira renderização
-
-  }, [])
-
+  }
+  
+  redirectToLanguage(); // apenas na primeira renderização
 
   return (
     <React.Fragment>
