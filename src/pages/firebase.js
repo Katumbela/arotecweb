@@ -11,7 +11,7 @@ import 'firebase/compat/firestore';
 const firebaseConfig = {
   apiKey: "AIzaSyBo-Xg_nqEHG7YsR4BUP6jPLW7Pe_66-m8",
   authDomain: "arotec-374911.firebaseapp.com",
-  projectId: "arotec-374911",
+  projectId: "arotec-374911", 
   storageBucket: "arotec-374911.appspot.com",
   messagingSenderId: "318225936907",
   appId: "1:318225936907:web:10c299f87fa132fc928d0e",

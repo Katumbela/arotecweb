@@ -42,14 +42,18 @@ const Sobre = ({cart, nomee, emaill}) => {
         <h3>MERCADO</h3>
         <div className="row ">
           <div className="col-12 col-sm-6 my-2 text-start">
-            <div className="bg-primary rounded-circle " style={{height: '3em', width: '3em', border: '1px solid black'}}>        </div>
+            <div className="bg-primary rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
+            <i className="bi bi-hdd-rack-fill f-30 text-white"></i>
+               </div>
             <b className='text-secondary'>DESIGN DE HARDWARE</b>
             <p className="text-secondary f-12">
               Serviços relacionados com hardware, design e imporessão 3D
             </p>
           </div>
           <div className="col-12 col-sm-6 my-2 text-start">
-            <div className="bg-primary rounded-circle " style={{height: '3em', width: '3em', border: '1px solid black'}}>        </div>
+            <div className="bg-primary rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
+            <i className="bi bi-mortarboard-fill f-30 text-white"></i>
+               </div>
             <b className='text-secondary'>EDUCACÃO</b>
             <p className="text-secondary f-12">
               Cursos diversos relacionados a area de TI e robotica e formação nas escolas

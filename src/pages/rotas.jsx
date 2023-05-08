@@ -22,6 +22,7 @@ import LoginPage from "./eg_login";
 import BuyNow from "./comprar_agora";
 import Aplicar from "./aplicar_curso";
 import { UserProvider } from "./userContext";
+import AppVaga from "./submit_vaga";
 
 
 const Rotas = (props) => {
@@ -52,6 +53,7 @@ const Rotas = (props) => {
                     <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/s/" exact />
                     <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />
                     <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/formulario/curso/:id" exact />
+                    <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/application/submit/:id" exact />
                     <Route element={<DetalheCurso  nomee={nomee} emaill={emaill} cart={cart} />} path="/academia/curso/arotec/:id" exact />
 
                 </Routes>

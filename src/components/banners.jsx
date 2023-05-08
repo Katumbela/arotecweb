@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import '../css/banners.css'
 import { NavLink } from 'react-router-dom';
-
+import banner_empresa from '../imgs/img1.png' 
 
 function Banners() {
   return (
@@ -56,8 +56,8 @@ function Banners() {
         </div>
          </div>
          
-          <div className="col-12 my-auto emp mx-auto col-sm-6">
-             <div className='im'>
+          <div className="col-12 text-center my-auto emp mx-auto col-sm-6">
+             <div className='im mx-auto'>
               {/* <img src={banner_empresa} alt="" className='img_banner' /> */}
             </div>
          </div>
