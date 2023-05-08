@@ -25,15 +25,15 @@ import { UserProvider } from "./userContext";
 import AppVaga from "./submit_vaga";
 
 
-const RotasPT = (props) => {
+const RotasEN = (props) => {
 
     const {emaill, setEmaill, nomee, setNomee, cart, adicionar, remover, handleClick } = props;
-
+    
     return (
         <BrowserRouter>
             <UserProvider>
                 <Routes >
-                    <Route element={<Home nomee={nomee} emaill={emaill} cart={cart} />} path="/" />
+                    <Route element={<Home nomee={nomee} emaill={emaill} cart={cart} />} path="/en/" />
                     <Route element={<Academia  nomee={nomee} emaill={emaill} cart={cart} />} path="/academia" exact />
                     <Route element={<Projectos  nomee={nomee} emaill={emaill} cart={cart} />} path="/projectos" exact />
                     <Route element={<Empresas  nomee={nomee} emaill={emaill} cart={cart} />} path="/empresas" exact />
@@ -62,4 +62,4 @@ const RotasPT = (props) => {
     )
 }
 
-export default RotasPT;
+export default RotasEN;

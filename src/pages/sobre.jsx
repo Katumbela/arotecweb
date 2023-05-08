@@ -34,7 +34,7 @@ const Sobre = ({cart, nomee, emaill}) => {
      <div className="container">
      <h2>AROTEC (SU) Serviços de Tecnologia</h2>
       <p className='text-secondary'>Arotec é uma empresa voltadas as novas tecnologias, robotica e Inteligencia artificial. Oferecemos aos nossos clientes 1. Design e fabricação de harware e sistemas inteligentes. 2. Kits de aprendizado ao CTEM 3. Formação nas areas de tecnologias.</p>
-      <NavLink to={'/contactar'}><button className="btn btn-outline-primary">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
+      <NavLink to={'/contactar'}><button className="btn btn-outline-dark">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
       <br />
       <hr />
       <br />
@@ -42,19 +42,19 @@ const Sobre = ({cart, nomee, emaill}) => {
         <h3>MERCADO</h3>
         <div className="row ">
           <div className="col-12 col-sm-6 my-2 text-start">
-            <div className="bg-primary rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
+            <div className="bg-dark rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
             <i className="bi bi-hdd-rack-fill f-30 text-white"></i>
                </div>
-            <b className='text-secondary'>DESIGN DE HARDWARE</b>
+            <b className='text-dark'>DESIGN DE HARDWARE</b>
             <p className="text-secondary f-12">
               Serviços relacionados com hardware, design e imporessão 3D
             </p>
           </div>
           <div className="col-12 col-sm-6 my-2 text-start">
-            <div className="bg-primary rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
+            <div className="bg-dark rounded-circle " style={{height: '3em',display:'grid', placeContent:'center', width: '3em', border: '1px solid black'}}>     
             <i className="bi bi-mortarboard-fill f-30 text-white"></i>
                </div>
-            <b className='text-secondary'>EDUCACÃO</b>
+            <b className='text-dark'>EDUCACÃO</b>
             <p className="text-secondary f-12">
               Cursos diversos relacionados a area de TI e robotica e formação nas escolas
             </p>

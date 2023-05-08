@@ -4,8 +4,10 @@ import './App.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Rotas from './pages/rotas';
-import React, { useState } from 'react';
-
+import React, {  useEffect, useState } from 'react';
+import RotasPT from './pages/rotas';
+import RotasEN from './pages/rotasEN';
+import {useHistory} from 'react-router-dom';
 function App() {
 
   const [cart, setCart] = useState([]);
@@ -67,11 +69,39 @@ function App() {
     }
   }
 
+  const [country, setCountry] = useState('');
+
+  useEffect(() => {
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => setCountry(data.country_name))
+      .catch(error => console.error(error));
+  }, []);
+
+  useEffect(() => {
+    const redirectToLanguage = () => {
+      const currentPath = window.location.pathname;
+      const isEnglish = currentPath.startsWith('/en');
+      const isPortuguese = currentPath.startsWith('/');
+
+      if (country != 'Angola' && !isEnglish) {
+        window.location.href = '/en' // redireciona para a versão em inglês
+      } 
+       if (country === 'Angola' && !isEnglish || country === 'Angola' && !isPortuguese) {
+        window.location.href = '/' // redireciona para a versão em português
+      }
+    }
+
+    redirectToLanguage(); // apenas na primeira renderização
+
+  }, [])
+
 
   return (
     <React.Fragment>
       <ToastContainer />
-      <Rotas emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
+      {country == 'Angola' ? <RotasPT emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
+      : <RotasEN emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>}
 
     </React.Fragment>
   
