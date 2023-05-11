@@ -8,6 +8,8 @@ import React, {  useEffect, useState } from 'react';
 import RotasPT from './pages/rotas';
 import RotasEN from './en/pages/rotasEN';
 import {useHistory} from 'react-router-dom';
+
+
 function App() {
 
   const [cart, setCart] = useState([]);

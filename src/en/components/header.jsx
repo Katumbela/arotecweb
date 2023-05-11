@@ -4,7 +4,7 @@ import cart from '../imgs/carrinho.png';
 import '../css/header.css';
 import { NavLink } from 'react-router-dom';
 import { UserContext } from '../pages/userContext';
-
+import firebase from 'firebase/compat/app';
 
 const Header = (props) => {
     const [use, setUser] = useState([]);
@@ -43,6 +43,33 @@ const Header = (props) => {
     const fecharMenu = () => {
         setNav(!nav);
     }
+
+
+
+    useEffect(() => {
+        // Adicione um listener para o estado da autenticação
+        const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+            if (!user) {
+                // Se não houver usuário autenticado, redirecione para a página de login
+              
+                const userData = {
+                    name: '',
+                    email: '',
+                    pictureUrl: '',
+                    tel: '',
+                    uid:'',
+                }
+
+                localStorage.setItem('user', JSON.stringify(userData));
+
+            }
+        });
+
+
+        // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
+        return unsubscribe;
+    }, []);
+
 
 
 

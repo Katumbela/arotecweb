@@ -4,10 +4,39 @@ import cart from '../imgs/carrinho.png';
 import '../css/header.css';
 import { NavLink } from 'react-router-dom';
 import { UserContext } from '../pages/userContext';
-
+import firebase from 'firebase/compat/app';
 
 const Header = (props) => {
     const [use, setUser] = useState([]);
+
+    const [ph, setPh] = useState('')
+
+
+
+    useEffect(() => {
+        // Adicione um listener para o estado da autenticação
+        const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+            if (!user) {
+                // Se não houver usuário autenticado, redirecione para a página de login
+              
+                const userData = {
+                    name: '',
+                    email: '',
+                    pictureUrl: '',
+                    tel: '',
+                    uid:'',
+                }
+
+                localStorage.setItem('user', JSON.stringify(userData));
+
+            }
+        });
+
+
+        // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
+        return unsubscribe;
+    }, []);
+
 
     useEffect(() => {
         // Obtém o valor de 'user' do local storage quando o componente for montado
@@ -15,6 +44,7 @@ const Header = (props) => {
         if (userString) {
             const user = JSON.parse(userString);
             setUser(user);
+            setPh(user.photo);
         }
         else {
             const userData = {
@@ -57,7 +87,10 @@ const Header = (props) => {
 
                         {
 
-                            use.name != '' ? <div><img src={`${use.pictureUrl}`} style={{height:'2em'}} alt="" /></div>
+                            use.name != '' ? <div className="position-relative" style={{padding:'.09rem 0'}}>
+                                <img src={use.photo} className='rounded-circle' style={{height:'2.5em',border:'1px solid white', width:'2.5em', top:'-.35rem', position: 'absolute'}} alt={use.photo} />
+                                <NavLink className={'text-white  ms-5 navlink'} to={'/meus_cursos'} style={{marginBottom:'.5rem', border:'1px solid white', padding:'.25rem .5rem'}}>Meus Cursos <i className="bi bi-mortarboard-fill"></i></NavLink>
+                            </div>
                                 :
                                 <div className="">
                                     <span>(+244) 938 811 659</span>
@@ -66,7 +99,7 @@ const Header = (props) => {
                         {
 
                             use.name != '' ?
-                                <span> {use.name} &middot; <NavLink to={'/login'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
+                                <span className='my-auto'> {use.name} &middot; <NavLink to={'/login'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
                                 :
 
                                 <div className="text-white">

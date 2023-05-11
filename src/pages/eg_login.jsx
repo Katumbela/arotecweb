@@ -1,81 +1,74 @@
-import { useState } from 'react';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
 
 
-function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
+import '../App.css';
+// Bootstrap CSS
+// Bootstrap Bundle JS
+import Header from '../components/header';
+import bb from '../imgs/logo.png';
+import Footer from '../components/footer';
+import Cursos from '../components/academia/cursos_disponiveis';
+import BannerPreto from '../components/banner_preto';
+import cursos from './lista_cursos';
+import { NavLink, useParams } from 'react-router-dom';
+import vid from '../imgs/video.png'
 
-  const handleSignIn = async (e) => {
-    e.preventDefault();
-    try {
-      // Faz o login com o email e senha informados
-      await firebase.auth().signInWithEmailAndPassword(email, password);
-      // Redireciona para a página de perfil, por exemplo
-      window.location.href = '/perfil';
-    } catch (error) {
-      // Trata o erro e exibe uma mensagem de erro para o usuário
-      setError(error.message);
-    }
-  };
 
-  const handleSignUp = async (e) => {
-    e.preventDefault();
-    try {
-      // Cria uma nova conta com o email e senha informados
-      await firebase.auth().createUserWithEmailAndPassword(email, password);
-      // Redireciona para a página de perfil, por exemplo
-      window.location.href = '/perfil';
-    } catch (error) {
-      // Trata o erro e exibe uma mensagem de erro para o usuário
-      setError(error.message);
-    }
-  };
+function PlayLis({ nomee, emaill, cart }) {
 
-  return (
-    <div className='container text-center'>
-      <br />
-      <br />
-      
-      {error != 'Firebase: There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found).' && <form className='w-100' onSubmit={handleSignIn}>
-        <label className='text-secondary'>
-          Email:
-          <input className='w-100 form-control' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </label>
-        <br /><br />
-        <label className='text-secondary'>
-          Senha:
-          <input  className='w-100 form-control' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
-        <br />
-        <br />
-        <button className='btn btn-outline-primary' type="submit">Entrar</button>
-      </form>}
-      <form className='text-center' onSubmit={handleSignUp}>
-       
-      <br /><br />
-        <label className='text-secondary'>
-          Email:
-          <input  className='form-control' type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </label>
-        <br />
-        <br />
-        <label className='text-secondary'>
-          Senha:
-          <input className='form-control' type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label><br /><br />
-        <button className='btn btn-outline-primary' type="submit">Cadastrar</button>
-      </form>
-      {error == 'Firebase: There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found).' && <div>
-        
-        
-      <p className='w-75 f-14 text-secondary'>Não há nenhum usuario correspondente à estes dados, crie uma conta!</p>
-      
-        </div>}
-    </div>
-  );
+    const { curso } = useParams();
+    const cc = cursos.filter(p => p.id == curso);
+
+    document.title = `PlayList do curso de ${cc[0].curso} | AROTEC`;
+
+    return (
+        <div className="bg-light w-100">
+
+            < Header nomee={nomee} emaill={emaill} cart={cart} />
+            <BannerPreto>
+                {cc[0].curso}
+            </BannerPreto>
+            <br />
+
+            <div className="container">
+                <center>
+                    <h1 className="text-primary">
+                        PlayList do Curso
+                    </h1>
+                    <hr />
+                    <br />
+                </center>
+                <div className="row">
+                    <div className="col-12 col-sm-4 col-md-3 col-xl-2">
+                        <NavLink to={'/w/'} style={{ background: '', padding: '.5em' }} className="vid-car navlink rounded-3 border-primary text-center">
+                            <div className="img">
+                                <img src={vid} style={{ height: '4em' }} alt="" />
+                            </div>
+                            <div className="corp">
+                                <b>Aula 1: Introdução ao curso</b>
+                            </div>
+                        </NavLink>
+                    </div>
+                    <div className="col-12 col-sm-4 col-md-3 col-xl-2">
+                        <div style={{ border: '1px solid #0066be', padding: '.5em' }} className="vid-car rounded-3 border-primary text-center">
+                            <div className="img">
+                                <img src={vid} style={{ height: '4em' }} alt="" />
+                            </div>
+                            <div className="corp">
+                                <b>Aula 1: Introdução ao curso</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br />
+            <br />
+
+            < Footer />
+
+        </div>
+    );
 }
 
-export default LoginPage;
+export default PlayLis;

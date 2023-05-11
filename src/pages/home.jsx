@@ -11,12 +11,38 @@ import BannerLoja from '../components/banner_loja';
 import CookieConsent from 'react-cookie-consent';
 import { useContext, useEffect, useState } from 'react';
 import { UserContext } from './userContext';
+import firebase from 'firebase/compat/app';
 
 const Home = ({cart, nomee, emaill}) => {
 
   const { user, handleLogout } = useContext(UserContext);
   document.title='Inicial | AROTEC';
   
+
+  useEffect(() => {
+    // Adicione um listener para o estado da autenticação
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+        if (!user) {
+            // Se não houver usuário autenticado, redirecione para a página de login
+          
+            const userData = {
+                name: '',
+                email: '',
+                pictureUrl: '',
+                tel: '',
+                uid:'',
+            }
+
+            localStorage.setItem('user', JSON.stringify(userData));
+
+        }
+    });
+
+
+    // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
+    return unsubscribe;
+}, []);
+
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {

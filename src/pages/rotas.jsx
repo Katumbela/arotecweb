@@ -24,6 +24,8 @@ import Aplicar from "./aplicar_curso";
 import { UserProvider } from "./userContext";
 import AppVaga from "./submit_vaga";
 import SubmitP from "./enviar_projecto";
+import MeusC from "./meus_cursos";
+import PlayList from "./playlist";
 
 
 const RotasPT = (props) => {
@@ -46,7 +48,9 @@ const RotasPT = (props) => {
                     <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/sobre" exact />
                     <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/carreiras" exact />
                     <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/unitel_code_robotica_inscricao" exact />
+                    <Route element={<PlayList  nomee={nomee} emaill={emaill} cart={cart} />} path="/aulas/:curso" exact />
                     <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/login" exact />
+                    <Route element={<MeusC cart={cart}  emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/meus_cursos" exact />
                     <Route element={<LoginPage />} path="/loginn" exact />
                     <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />
                     <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/aplicar/:id" exact />
