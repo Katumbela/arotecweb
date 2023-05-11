@@ -29,7 +29,7 @@ const UnitelCode = ({nomee, emaill,  cart }) => {
 
   const salvar = () => {
     setLoad(true)
-    db.collection('unitel_code').add({
+    db.collection('unitel_code').doc(nomeCompleto).set({
       nome: nomeCompleto,
       telefone: telefone,
       email: email,
@@ -117,6 +117,8 @@ const UnitelCode = ({nomee, emaill,  cart }) => {
                   <option value="Luanda - Belas">Luanda - Belas</option>
                   <option value="Luanda - Cazenga">Luanda - Cazenga</option>
                   <option value="Luanda - Nova Vida">Luanda - Nova Vida</option>
+                  <option value="Kwanza Sul">Kwanza Sul</option>
+                  <option value="Uíge">Uíge</option>
                 </select>
               </div>
               <div className="col-12 my-1 col-sm-6">

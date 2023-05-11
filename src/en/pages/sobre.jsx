@@ -191,7 +191,7 @@ const Sobre = ({cart, nomee, emaill}) => {
           <a className='bg-light' style={{textDecoration: 'none'}} href="#">
             <b>TITULO DA NOTICIA</b>
             <p className="text-secondary f-12">
-              breve descricao da noticia e talvez alguma coisa... 
+            Arotec: Equipa Angola disputa Campeonato Mundial de Robótica na Suíça... 
             </p>
           </a>
         </div>

@@ -7,7 +7,7 @@ import gif3d from '../imgs/aro1.jpg'
 const ProjectosDiy = () => {
   return (
     <div className="w-100 container py-3 px-3 px-lg-4" style={{background: 'white'}}>
-     <h3 className='text-primary'>Projectos Disponíveis, faça você mesmo</h3>
+     <h3 className='text-dark'>Projectos Disponíveis, faça você mesmo</h3>
      <br />
 
      <div className="row">

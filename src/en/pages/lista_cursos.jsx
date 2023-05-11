@@ -15,7 +15,6 @@ import ia from '../imgs/ia2.webp'
 const cursos = [
     {
         id: 2021,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Little Engineer Course",
         duracao: "3 weeks",
         preco: "15.000 Kz / Módulo",
@@ -31,7 +30,6 @@ const cursos = [
     },
     {
         id: 2022,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Little Engineer Course",
         duracao: "4 weeks",
         preco: "30.000 Kz ",
@@ -47,7 +45,6 @@ const cursos = [
     },
     {
         id: 2023,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Electronics Course",
         duracao: "4 weeks",
         preco: "30.000 Kz",
@@ -63,7 +60,6 @@ const cursos = [
     },
     {
         id: 2024,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Robotics Course Mod. 1",
         duracao: "4 weeks",
         preco: "30.000 Kz ",
@@ -80,7 +76,6 @@ const cursos = [
     },
     {
         id: 2025,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Robotics Course Mod. 2",
         duracao: "4 weeks",
         preco: "35.000 Kz ",
@@ -96,7 +91,6 @@ const cursos = [
     },
     {
         id: 2026,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Industrial Mechanics Course",
         duracao: "4 weeks",
         preco: "30.000 Kz ",
@@ -112,7 +106,6 @@ const cursos = [
     },
     {
         id: 2027,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Introduction to Cyber ​​Security",
         duracao: "1 week",
         preco: "15.000 Kz ",
@@ -128,7 +121,6 @@ const cursos = [
     },
     {
         id: 2028,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Creating My First Website",
         duracao: "1 week",
         preco: "15.000 Kz",
@@ -144,7 +136,6 @@ const cursos = [
     },
     {
         id: 2029,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Game Creation Course in Scracth",
         duracao: "1 week",
         preco: "15.000 Kz ",
@@ -160,7 +151,6 @@ const cursos = [
     },
     {
         id: 2030,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Application Creation Course",
         duracao: "4 weeks",
         preco: "30.000 Kz ",
@@ -176,7 +166,6 @@ const cursos = [
     },
     {
         id: 2031,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "3D Printing Course",
         duracao: "1 week",
         preco: "15.000 Kz ",
@@ -192,7 +181,6 @@ const cursos = [
     },
     {
         id: 2032,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Python Programming Course",
         duracao: "4 weeks",
         preco: "30.000 Kz ",
@@ -209,7 +197,6 @@ const cursos = [
    
     {
         id: 2034,
-        lastUpdate: "Last Update: 23 Jan. 2023",
         curso: "Artificial Intelligence Course with Python",
         duracao: "4 weeks",
         preco: "50.000 Kz ",
