@@ -41,7 +41,8 @@ const Login = ({setNomee, setEmaill}) => {
                 const userData = {
                     name: result.user.displayName,
                     email: result.user.email,
-                    pictureUrl: result.user.photoURL,
+                    pictureUrl: result.user.pictureUrl,
+                    uid: result.user.uid,
                     tel: result.user.phoneNumber,
                   }
 

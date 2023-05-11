@@ -22,6 +22,7 @@ const Header = (props) => {
                 email: '',
                 pictureUrl: '',
                 tel: '',
+                uid:'',
             }
             setUser(userData);
         }
@@ -56,7 +57,7 @@ const Header = (props) => {
 
                         {
 
-                            use.name != '' ? <div><i className="bi bi-person text-white"></i></div>
+                            use.name != '' ? <div><img src={`${use.pictureUrl}`} style={{height:'2em'}} alt="" /></div>
                                 :
                                 <div className="">
                                     <span>(+244) 938 811 659</span>
