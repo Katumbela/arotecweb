@@ -33,7 +33,14 @@ const Sobre = ({ cart, nomee, emaill }) => {
 
       <div className="container">
         <h2>AROTEC (SU) Serviços de Tecnologia</h2>
-        <p className='text-secondary'>Arotec é uma empresa voltadas as novas tecnologias, robotica e Inteligencia artificial. Oferecemos aos nossos clientes 1. Design e fabricação de harware e sistemas inteligentes. 2. Kits de aprendizado ao CTEM 3. Formação nas areas de tecnologias.</p>
+        <p className='text-secondary'>Arotec é uma empresa voltadas as novas tecnologias, robotica e Inteligencia artificial. Oferecemos aos nossos clientes 
+       <br /><br />
+        <ol>
+          <li> Design e fabricação de harware e sistemas inteligentes. </li>
+          <li>Kits de aprendizado ao CTEM </li>
+          <li>Formação nas areas de tecnologias.</li>
+        </ol>
+        </p>
         <NavLink to={'/contactar'}><button className="btn btn-outline-dark">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
         <br />
         <hr />
