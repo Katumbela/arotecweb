@@ -18,7 +18,7 @@ const BannerLoja = () => {
 
         <div className="">
            
-           <NavLink className="navlink" to="/produtos/store/3">
+           <NavLink className="navlink" to="/en/products/store/3">
                 <div className="item">
                     <div className="card_prod">
                         <div className="card-header">
