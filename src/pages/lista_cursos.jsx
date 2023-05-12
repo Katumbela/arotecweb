@@ -174,6 +174,22 @@ const cursos = [
         categoria: "IT & Tecnologia",
         review: 5
     },
+    {
+        id: 2030,
+        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        curso: "Criacão do meu primeiro site",
+        duracao: "4 semanas",
+        preco: "30.000 Kz ",
+        img: app,
+        desc: "Um curso que enisina a base por tras da criação de sites e dá o conhecimento necessário para que o formando no fim do curso esteja capacitado de criar os seus próprios aplicativos web e derivados",
+        tools1: "Computador",
+        tools2: "Internet",
+        tools3: "Projectora",
+        tools4: "VSCode / Android Studio",
+        teacher: "João Afonso Katombela",
+        categoria: "IT & Tecnologia",
+        review: 5
+    },
     
     {
         id: 2031,
