@@ -46,40 +46,45 @@ function BuyNow (props) {
      
         <div className="row prods-set">
             <div className="col-12 text-start py-3 col-sm-6 col-md-8 col-lg-6">
-                <h5 className='text-primary' style={{textTransform: 'uppercase'}}>Compra Instantânea de  {pp[0].tit} </h5>
+                <h5 className='text-primary' style={{textTransform: 'uppercase'}}>Instant Purchase from  {pp[0].tit} </h5>
                 <p className="text-secondary">
                     <div className="row">
                         <div className="col-12 my-2 col-md-6">
-                            <label htmlFor="" className="text-secondary f-12">Insira seu nome completo <span className="text-danger">*</span></label>
-                            <input type="text" placeholder='Digite seu nome' name="" id="" className="form-control" />
+                            <label htmlFor="" className="text-secondary f-12">Enter your full name<span className="text-danger">*</span></label>
+                            <input type="text" placeholder='Type your name' name="" id="" className="form-control" />
                         </div>
                         <div className="col-12 my-2 col-md-6">
-                            <label htmlFor="" className="text-secondary f-12">Insira seu email <span className="text-danger">*</span></label>
+                            <label htmlFor="" className="text-secondary f-12">Enter your email <span className="text-danger">*</span></label>
                             <input type="text" name="" placeholder='E-mail' id="" className="form-control" />
                         </div>
                         <div className="col-12 my-2 col-md-6">
-                            <label htmlFor="" className="text-secondary f-12">Contacto <span className="text-danger">*</span></label>
-                            <input type="text" name="" placeholder='Seu telefone' id="" className="form-control" />
+                            <label htmlFor="" className="text-secondary f-12">Contact <span className="text-danger">*</span></label>
+                            <input type="text" name="" placeholder='Your number' id="" className="form-control" />
                         </div>
                         <div className="col-12 my-2 col-md-6">
-                            <label htmlFor="" className="text-secondary f-12">Seu endereço <span className="text-danger">*</span></label>
-                            <input type="text" name="" placeholder='Residencia actual' id="" className="form-control" />
+                            <label htmlFor="" className="text-secondary f-12">Your adress <span className="text-danger">*</span></label>
+                            <input type="text" name="" placeholder='Current residence' id="" className="form-control" />
                         </div>
                         <div className="col-12 my-2 col-md-12">
-                            <label htmlFor="" className="text-secondary f-12">Informação Adicional (opcional) </label>
+                            <label htmlFor="" className="text-secondary f-12">Additional Information (optional) </label>
                             <textarea name="" id="" cols="30" rows="2" className="form-control w-100" placeholder='Informação adicional'></textarea>
                         </div>
                         <div className="col-12 my-3 col-md-12">
                             
-                            <p className="f-12">Actualmente não fazemos entregas dos kits, o cliente terá que pegar no laboratorio</p>
+                            <p className="f-12">Purchases are temporarily suspended!</p>
                         </div>
                     </div>
                 </p>
               <div className="row">
                     <div className="col-12 col-md-12">
-                        <button className="btn w-100 btn-outline-primary" >
+                        {/* <button className="btn w-100 btn-outline-primary" >
                         Finalizar Compra <i className="bi ms-2 bi-cart"></i>
-                        </button>
+                        </button> */}
+                        <center>
+                            <i className="bi bi-exclamation-triangle f-50 text-secondary "></i>
+                            <br />
+                            <span className="text-secondary f-14">Purchases are temporarily suspended!</span>
+                        </center>
                     </div>
               </div>
             </div>

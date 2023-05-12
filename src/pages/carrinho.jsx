@@ -70,7 +70,12 @@ cart.map((item) => (qnt +=  item.qty ));
                        <h4>Total: {preco} Kz</h4>
                     </div>
                     <div className="col-6 col-md-4 text-end">
-                       <button className="btn btn-primary">Finalizar compra</button>
+                       {/* We currently do not deliver the kits, the customer will have to pick them up at the laboratory<button className="btn btn-primary">Finalizar compra</button> */}
+                       <center>
+                            <i className="bi bi-exclamation-triangle f-50 text-secondary "></i>
+                            <br />
+                            <span className="text-secondary f-14">As compras estão temporariamente suspensas!</span>
+                        </center>
                     </div>
                   </div>
 

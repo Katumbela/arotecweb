@@ -47,6 +47,13 @@ const Home = ({cart, nomee, emaill}) => {
       
       <br />
       <BannerLoja />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
       < Footer />
       </div>
       <CookieConsent

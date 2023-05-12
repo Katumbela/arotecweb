@@ -77,9 +77,14 @@ function BuyNow (props) {
                 </p>
               <div className="row">
                     <div className="col-12 col-md-12">
-                        <button className="btn w-100 btn-outline-primary" >
+                        {/* <button className="btn w-100 btn-outline-primary" >
                         Finalizar Compra <i className="bi ms-2 bi-cart"></i>
-                        </button>
+                        </button> */}
+                        <center>
+                            <i className="bi bi-exclamation-triangle f-50 text-secondary "></i>
+                            <br />
+                            <span className="text-secondary f-14">As compras estão temporariamente suspensas!</span>
+                        </center>
                     </div>
               </div>
             </div>
