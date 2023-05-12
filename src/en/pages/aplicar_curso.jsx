@@ -169,7 +169,7 @@ function Aplicar({ emaill, nomee, cart }) {
                             <div className="col-12 col-md-6">
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary  f-12">Full Name <span className="text-danger">*</span></label>
-                                    <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" placeholder='Nome completo' className="form-control" />
+                                    <input value={nome} onChange={(e) => setNome(e.target.value)} type="text" placeholder='Full name' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Telephone  <span className="text-danger">*</span></label>
@@ -177,16 +177,16 @@ function Aplicar({ emaill, nomee, cart }) {
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">E-mail <span className="text-danger">*</span></label>
-                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Seu email' className="form-control" />
+                                    <input value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder='Your email' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Address </label>
-                                    <input type="text" value={end} onChange={(e) => setEnd(e.target.value)} placeholder='Residência' className="form-control" />
+                                    <input type="text" value={end} onChange={(e) => setEnd(e.target.value)} placeholder='Address' className="form-control" />
                                 </div>
                                 <div className="my-2">
                                     <label htmlFor="" className="text-secondary f-12">Create a password <span className="text-danger">*</span></label>
                                     <div className="d-flex">
-                                        <input onChange={handlePasswordChange} value={password} type={showPassword ? "text" : "password"} placeholder='*******' className="form-control" />
+                                        <input onChange={handlePasswordChange} value={password} type={showPassword ? "text" : "password"} placeholder='password' className="form-control" />
                                         <button style={{ background: 'none', border: 'none' }} onClick={toggleShowPassword}>
                                             {showPassword ? <i className='bi bi-eye-slash f-26 text-danger'></i> : <i className='bi text-primary bi-eye f-26'></i>}
                                         </button>
