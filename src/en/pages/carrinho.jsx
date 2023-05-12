@@ -9,6 +9,7 @@ const Cart = (props) => {
  const {cart, nomee, emaill, adicionar, remover, handleClick} = props;
 let qnt = 0 ;
 
+document.title ='Your Cart | AROTEC'
 
 cart.map((item) => (qnt +=  item.qty ));
 
