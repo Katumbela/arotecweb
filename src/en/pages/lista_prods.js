@@ -27,6 +27,7 @@ const produtos = [
         tit: "KIT AROBOT",
         preco: 29000,
         img: aro,
+        desc: "The AROBOT kit is an educational robot kit designed for kids to learn about robotics and programming. The kit includes a variety of components, including motors, sensors, controllers, and other electronic parts that allow children to build and program their own robot. With the help of a step-by-step guide and an intuitive graphical programming interface, kids can create different robot models and customize their functionality. The AROBOT kit is ideal for children aged 8-14 who want to develop their STEM skills and explore the exciting world of robotics. By assembling and programming their own robot, children can learn about mechanics, electronics, and computer programming while having fun and engaging in creative problem-solving activities. The AROBOT kit is a perfect tool for inspiring the next generation of young innovators and makers.",
     },
     {
         id: 4,
