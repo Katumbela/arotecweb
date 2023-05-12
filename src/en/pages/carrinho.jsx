@@ -34,7 +34,7 @@ cart.map((item) => (qnt +=  item.qty ));
 
 <center>
   {cart.length == 0 && <div><span className="text-secondary">Your shopping cart is empty</span> <br />
-  <NavLink to={'/store'} >
+  <NavLink to={'/en/store'} >
     <button className="btn-outline-primary mt-2 f-14 btn">Go shopping <i className="bi bi-cart"></i></button>
   </NavLink>
   </div>}
