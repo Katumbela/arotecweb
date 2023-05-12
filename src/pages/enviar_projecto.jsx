@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getStorage, ref, uploadBytes } from 'firebase/storage';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import Header from '../components/header';
@@ -6,9 +6,60 @@ import BannerPreto from '../en/components/banner_preto';
 import Footer from '../components/footer';
 import { toast } from 'react-toastify';
 import { db } from './firebase';
+import firebase from 'firebase/compat/app';
 
 function SubmitP({ nomee, emaill, cart }) {
     const [fotoUrl, setFotoUrl] = useState('');
+    
+    
+  const [use, setUser] = useState([]);
+
+
+
+  useEffect(() => {
+    // Adicione um listener para o estado da autenticação
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      if (!user) {
+        // Se não houver usuário autenticado, redirecione para a página de login
+
+        const userData = {
+          name: '',
+          email: '',
+          pictureUrl: '',
+          tel: '',
+          uid: '',
+        }
+
+        localStorage.setItem('user', JSON.stringify(userData));
+
+      }
+    });
+
+
+    // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
+    return unsubscribe;
+  }, []);
+
+  useEffect(() => {
+    // Obtém o valor de 'user' do local storage quando o componente for montado
+    const userString = localStorage.getItem('user');
+    if (userString) {
+      const user = JSON.parse(userString);
+      setUser(user);
+    }
+    else {
+      const userData = {
+        name: '',
+        email: '',
+        pictureUrl: '',
+        tel: '',
+      }
+      setUser(userData);
+    }
+  }, []);
+
+
+
     const [projeto, setProjeto] = useState({
       titulo: '',
       descricao: '',
@@ -16,27 +67,35 @@ function SubmitP({ nomee, emaill, cart }) {
     });
   
     const handleSubmit = (event) => {
-      event.preventDefault();
-  
-      addDoc(collection(db, 'projetos'), {
-        ...projeto,
-        fotoUrl: fotoUrl,
-        fotoUrlDownload: `${fotoUrl}?alt=media`,
-      })
-        .then(() => {
-          toast.info('Projeto adicionado com sucesso!');
+        event.preventDefault();
+        
+        const user = firebase.auth().currentUser;
+        const { email, displayName } = user;
+      
+        addDoc(collection(db, 'projetos'), {
+          ...projeto,
+          email: email,
+          nome: displayName,
+          fotoUrl: fotoUrl,
+          fotoUrlDownload: `${fotoUrl}?alt=media`,
         })
-        .catch((erro) => {
-          toast.info('Erro ao adicionar o projeto:', erro);
-        });
-    };
+          .then(() => {
+            toast.info('Projeto adicionado com sucesso!');
+          })
+          .catch((erro) => {
+            toast.info('Erro ao adicionar o projeto:', erro);
+          });
+      };
+      
   
     const handleChange = (event) => {
+
       setProjeto({
         ...projeto,
         [event.target.name]: event.target.value,
       });
     };
+    
     const handleFileInputChange = (event) => {
         const arquivo = event.target.files[0];
         const storage = getStorage();
@@ -55,9 +114,10 @@ function SubmitP({ nomee, emaill, cart }) {
                 });
             })
             .catch((erro) => {
-                toast.info('Erro ao enviar o arquivo:', erro);
+                // toast.info('Erro ao enviar o arquivo:', erro);
             });
     };
+
     
 
     return (
@@ -72,7 +132,7 @@ function SubmitP({ nomee, emaill, cart }) {
             <br />
             <div className="container">
                 <form onSubmit={handleSubmit}>
-                    <b>Adicione seu Projeto!</b>
+                    <b>Adicione seu Projeto {use.name}!</b>
                     <br />
                     <hr />
                     <div className="row">

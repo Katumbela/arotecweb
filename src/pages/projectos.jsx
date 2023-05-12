@@ -24,26 +24,26 @@ function Projectos({ nomee, emaill, cart }) {
   useEffect(() => {
     // Adicione um listener para o estado da autenticação
     const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
-        if (!user) {
-            // Se não houver usuário autenticado, redirecione para a página de login
-          
-            const userData = {
-                name: '',
-                email: '',
-                pictureUrl: '',
-                tel: '',
-                uid:'',
-            }
+      if (!user) {
+        // Se não houver usuário autenticado, redirecione para a página de login
 
-            localStorage.setItem('user', JSON.stringify(userData));
-
+        const userData = {
+          name: '',
+          email: '',
+          pictureUrl: '',
+          tel: '',
+          uid: '',
         }
+
+        localStorage.setItem('user', JSON.stringify(userData));
+
+      }
     });
 
 
     // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
     return unsubscribe;
-}, []);
+  }, []);
 
   useEffect(() => {
     // Obtém o valor de 'user' do local storage quando o componente for montado
@@ -122,36 +122,38 @@ function Projectos({ nomee, emaill, cart }) {
       <br />
       <div className="container">
         <h2>Projectos disponíveis, faça você mesmo</h2>
-       
+
 
 
         <br />
         <br />
         <br />
         <div className="container">
-          
+
           {/* <center>
             <i className="bi bi-exclamation-triangle text-warning " style={{ fontSize: '70px' }}></i>
             <br />
             <p className="text-warning">Em construção!</p>
           </center> */}
-          {projetos.map((projeto) => (
-            <div key={projeto.id} className="row my-4">
-              <div className="col-12 col-md-4">
-                <img src={`gs://arotec-374911.appspot.com/arquivos/projectos/` + projeto.fotoUrlDownload} className="img-fluid" alt={projeto.fotoUrl} />
-                <img src={`https://firebasestorage.googleapis.com/v0/b/my-firebase-app.appspot.com/o/images%2Fexample.jpg?alt=media`}/>
+
+          <div className="row">
+            {projetos.map((projeto) => (
+              <div key={projeto.id} className=" col-12 col-sm-6 col-md-4 col-ls-3 col-xxl-2 my-2 my-4">
+                <div className="col-12">
+                  <img className='-100' style={{height:'20em'}} src={`https://firebasestorage.googleapis.com/v0/b/arotec-374911.appspot.com/o/projectos%2F${projeto.fotoUrl}?alt=media`} />
+                </div>
+                <div className="col-12 mt-2">
+                  <h3 className='f-16'>{projeto.titulo}</h3>
+                  <p className='f-12'>{projeto.descricao} <br />
+                    De: <span className="text-primary">{projeto.nome}</span>
+                  </p>
+                  <p>
+                    <NavLink className="btn f-12 btn-outline-dark" to={'/ver_projecto'}>Ver projecto</NavLink>
+                  </p>
+                </div>
               </div>
-              <div className="col-12 col-md-8">
-                <h3>{projeto.titulo}</h3>
-                <p>{projeto.descricao}</p>
-                <p>
-                  <a href={projeto.link} target="_blank" rel="noopener noreferrer">
-                    {projeto.link}
-                  </a>
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
 
         </div>
       </div>
