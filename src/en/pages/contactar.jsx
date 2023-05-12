@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from '../components/loader';
 
 const Contactar = ({emaill,nomee, cart }) => {
-  document.title = 'Formulario de Contacto | AROTEC';
+  document.title = 'Contact form| AROTEC';
   
   const [nomeCompleto, setNC] = useState('');
   const [telefone, setTel] = useState('');
@@ -49,7 +49,7 @@ const Contactar = ({emaill,nomee, cart }) => {
 
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
       <BannerPreto>
-        CONTACTAR AROTEC
+      CONTACT AROTEC
       </BannerPreto>
       <br />
       <br /><br />
@@ -62,30 +62,30 @@ const Contactar = ({emaill,nomee, cart }) => {
           </div>
           <div className="col-12 col-sm-6">
             <div className="">
-              <b>Preencha o Formulário</b>
+              <b>Fill the form below</b>
               <div className="row">
                 <div className="col-12 col-lg-6 my-2">
-                  <label className='text-secodary f-12' htmlFor="">Nome completo </label>
-                  <input value={nomeCompleto} onChange={(e)=> setNC(e.target.value)} type="text" name="" placeholder="Nome completo" id="" className="form-control" />
+                  <label className='text-secodary f-12' htmlFor="">Full name </label>
+                  <input value={nomeCompleto} onChange={(e)=> setNC(e.target.value)} type="text" name="" placeholder="Your name" id="" className="form-control" />
                 </div>
                 <div className="col-12 col-lg-6 my-2">
-                  <label className='text-secodary f-12' htmlFor="">Telefone</label>
-                  <input value={telefone} onChange={(e)=> setTel(e.target.value)}  type="text" name="" placeholder="909 433 978" id="" className="form-control" />
+                  <label className='text-secodary f-12' htmlFor="">Telephone (width DDD code)</label>
+                  <input value={telefone} onChange={(e)=> setTel(e.target.value)}  type="text" name="" placeholder="Your phone" id="" className="form-control" />
                 </div>
                 <div className="col-12 col-lg-6 my-2">
-                  <label className='text-secodary f-12' htmlFor="">Email</label>
-                  <input value={email} onChange={(e)=> setEmail(e.target.value)}  type="text" name="" placeholder="Seu email" id="" className="form-control" />
+                  <label className='text-secodary f-12' htmlFor="">E-mail</label>
+                  <input value={email} onChange={(e)=> setEmail(e.target.value)}  type="text" name="" placeholder="Your email" id="" className="form-control" />
                 </div>
                 <div className="col-12 col-lg-6 my-2">
-                  <label className='text-secodary f-12' htmlFor="">Ficheiro ( Opcional )</label>
+                  <label className='text-secodary f-12' htmlFor="">File ( Optional )</label>
                   <input  type="file" name="" id="" className="form-control" />
                 </div>
                 <div className="col-12 col-lg-6 my-2">
-                  <label className='text-secodary f-12' htmlFor="">Sua Mensagem</label>
-                  <textarea value={mensagem} onChange={(e)=> setMsg(e.target.value)}  type="text" name="" placeholder="Seu email" id="" className="form-control" ></textarea>
+                  <label className='text-secodary f-12' htmlFor="">Your Message</label>
+                  <textarea value={mensagem} onChange={(e)=> setMsg(e.target.value)}  type="text" name="" placeholder="Type a message" id="" className="form-control" ></textarea>
                 </div>
                   <div className="col-12 my-3">
-                     <button disabled={!nomeCompleto || !mensagem || !email || !telefone} onClick={()=> salvar()} className="btn btn-primary w-100"> {load == false ? <span>Envar <i className="bi bi-send ms-2"></i></span> : <Loader/>} </button>
+                     <button disabled={!nomeCompleto || !mensagem || !email || !telefone} onClick={()=> salvar()} className="btn btn-primary w-100"> {load == false ? <span>Send <i className="bi bi-send ms-2"></i></span> : <Loader/>} </button>
                   </div>
               </div>
             </div>
