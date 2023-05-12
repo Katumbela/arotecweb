@@ -28,13 +28,13 @@ cart.map((item) => (qnt +=  item.qty ));
       <div className="container">
         <br />
         <br />
-        <h2>Produtos no carrinho</h2>
+        <h2>Products in cart</h2>
         <hr />
 
 <center>
-  {cart.length == 0 && <div><span className="text-secondary">Seu carrinho está Vazio</span> <br />
-  <NavLink to={'/loja'} >
-    <button className="btn-outline-primary mt-2 f-14 btn">Faça Compras <i className="bi bi-cart"></i></button>
+  {cart.length == 0 && <div><span className="text-secondary">Your shopping cart is empty</span> <br />
+  <NavLink to={'/store'} >
+    <button className="btn-outline-primary mt-2 f-14 btn">Go shopping <i className="bi bi-cart"></i></button>
   </NavLink>
   </div>}
 </center> 
@@ -48,7 +48,7 @@ cart.map((item) => (qnt +=  item.qty ));
                 <div className="my-auto w-100 ms-3">
                 <h3>{item.tit}</h3>
                 <div className="d-flex w-100 justify-content-between">
-                <p className='mt-auto'>Preço: {item.preco} Kz</p>
+                <p className='mt-auto'>Price: {item.preco} Kz</p>
                   <button className="btn d-flex f-12 btn-outline-primary" style={{height: '2em', lineHeight: '0', fontSize: '12px'}}>
                     <span onClick={()=>remover(item)} className='my-auto'>-</span><span className="my-auto mx-2">{item.qty}</span><span onClick={()=>adicionar(item)} className="my-auto">+</span>
                   </button>
@@ -66,11 +66,11 @@ cart.map((item) => (qnt +=  item.qty ));
                   cart.length !== 0 &&
                   <div className="row">
                     <div className="col-6 col-md-8">
-                      <span className="f-14">Compra de {qnt} itens</span>
-                       <h4>Total: {preco} Kz</h4>
+                      <span className="f-14">Purchase of{qnt} items</span>
+                       <h4>Total: {preco} AOA</h4>
                     </div>
                     <div className="col-6 col-md-4 text-end">
-                       <button className="btn btn-primary">Finalizar compra</button>
+                       <button className="btn btn-primary">Checkout</button>
                     </div>
                   </div>
 
