@@ -35,7 +35,8 @@ function Footer() {
     .catch((error) => {
       setLoad(false);
       toast.error('Erro ao enviar mensagem:' + error);
-    });
+    }); 
+
   }
   
     return (
@@ -64,8 +65,6 @@ function Footer() {
                             <i className="bi ms-1 bi-youtube text-white"></i>
                         </a>
                     </div>
-
-                    
                 </div>
                 <div className="col-12 my-2 my-md-1 col-sm-4 col-md-4 text-start">
                     <h5 className="text-white">Links Rápidos</h5>
