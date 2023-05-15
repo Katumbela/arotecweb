@@ -48,7 +48,7 @@ function Footer() {
                     <ul>
                         <li>Address: Luanda - Angola</li>
                         <li>Phone: +244 938 811 659</li>
-                        <li>E-mail: info@arotec.ao</li>
+                        <li>E-mail: arotec.info@gmail.com</li>
                     </ul>
                     <div className="d-flex gap-3 ms-4">
                         <a href="https://www.facebook.com/Arotec1/" className="navlink">
