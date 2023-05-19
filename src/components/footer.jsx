@@ -36,7 +36,6 @@ function Footer() {
       setLoad(false);
       toast.error('Erro ao enviar mensagem:' + error);
     }); 
-
   }
   
     return (
