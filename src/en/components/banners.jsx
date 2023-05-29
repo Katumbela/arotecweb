@@ -5,7 +5,7 @@ import banner_empresa from '../imgs/img1.png'
 
 function Banners() {
   return (
-    <Carousel className='container'>
+    <Carousel className=''>
       <Carousel.Item className="carousel b_code py-auto bg-c">
 
         <div className="row ">

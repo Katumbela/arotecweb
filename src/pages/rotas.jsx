@@ -26,6 +26,9 @@ import AppVaga from "./submit_vaga";
 import SubmitP from "./enviar_projecto";
 import MeusC from "./meus_cursos";
 import PlayList from "./playlist";
+import Jogo from "./okupalenda";
+import Jogos from "./jogo";
+import Quiz from "./okupalenda";
 
 
 const RotasPT = (props) => {
@@ -56,6 +59,8 @@ const RotasPT = (props) => {
                     <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/aplicar/:id" exact />
                     <Route element={<SubmitP  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/adicionar_projecto" exact />
                     <Route element={<CriarConta />} path="/criar_conta" exact />
+                    <Route element={<Jogos />} path="/okupalenda" exact />
+                    <Route element={<Quiz />} path="/okupalenda/game" exact />
                     <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/s/" exact />
                     <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />
                     <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/formulario/curso/:id" exact />
