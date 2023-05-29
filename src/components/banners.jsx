@@ -5,10 +5,10 @@ import banner_empresa from '../imgs/img1.png'
 
 function Banners() {
   return (
-    <Carousel>
-      <Carousel.Item className="carousel b_code py-auto bg-c">
+    <Carousel className=''>
+      <Carousel.Item className="carousel px-5 b_code py-auto bg-c">
        
-       <div className="row ">
+       <div className="row container px-5">
         <div className="col-12 position-relative  text-start px-lg-5 px-md-4 px-sm-5 px-4 col-lg-6">
           <div className='my-5 cont text-white' >
             <h3>UNITEL CODE ROBOTICA</h3>
