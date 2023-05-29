@@ -8,8 +8,8 @@ function Banners() {
     <Carousel className=''>
       <Carousel.Item className="carousel px-5 b_code py-auto bg-c">
        
-       <div className="row container px-5">
-        <div className="col-12 position-relative  text-start px-lg-5 px-md-4 px-sm-5 px-4 col-lg-6">
+       <div className="row  px-4">
+        <div className="col-12 position-relative  text-start  col-lg-6">
           <div className='my-5 cont text-white' >
             <h3>UNITEL CODE ROBOTICA</h3>
             <p className='w-lg-75 pe-sm-2'>Está de volta a terceira edição do Unitel Code Robótica, para Luanda, Cabinda, Benguela, Uíge, Bengo Kwanza Sul, Kwanza Norte.</p>
