@@ -26,7 +26,8 @@ cart.map((item) => (qnt +=  item.qty ));
     return (
       <div className='bg-white'>
       <Header  nomee={nomee} emaill={emaill} cart={cart} />
-      <div className="container">
+      <br />
+      <div className="container mt-5">
         <br />
         <br />
         <h2>Products in cart</h2>
@@ -77,6 +78,16 @@ cart.map((item) => (qnt +=  item.qty ));
 
                 }
         
+        <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <br />
           <br />
 

@@ -137,7 +137,7 @@ const Header = (props) => {
                         </ul>
                     </div>
                     <div className="d-flex icones gap-3">
-                        <NavLink className={'cart-logo'} to="/cart">
+                        <NavLink className={'cart-logo'} to="/en/cart">
                             <div className="c d-flex gap-1 position-relative rounded-pill" style={{ height: '2em', padding: '.3rem .5rem' }}>
                                 <b style={{ fontSize: "13px", position: 'absolute', top: '0', right: '-.2rem', background: '#0066be', color: 'white', width: '1.5em', display: 'grid', placeContent: 'center', height: '1.5em', borderRadius: '90px' }} className='text-white fw-light rounded-circle'>{qnt}</b>
                                 <i style={{ fontSize: "21px" }} className="bi bi-cart text-secondary"></i>
@@ -163,12 +163,12 @@ const Header = (props) => {
                         <li><NavLink className="link d-flex justify-content-between" to="/en/companies" style={({ isActive }) => isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}>Companies <i className="bi bi-arrow-right-short"></i></NavLink></li>
                     </ul>
                     <div className="btns gap-3 ms-4 justify-content-between d-flex">
-                        <NavLink to={'/signin'} className={'w-100'}>
+                        <NavLink to={'/en/signin'} className={'w-100'}>
                             <button className="btn w-100 btn-outline-primary">
                                 Sign In
                             </button>
                         </NavLink>
-                        <NavLink to={'/signup'} className=" w-100 ">
+                        <NavLink to={'/en/signup'} className=" w-100 ">
                             <button className="btn w-100 btn-primary">
                                 Sign Up
                             </button>
