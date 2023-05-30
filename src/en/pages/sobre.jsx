@@ -26,10 +26,9 @@ const Sobre = ({ cart, nomee, emaill }) => {
 
      
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
+     
       <BannerPreto>
-      About AROTEC
+      About Arotec
       </BannerPreto>
       <br />
       <br />
@@ -44,7 +43,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
           <li>Training in the areas of technologies.</li>
         </ol>
         </p>
-        <NavLink to={'/contactar'}><button className="btn btn-outline-dark">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
+        <NavLink to={'/en/contact'}><button className="btn btn-outline-dark">Contact <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
         <br />
         <hr />
         <br />
@@ -199,7 +198,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
           <div className="row mt-3">
             <div className="col-6 col-sm-4 col-md-4 col-lg-2">
               <a className='bg-light' style={{ textDecoration: 'none' }} href="https://tecangologies.com/eventos/arotec--equipa-angola-disputa-campeonato-mundial-de-robotica-na-suica">
-              <b>Arotec: Team Angola competes in the Rob World Championship...</b>
+              <b className='text-dark'>Arotec: Team Angola competes in the Rob World Championship...</b>
                 <p className="text-secondary f-12">
                   With a team of 4 students, Arotec has been participating since last Thursday, October 13th...
                 </p>
@@ -207,7 +206,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2">
               <a className='bg-light' style={{ textDecoration: 'none' }} href="https://tecangologies.com/eventos/campeonato-mundial-de-robotica-2022--team-angola-pretende-figurar-entre-os-primeiros-classificados">
-              <b>World Robotics Championship 2022: Team Angol...</b>
+              <b className='text-dark'>World Robotics Championship 2022: Team Angol...</b>
                 <p className="text-secondary f-12">
                   A group of four Angolan students led by Arotec (Angola Robotics and Technology) will participate in the...
                 </p>
@@ -215,7 +214,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
             </div>
             <div className="col-6 col-sm-4 col-md-4 col-lg-2">
               <a className='bg-light' style={{ textDecoration: 'none' }} href="https://ggpen.gov.ao/?tag=arotec">
-              <b>World Space Week 2022 celebrated today in Cazenga</b>
+              <b className='text-dark'>World Space Week 2022 celebrated today in Cazenga</b>
                 <p className="text-secondary f-12">
                   Continuing the Program of Activities for World Space Week 2022, today...
                 </p>
