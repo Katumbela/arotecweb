@@ -116,8 +116,8 @@ const Header = (props) => {
                                 :
 
                                 <div className="text-white">
-                                    <NavLink className='text-white link' to="/en/signin">Login / </NavLink>
-                                    <NavLink className='text-white link' to="/en/signup">Criar Conta {use.emal}</NavLink>
+                                    <NavLink className='text-white link' to="/en/signin">Signin / </NavLink>
+                                    <NavLink className='text-white link' to="/en/signup">Signup </NavLink>
                                 </div>
                         }
 
