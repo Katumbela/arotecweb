@@ -41,7 +41,7 @@ const Destaque = () => {
             <div className="mt-4">
                 <OwlCarousel className='owl-theme owl-carousel' navClass={['owl-prev', 'owl-next']} margin={15} responsiveClass={true} controlsClass='owl-controls' dots={true} autoWidth={true} nav={true}>
 
-                    <NavLink to={'/en/academia/curso/arotec/2021'} className="my-2 link">
+                    <NavLink to={'/en/academy/course/arotec/2021'} className="my-2 link">
                         <div className="card_curso card-hover">
                             <div className="card-header">
                                 <img src={peq_eng} alt="pequeno engenheiro" />
@@ -58,7 +58,7 @@ const Destaque = () => {
                     </NavLink>
 
 
-                    <NavLink to={'/en/academia/curso/arotec/2022'} className="link my-2">
+                    <NavLink to={'/en/academy/course/arotec/2022'} className="link my-2">
                         <div className="card_curso card-hover">
                             <div className="card-header">
                                 <img src={arduino} alt="pequeno engenheiro" />

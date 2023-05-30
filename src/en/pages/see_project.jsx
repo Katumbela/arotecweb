@@ -96,7 +96,9 @@ function SeeP({ nomee, emaill, cart }) {
         <Header nomee={nomee} emaill={emaill} cart={cart} />
         <br />
         <br />
-        <div className='container text-start'>
+        <br />
+        <br />
+        <div className='container mt-5 text-start'>
             <div className="row">
                 <div className="col-12 col-xxl-8 col-sm-7">
         <YouTube videoId={youtubeVideoId} opts={youtubePlayerOptions} />
