@@ -524,6 +524,24 @@ footer {
 
 }
 
+.navbar {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+  margin-bottom: 9rem;
+  z-index: 9999999999;
+  margin-top: -.5rem;
+}
+
+
+.navbar-show {
+  top: 0;
+}
+
+.navbar-hide {
+  top: -100px;
+}
 
 @media (min-width: 801px) {
 

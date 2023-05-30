@@ -11,7 +11,10 @@ function Watch({ nomee, emaill, cart }) {
     return (
         <div className="bg-light w-100">
 
-            < Header nomee={nomee} emaill={emaill} cart={cart} />
+           
+      < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
+      <br />
+      <br />
             <br />
             <br />
 

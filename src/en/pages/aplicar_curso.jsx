@@ -108,7 +108,10 @@ function Aplicar({ emaill, nomee, cart }) {
         <>
             <div className='destaque '>
 
-                < Header nomee={nomee} emaill={emaill} cart={cart} />
+               
+      < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
+      <br />
+      <br />
                 <BannerPreto >
                     {cc[0].curso}
                 </BannerPreto>

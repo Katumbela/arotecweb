@@ -63,7 +63,10 @@ const Home = ({cart, nomee, emaill}) => {
   return (
     <div className="w-100">
       
-      < Header nomee={nomee} emaill={emaill} cart={cart} />
+     
+      < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
+      <br />
+      <br />
       <div className="s">
       < Banners />
       <br />

@@ -31,7 +31,10 @@ function AppVaga(props) {
         <>
             <div className='destaque '>
 
-                < Header nomee={nomee} emaill={emaill} cart={cart} />
+               
+      < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
+      <br />
+      <br />
                 <BannerPreto >
                     {vaga[0].vaga}
                 </BannerPreto>

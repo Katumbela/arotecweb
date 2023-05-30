@@ -74,11 +74,25 @@ const Header = (props) => {
     const fecharMenu = () => {
         setNav(!nav);
     }
-
-
+    
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        const visible = prevScrollPos > currentScrollPos;
+  
+        setPrevScrollPos(currentScrollPos);
+        setVisible(visible);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [prevScrollPos]);
 
     return (
-        <>
+        <div className={`navbar ${visible ? 'navbar-show' : 'navbar-hide'}`}>
             <header className='bg-white w-100 position-relative'>
                 <div className=" bg-primary ">
                     <div className="d-flex dados py-2 container justify-content-between f-12 text-white">
@@ -164,7 +178,7 @@ const Header = (props) => {
                 </div> : ""
             }
 
-        </>
+        </div>
     );
 };
 

@@ -54,10 +54,10 @@ const Cursos = () => {
   }, []);
     return (
   <div className='cursos container text-center'>
-    <div className="">
+    <div className="" style={{marginTop:'6rem'}}>
 
     <h1 className='text-primary'>Nossos Cursos </h1>
- <p className='text-secondary f-12'>{use.name != '' ? use.name +' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
+ <p className='text-secondary f-12'>{use.name != '' ? use.name +' veja os' : ""} Cursos disponíveis presencialmente nas academias arotec e on-line em nossa plataforma</p>
  
     </div>
 <center>

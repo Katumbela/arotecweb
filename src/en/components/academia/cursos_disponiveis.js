@@ -26,10 +26,10 @@ const Cursos = () => {
   }, []);
     return (
   <div className='cursos container text-center'>
-    <div className="">
+    <div className="mt-6" style={{marginTop:'6rem'}}>
 
     <h1 className='text-primary'>Our Courses </h1>
- <p className='text-secondary f-12'>{use.name != '' ? use.name +' see the' : ""} Courses available in person at AROTEC academies and online on our platform</p>
+ <p className='text-secondary f-12'>{use.name != '' ? use.name +' see the' : ""} Courses available in person at arotec academies and online on our platform</p>
  
     </div>
 <center>
