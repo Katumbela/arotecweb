@@ -50,7 +50,7 @@ const RotasEN = (props) => {
                     <Route element={<LoginPage />} path="/loginn" exact />
                     <Route element={<SeeP nomee={nomee} emaill={emaill} cart={cart} />} path="/en/see_project/:id" exact />
                     <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />
-                    <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/aplicar/:id" exact />
+                    <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/apply/:id" exact />
                     <Route element={<CriarConta />} path="/signup" exact />
                     <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/s/" exact />
                     <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />

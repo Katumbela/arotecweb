@@ -137,7 +137,7 @@ function Aplicar({ emaill, nomee, cart }) {
                                 </span>
                                 <br />
                                 <br />
-                                <NavLink to={'/academia'} className="btn btn-outline-primary">OK</NavLink>
+                                <NavLink to={'/en/academy'} className="btn btn-outline-primary">OK</NavLink>
                                 <br />
                                 <br />
                                 <br />
