@@ -39,7 +39,7 @@ const Empresas = ({nomee, emaill, cart}) => {
           </div>
         </div>
         <div className="col-12 col-sm-5 col-xl-6 col-lg-5 p-2">
-          <img src={aro} className='w-100' alt="" />
+          <img src={aro} className='' style={{height:'20em'}} alt="" />
           </div>
       </div>
       <br />
