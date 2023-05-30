@@ -57,8 +57,8 @@ function DetalheCurso ({nomee, emaill,cart}) {
                
                 <br />
               <div className="detalhes">
-                  <div className="banner">
-                    <img src={cc[0].img} alt="Banner curso" className='w-100' />
+                  <div className="banner" style={{height:'25em', background: `url(${cc[0].img})`, backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'90% 90%' }}>
+                    {/* <img src={cc[0].img} alt="Banner curso" className='w-100' /> */}
                   </div>
                   <br />
                   <b>Descrição</b>

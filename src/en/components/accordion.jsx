@@ -9,11 +9,11 @@ function Accordion({ title, children }) {
 
   return (
     <div className="accordion">
-      <h6 onClick={toggleAccordion}>
+      <b onClick={toggleAccordion}>
         {title}
         <span className={`arrow ${isOpen ? 'arrow-down' : ''}`}>▼</span>
-      </h6>
-      {isOpen && <div>{children}</div>}
+      </b> 
+      {isOpen && <div className='mt-2'>{children}</div>}
     </div>
   );
 }
