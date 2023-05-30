@@ -16,6 +16,8 @@ function Academia({nomee, emaill, cart}) {
       <Cursos />
       <br />
       <br />
+      <br />
+      <br />
       < Footer />
       
     </div>

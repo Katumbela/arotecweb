@@ -66,7 +66,7 @@ function DetalheCurso ({nomee, emaill,cart}) {
                     {cc[0].desc}
                   </p>
                   <br />
-                  <NavLink to={'/aplicar/'+id} className="btn btn-primary w-100">APPLY TO THIS COURSE</NavLink>
+                  <NavLink to={'/en/aplicar/'+id} className="btn btn-primary w-100">APPLY TO THIS COURSE</NavLink>
                   <br />
                   <br />
                   <b>Course Materials</b>

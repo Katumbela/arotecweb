@@ -126,6 +126,8 @@ function SeeP({ nomee, emaill, cart }) {
         <br />
         <br />
         <br />
+        <br />
+        <br />
         <Footer />
       </div>
     </>
