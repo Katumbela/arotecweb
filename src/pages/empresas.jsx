@@ -39,8 +39,8 @@ const Empresas = ({nomee, emaill, cart}) => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-sm-5 col-xl-6 col-lg-5 p-2">
-          <img src={aro} className='w-100' alt="" />
+        <div className="col-12 col-sm-5 text-end col-xl-6 col-lg-5 p-2">
+          <img src={aro} className='w-100' style={{height:'22em'}} alt="" />
           </div>
       </div>
       <br />

@@ -38,7 +38,7 @@ const Empresas = ({nomee, emaill, cart}) => {
             Arotec is made up of engineers who are experts in intelligent hardware and software. We offer solutions for design, manufacture and development of hardware and software.  </p>
           </div>
         </div>
-        <div className="col-12 col-sm-5 col-xl-6 col-lg-5 p-2">
+        <div className="col-12 col-sm-5 text-end col-xl-6 col-lg-5 p-2">
           <img src={aro} className='' style={{height:'20em'}} alt="" />
           </div>
       </div>
