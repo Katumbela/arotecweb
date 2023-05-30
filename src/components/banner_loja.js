@@ -25,13 +25,9 @@ const BannerLoja = () => {
                             <img src={arobot} alt="pequeno engenheiro" />
                         </div>
                         <div className="corpo-loja text-start">
-                            <b className='b'>Kit AROBOT</b>
+                            <b className='b'>Kit Arobot</b>
                             <div className="d-flex">
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-half text-warning"></i>
-                                <i className="bi bi-star text-warning"></i>
+                             
                             </div>
                             <p className='preco'>
                                 <b> 29.000 Kz</b>

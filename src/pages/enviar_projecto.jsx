@@ -7,6 +7,8 @@ import Footer from '../components/footer';
 import { toast } from 'react-toastify';
 import { db } from './firebase';
 import firebase from 'firebase/compat/app';
+import { v4 as uuidv4 } from 'uuid';
+
 
 function SubmitP({ nomee, emaill, cart }) {
     const [fotoUrl, setFotoUrl] = useState('');
@@ -25,7 +27,6 @@ function SubmitP({ nomee, emaill, cart }) {
         const userData = {
           name: '',
           email: '',
-          pictureUrl: '',
           tel: '',
           uid: '',
         }
@@ -58,17 +59,19 @@ function SubmitP({ nomee, emaill, cart }) {
     }
   }, []);
 
+  const uiid = uuidv4();
 
 
     const [projeto, setProjeto] = useState({
       titulo: '',
       descricao: '',
       link: '',
+      id: uiid,
+      visualizacoes: 0,
     });
   
     const handleSubmit = (event) => {
-        event.preventDefault();
-        
+        event.preventDefault(); 
         const user = firebase.auth().currentUser;
         const { email, displayName } = user;
       
@@ -182,7 +185,7 @@ function SubmitP({ nomee, emaill, cart }) {
                             <label htmlFor="link" className="f-12 text-secondary">
                                 Link do projeto
                             </label>
-                            <textarea
+                            <input
                                 type="text"
                                 placeholder="Adicione o link do youtube"
                                 className="form-control"
@@ -190,7 +193,7 @@ function SubmitP({ nomee, emaill, cart }) {
                                 value={projeto.link}
                                 onChange={handleChange}
                                 required
-                            ></textarea>
+                            />
                         </div>
                     </div>
                     <div className="d-grid mt-4">

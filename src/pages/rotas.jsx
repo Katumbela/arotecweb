@@ -29,6 +29,7 @@ import PlayList from "./playlist";
 import Jogo from "./okupalenda";
 import Jogos from "./jogo";
 import Quiz from "./okupalenda";
+import VerP from "./ver_project";
 
 
 const RotasPT = (props) => {
@@ -65,6 +66,7 @@ const RotasPT = (props) => {
                     <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />
                     <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/formulario/curso/:id" exact />
                     <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/application/submit/:id" exact />
+                    <Route element={<VerP  nomee={nomee} emaill={emaill} cart={cart} />} path="/ver_projecto/:id" exact />
                     <Route element={<DetalheCurso  nomee={nomee} emaill={emaill} cart={cart} />} path="/academia/curso/arotec/:id" exact />
 
                 </Routes>

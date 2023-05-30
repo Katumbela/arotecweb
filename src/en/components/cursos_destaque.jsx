@@ -32,7 +32,7 @@ const Destaque = () => {
             <div className="text-start">
 
                 <h1 claxssName='text-primary'>Explore courses at the academy </h1>
-                <p className='text-secondary'>{use.name != '' ? use.name +' veja os' : ""} Courses available in person at AROTEC academies and online on our platform</p>
+                <p className='text-secondary'>{use.name != '' ? use.name +' veja os' : ""} Courses available in person at arotec academies and online on our platform.</p>
                 <NavLink to="/en/academy" className="navlink">
                     <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> GO TO ACADEMY</button>
                 </NavLink>
@@ -49,9 +49,9 @@ const Destaque = () => {
                             <div className="corpo-curso text-start">
                                 <span className="spa1">Last Update: Jan 23, 2023</span> <br />
                                 <b className='b'>Little Engineer Course</b><br />
-                                <span className="spa"><i className="bi bi-watch"></i> 3 week</span>
+                                <span className="spa"><i className="bi bi-watch"></i> 3 weeks</span>
                                 <p className='preco'>
-                                    <b> 15.000 Kz/ Module</b>
+                                    <b> 15.000 AOA</b>
                                 </p>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Destaque = () => {
                                 <b className='b'>Arduino course</b><br />
                                 <span className="spa"><i className="bi bi-watch"></i> 4 weeks</span>
                                 <p className='preco'>
-                                    <b> 30.000 Kz</b>
+                                    <b> 30.000 AOA</b>
                                 </p>
                             </div>
                         </div>

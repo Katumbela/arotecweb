@@ -20,11 +20,7 @@ const {id, tit, preco, img} = item;
                         <div className="corpo-lojas text-start">
                             <b className='b'>{tit}</b>
                             <div className="d-flex">
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-fill text-warning"></i>
-                                <i className="bi bi-star-half text-warning"></i>
-                                <i className="bi bi-star text-warning"></i>
+                               
                             </div>
                             <p className='preco'>
                                 <b><i className="bi bi-cash"></i> {preco} Kz</b>

@@ -74,7 +74,7 @@ const Login = ({setNomee, setEmaill}) => {
                 localStorage.setItem('user', JSON.stringify(userData));
                 setNomee(result.user.displayName)
                 handleLogin(result)
-                window.location.href = '/';
+                window.location.href = '/en';
             
             })
             .catch((error) => {
@@ -147,7 +147,7 @@ const Login = ({setNomee, setEmaill}) => {
                     <br />
 <center>
 
-<NavLink className={'btn btn-outline-secondary'} to={'/'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
+<NavLink className={'btn btn-outline-secondary'} to={'/en'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
 </center>
                 </div>
             </div>

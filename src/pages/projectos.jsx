@@ -7,7 +7,6 @@ import '../css/projectos.css';
 import printt from '../imgs/print.gif';
 import { NavLink } from 'react-router-dom';
 import BannerPreto from '../components/banner_preto';
-import ProjectosDiy from '../components/projetos_diy';
 import { useEffect, useState } from 'react';
 import { db } from './firebase';
 import { collection, getDocs } from 'firebase/firestore';
@@ -71,12 +70,12 @@ function Projectos({ nomee, emaill, cart }) {
       const projetosCollection = collection(db, 'projetos');
       const projetosSnapshot = await getDocs(projetosCollection);
       const projetosData = projetosSnapshot.docs.map((doc) => ({
-        id: doc.id,
+        refId: doc.ref.id,
         ...doc.data(),
       }));
       setProjetos(projetosData);
     };
-
+    
     getProjetos();
   }, []);
 
@@ -97,10 +96,10 @@ function Projectos({ nomee, emaill, cart }) {
           <div className="col-3 text-start bg-white col-sm-3">
             <img src={printt} alt="printing pub" className="w-100" />
           </div>
-          <div className="col-9 col-sm-9 py-1">
-            <b className="proj-tit">Serviço de impressão 3D</b><br />
-            <p className="text-secondary proj-f">Crie os seus projectos com AROTEC, consulte o orçamento para o seu projeto clicando no botão abaixo.</p>
-            <NavLink to={'/contactar'} className="btn  btn-outline-primary proj-f">Solicitar orçamento</NavLink>
+          <div className="col-9 col-sm-9 printing py-1">
+            <b className="proj-tit d1">Serviço de impressão 3D</b><br />
+            <p className="text-secondary d2 proj-f">Crie os seus projectos com AROTEC, consulte o orçamento para o seu projeto clicando no botão abaixo.</p>
+            <NavLink to={'/contactar'} className="btn d3 btn-outline-primary proj-f">Solicitar orçamento</NavLink>
           </div>
 
         </div>
@@ -140,7 +139,7 @@ function Projectos({ nomee, emaill, cart }) {
             {projetos.map((projeto) => (
               <div key={projeto.id} className=" col-12 col-sm-6 col-md-4 col-ls-3 col-xxl-2 my-2 my-4">
                 <div className="col-12">
-                  <img className='-100' style={{height:'20em'}} src={`https://firebasestorage.googleapis.com/v0/b/arotec-374911.appspot.com/o/projectos%2F${projeto.fotoUrl}?alt=media`} />
+                  <img className='w-100' style={{height:'15em'}} src={`https://firebasestorage.googleapis.com/v0/b/arotec-374911.appspot.com/o/projectos%2F${projeto.fotoUrl}?alt=media`} />
                 </div>
                 <div className="col-12 mt-2">
                   <h3 className='f-16'>{projeto.titulo}</h3>
@@ -148,7 +147,7 @@ function Projectos({ nomee, emaill, cart }) {
                     De: <span className="text-primary">{projeto.nome}</span>
                   </p>
                   <p>
-                    <NavLink className="btn f-12 btn-outline-dark" to={'/ver_projecto'}>Ver projecto</NavLink>
+                    <NavLink className="btn f-12 btn-outline-dark" to={'/ver_projecto/'+ projeto.refId}>Ver projecto</NavLink>
                   </p>
                 </div>
               </div>

@@ -3,38 +3,57 @@
 @tailwind utilities;
 
 
-* {
-  font-family: 'Roboto', sans-serif;
+@font-face {
+  font-family: arotec-regular;
+  src: url(../public/fonts/font-arotec.ttf);
 }
 
-html,body {
-  overflow-x: hidden!important;
+@font-face {
+  font-family: arotec-light;
+  src: url(../public/fonts/font-arotec-light.ttf);
+}
+
+* {
+  font-family: arotec-regular;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
 }
 
 .f-10 {
   font-size: 10px;
 }
+
 .f-12 {
   font-size: 12px;
 }
+
 .f-14 {
   font-size: 14px;
 }
+
 .f-16 {
   font-size: 16px;
 }
+
 .f-18 {
   font-size: 18px;
 }
+
 .f-20 {
   font-size: 20px;
 }
+
 .f-22 {
   font-size: 22px;
 }
+
 .f-24 {
   font-size: 24px;
 }
+
 .f-26 {
   font-size: 26px;
 }
@@ -69,6 +88,7 @@ html,body {
 .f-1 {
   height: 1em;
 }
+
 .f-1-5 {
   height: 1.5em;
 }
@@ -84,9 +104,9 @@ html,body {
 
 
 @media (max-width: 450px) {
-    .bb {
-      font-size: 11px !important;
-    }
+  .bb {
+    font-size: 11px !important;
+  }
 }
 
 .accordion {
@@ -96,28 +116,32 @@ html,body {
 }
 
 
-*{
+* {
   padding: 0;
   margin: 0;
   vertical-align: baseline;
 }
-body, html {
-overflow-x: hidden!important;
+
+body,
+html {
+  overflow-x: hidden !important;
 }
-.float-left{
+
+.float-left {
   float: left;
 }
-.float-right{
+
+.float-right {
   float: right;
 }
 
-.clear{
+.clear {
   clear: both;
 }
 
 /* Player Video */
 
-.player-video{
+.player-video {
   position: relative;
   float: float;
   width: 100%;
@@ -125,18 +149,18 @@ overflow-x: hidden!important;
   background-color: #000;
 }
 
-.player-video video{
+.player-video video {
   width: 100%;
   height: 100%;
-} 
+}
 
-.video-preloader{
+.video-preloader {
   display: block;
   position: absolute;
   width: 80px;
   height: 80px;
   top: 45%;
-  left:44%;
+  left: 44%;
   /* background: url(Loading_2.gif); */
   background-size: auto 65%;
   background-repeat: no-repeat;
@@ -144,15 +168,15 @@ overflow-x: hidden!important;
 }
 
 
-.player-video .video-controls{
+.player-video .video-controls {
   position: absolute;
   background-color: rgba(5, 94, 196, 0.58);
   width: 100%;
   height: 9%;
   bottom: 0;
-}   
+}
 
-.video-controls .video-btn{
+.video-controls .video-btn {
   display: block;
   width: 30px;
   height: 90%;
@@ -162,33 +186,33 @@ overflow-x: hidden!important;
   cursor: pointer;
 }
 
-.video-controls .video-btn:hover{
-  background-color: rgba(255,255,255, 0.2);
+.video-controls .video-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.video-screen{
- margin-top: -1rem;
+.video-screen {
+  margin-top: -1rem;
 }
 
-.video-progress-bar{
+.video-progress-bar {
   cursor: pointer;
   width: 100%;
   height: 9%;
-  background-color: rgba(200,200,200, 0.5);
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 
 
-.video-loader{
+.video-loader {
   position: absolute;
   top: 0;
-  right: 0; 
+  right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(255,255,255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.video-progress{
+.video-progress {
   position: absolute;
   top: 0;
   left: 0;
@@ -198,17 +222,18 @@ overflow-x: hidden!important;
   background-color: rgba(255, 47, 0, 0.5);
 }
 
-.video-controls .video-time{
+.video-controls .video-time {
   display: block;
   cursor: default;
   color: #fff;
   font-size: 0.9em;
-  padding: 3px 5px;;
+  padding: 3px 5px;
+  ;
 }
 
 
-.slider{
-  background-color: rgba(255,255,255, 0.8);
+.slider {
+  background-color: rgba(255, 255, 255, 0.8);
   width: 80px;
   height: 20%;
   margin: 2% 0;
@@ -217,9 +242,9 @@ overflow-x: hidden!important;
   padding: 1px;
 }
 
-.slider-vol{
+.slider-vol {
   width: 100%;
-  background-color: rgba(255, 0,0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
   height: 100%;
   cursor: pointer;
 }
@@ -235,21 +260,21 @@ overflow-x: hidden!important;
   margin: auto;
   padding-bottom: 56.25%;
   text-align: left;
-  
-  
+
+
 }
 
 video {
-    position: absolute;
-    top: 0;
-    right: -50%;
-    bottom: 0;
-    left: -50%;
-    min-width: 100%;
-    width: 100%;
-    min-height: 100%;
-    margin: auto;
-  }
+  position: absolute;
+  top: 0;
+  right: -50%;
+  bottom: 0;
+  left: -50%;
+  min-width: 100%;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+}
 
 
 .video-controls {
@@ -263,20 +288,22 @@ video {
   padding: 0 0 10px 0;
   transition: all 0.4s ease-in-out;
   background: #0065be97;
-  }
-  
-   .playing .play-button::before {
-        color: #fff;
-      }
+}
+
+.playing .play-button::before {
+  color: #fff;
+}
 
 
 .top-wrapper {
   display: block;
 }
+
 .bottom-wrapper {
   padding: 0 20px 0 20px;
   display: block;
 }
+
 .progress-bar {
   position: relative;
   overflow: hidden;
@@ -288,24 +315,24 @@ video {
 }
 
 .buffer-bar {
-    z-index: 5;
-    background: #0066bec4;
-  }
+  z-index: 5;
+  background: #0066bec4;
+}
 
 
 .time-bar {
-    z-index: 10;
-    background: #e4270ac4;
-  }
+  z-index: 10;
+  background: #e4270ac4;
+}
 
 .custom-video-area .span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 0;
-    height: 100%;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+}
 
 
 
@@ -317,8 +344,9 @@ video {
 }
 
 .play-button::before {
-    color: #fff;
-  }
+  color: #fff;
+}
+
 .time {
   font-size: 11px;
   font-weight: 600;
@@ -334,23 +362,23 @@ video {
   width: 16px;
   cursor: pointer;
   vertical-align: middle;
-  
+
 }
 
 .sound-button::before {
-    color: #fff;
-  }
+  color: #fff;
+}
 
 .sound-med::before {
-    color: #fff;
-  }
+  color: #fff;
+}
 
 
 
 
 .sound-muted::before {
-    color: #fff;
-  }
+  color: #fff;
+}
 
 
 .volume {
@@ -362,19 +390,19 @@ video {
   cursor: pointer;
   vertical-align: middle;
   border-radius: 10px;
-  background-color:#fff;
-  
+  background-color: #fff;
+
 }
 
 .volume .volume-bar {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    display: block;
-    height: 100%;
-    background-color: white;
-  }
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  background-color: white;
+}
 
 
 .btnFS {
@@ -388,51 +416,47 @@ video {
 
 
 .btnFS::before {
-    font-size: 14px;
-    color: white;
-  }
+  font-size: 14px;
+  color: white;
+}
 
 
-  .video-controls {
-      transform: translateY(47px);
-  }
+.video-controls {
+  transform: translateY(47px);
+}
 
-  footer{
-      z-index: 1000;
-  }
+footer {
+  z-index: 1000;
+}
 
-  .h-6 {
-    height: 1.5em;
-  }
+.h-6 {
+  height: 1.5em;
+}
 
-  * {
-    font-family:Arial, Helvetica, sans-serif!important;
-  }
+.fs-1 {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
 
   .fs-1 {
-    font-size: 14px;
+    font-size: 12px;
   }
-
-  @media (max-width: 600px) {
-     
-     .fs-1 {
-       font-size: 12px;
-     }
-
-     .b {
-      padding-bottom: 25vh;
-     }
-  }
-
 
   .b {
-    padding-bottom: 15vh;
-   }
+    padding-bottom: 25vh;
+  }
+}
 
-   .closer {
-    cursor: pointer;
-    font-size: 30px;
-   }
+
+.b {
+  padding-bottom: 15vh;
+}
+
+.closer {
+  cursor: pointer;
+  font-size: 30px;
+}
 
 
 .accordion h5 {
@@ -450,42 +474,255 @@ video {
 
 .card-hover:hover {
   transform: translateY(-10px);
-/*   animation: 2s anim infinite ease; */
-}
-.card-hover:hover > .corpo-curso  {
-  background: #0D6EFD!important;
-  transition: .2s!important;
+  /*   animation: 2s anim infinite ease; */
 }
 
-.card-hover:hover > .corpo-curso .spa1  {
-  color: white!important;
-  transition: .2s!important;
+.card-hover:hover>.corpo-curso {
+  background: #0D6EFD !important;
+  transition: .2s !important;
 }
 
-.card-hover:hover > .corpo-curso .b {
-  color: white!important;
-  transition: .2s!important;
+.card-hover:hover>.corpo-curso .spa1 {
+  color: white !important;
+  transition: .2s !important;
 }
 
-.card-hover:hover .corpo-curso .spa  {
-  color: white!important;
-  transition: .2s!important;
+.card-hover:hover>.corpo-curso .b {
+  color: white !important;
+  transition: .2s !important;
 }
 
-.card-hover:hover .corpo-curso .preco  {
-  color: white!important;
-  transition: .1s!important;
+.card-hover:hover .corpo-curso .spa {
+  color: white !important;
+  transition: .2s !important;
+}
+
+.card-hover:hover .corpo-curso .preco {
+  color: white !important;
+  transition: .1s !important;
 }
 
 @keyframes anim {
   0% {
     transform: translateY(12px);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(12px);
+  }
+}
+
+
+@media (min-width: 401px) {
+  .printing .d1 {
+    font-size: 40px;
+  }
+
+}
+
+
+@media (min-width: 801px) {
+
+  .printing .d2 {
+    font-size: 20px;
+    color: black!important;
+  }
+  .printing .d3 {
+    font-size: 18px;
+  }
+  .printing .d1 {
+    font-size: 68px;
+  }
+  .carousel .row .col-12 div h3 {
+    font-size: 55px !important;
+  }
+  
+  .carousel .row .col-12 div p {
+    font-size: 25px !important;
+    margin-bottom: 2rem;
+  }
+  
+  .b_code .row .col-12 div h3 {
+    font-size: 40px!important;
+  }
+
+  .b_code .row .col-12 div p {
+    font-size: 20px!important;
+  }
+
+.emp {
+  background: url(./imgs/img1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 31em!important;
+  margin-top: 0rem!important;
+}
+
+.acad {
+  background: url(./imgs/img_b1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 30em!important;
+  margin-top: 0rem!important;
+}
+
+.loja {
+  background: url(./imgs/img3.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 30em!important;
+  margin-top: 0rem!important;
+}
+
+
+}
+@media (min-width: 1501px) {
+
+  .printing .d1 {
+    font-size: 90px;
+  }
+  .printing .d2 {
+    font-size: 25px;
+  }
+  .printing .d3 {
+    font-size: 25px;
+  }
+  .carousel .row .col-12 div h3 {
+    font-size: 50px!important;
+    margin-top: 1vh;
+  }
+  .carousel .row .col-12 div button {
+    font-size: 20px!important;
+    margin-top: 3rem!important;
+  }
+  
+  .carousel .row .col-12 div p {
+    font-size: 20px!important;
+    margin-bottom: 2rem;
+  }
+  
+.emp {
+  background: url(./imgs/img1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 30em!important;
+  margin-top: 0rem!important;
+}
+
+.acad {
+  background: url(./imgs/img_b1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 30em!important;
+  margin-top: 0rem!important;
+}
+
+.loja {
+  background: url(./imgs/img3.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 30em!important;
+  margin-top: 0rem!important;
+}
+
+
+.b_code {
+  background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(./imgs/unitel1.jpg) center center; 
+  background-size: cover;
+}
+
+
+.b_code .bb {
+  font-size: 20px !important;
+
+}
+}
+.bg-primary {
+  background: linear-gradient(to right, #289bff, #003d82e9) ;
+}
+
+@media (min-width: 1801px) {
+
+  .carousel .row .col-12 div h3 {
+    font-size: 120px!important;
+    margin-top: 1vh;
+  }
+  .carousel .row .col-12 div button {
+    font-size: 50px!important;
+    margin-top: 3rem!important;
+  }
+  
+  .carousel .row .col-12 div p {
+    font-size: 50px!important;
+    margin-bottom: 2rem;
+  }
+  
+.emp {
+  background: url(./imgs/img1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 80em!important;
+  margin-top: 0rem!important;
+}
+
+.acad {
+  background: url(./imgs/img_b1.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 80em!important;
+  margin-top: 0rem!important;
+}
+
+.loja {
+  background: url(./imgs/img3.png);
+  background-position: center!important;
+  background-size: 90px;
+  background-repeat: no-repeat;
+  height: 80em!important;
+  margin-top: 0rem!important;
+}
+
+
+.b_code {
+  background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(./imgs/unitel1.jpg) center center; 
+  background-size: cover;
+}
+
+
+.b_code .bb {
+  font-size: 50px;
+
+}
+}
+
+.car .bg-primary {
+  background: linear-gradient(to right, #289bff, #003d82e9), url('../src/imgs/bg.avif');
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  animation: gradientAnimation 60s linear infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

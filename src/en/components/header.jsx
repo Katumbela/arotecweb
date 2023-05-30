@@ -76,14 +76,17 @@ const Header = (props) => {
     return (
         <>
             <header className='bg-white w-100 position-relative'>
-                <div className=" bg-primary ">
+            <div className=" bg-primary ">
                     <div className="d-flex dados py-2 container justify-content-between f-12 text-white">
 
 
 
                         {
 
-                            use.name != '' ? <div><i className="bi bi-person text-white"></i></div>
+                            use.name != '' ? <div className="position-relative" style={{padding:'.09rem 0'}}>
+                                <img src={use.photo} className='rounded-circle' style={{height:'2.5em',border:'1px solid white', width:'2.5em', top:'-.35rem', position: 'absolute'}} alt={use.photo} />
+                                <NavLink className={'text-white  ms-5 navlink'} to={'/meus_cursos'} style={{marginBottom:'.5rem', border:'1px solid white', padding:'.25rem .5rem'}}>Meus Cursos <i className="bi bi-mortarboard-fill"></i></NavLink>
+                            </div>
                                 :
                                 <div className="">
                                     <span>(+244) 938 811 659</span>
@@ -92,12 +95,12 @@ const Header = (props) => {
                         {
 
                             use.name != '' ?
-                                <span> {use.name} &middot; <NavLink to={'/signin'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
+                                <span className='my-auto'> {use.name} &middot; <NavLink to={'/login'} className={'text-white'}> <i className="bi bi-box-arrow-right"></i> </NavLink></span>
                                 :
 
                                 <div className="text-white">
-                                    <NavLink className='text-white link' to="/signin">Sign in / </NavLink>
-                                    <NavLink className='text-white link' to="/signup">Sign Up {use.emal}</NavLink>
+                                    <NavLink className='text-white link' to="/en/signin">Login / </NavLink>
+                                    <NavLink className='text-white link' to="/en/signup">Criar Conta {use.emal}</NavLink>
                                 </div>
                         }
 

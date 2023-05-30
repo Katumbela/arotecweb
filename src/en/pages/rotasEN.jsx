@@ -23,6 +23,7 @@ import BuyNow from "./comprar_agora";
 import Aplicar from "./aplicar_curso";
 import { UserProvider } from "./userContext";
 import AppVaga from "./submit_vaga";
+import SeeP from "./see_project";
 
 
 const RotasEN = (props) => {
@@ -47,6 +48,7 @@ const RotasEN = (props) => {
                     <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/unitel_code_robotica_inscricao" exact />
                     <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/en/signin" exact />
                     <Route element={<LoginPage />} path="/loginn" exact />
+                    <Route element={<SeeP nomee={nomee} emaill={emaill} cart={cart} />} path="/en/see_project/:id" exact />
                     <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />
                     <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/aplicar/:id" exact />
                     <Route element={<CriarConta />} path="/signup" exact />
