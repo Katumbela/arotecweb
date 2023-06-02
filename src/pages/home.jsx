@@ -62,10 +62,10 @@ const Home = ({ cart, nomee, emaill }) => {
     }
 
 
-  fetchPlayersL();
+    fetchPlayersL();
 
 
-  fetchPlayers();
+    fetchPlayers();
 
   }, []);
 
@@ -115,17 +115,17 @@ const Home = ({ cart, nomee, emaill }) => {
   useEffect(() => {
     // Obtém o valor de 'user' do local storage quando o componente for montado
     const userString = localStorage.getItem('user');
-    if(userString) {
+    if (userString) {
       const user = JSON.parse(userString);
-    setUser(user);
+      setUser(user);
     }
     else {
       const userData = {
-          name: '',
-          email: '',
-          pictureUrl: '',
-          tel: '',
-        }
+        name: '',
+        email: '',
+        pictureUrl: '',
+        tel: '',
+      }
       setUser(userData);
     }
   }, []);
@@ -144,68 +144,68 @@ const Home = ({ cart, nomee, emaill }) => {
         {/* <Destaque /> */}
 
         <div className='destaque container text-center'>
-            <div className="text-start">
-                <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
-                <p className='text-secondary'>{use.name != '' ? use.name +' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
-                <NavLink to="/academia" className="navlink">
-                    <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
-                </NavLink>
-                <br />
-            </div>
-            <div className="mt-4">
-                <OwlCarousel className='owl-theme' margin={15} autoWidth={true}>
+          <div className="text-start">
+            <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
+            <p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
+            <NavLink to="/academia" className="navlink">
+              <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
+            </NavLink>
+            <br />
+          </div>
+          <div className="mt-4">
+            <OwlCarousel className='owl-theme' margin={15} autoWidth={true}>
 
-                    <NavLink to={'/academia/curso/arotec/2021'} className="my-2 link">
-                        <div className="card_curso card-hover">
-                            <div className="card-header">
-                                <img src={peq_eng} alt="pequeno engenheiro" />
-                            </div>
-                            <div className="corpo-curso text-start">
-                                <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
-                                <b className='b'>Curso de Pequeno Engenheiro</b><br />
-                                <span className="spa"><i className="bi bi-watch"></i> 3 semanas</span>
-                                <p className='preco'>
-                                    <b> 15.000 Kz/ Módulo</b>
-                                </p>
-                            </div>
-                        </div>
-                    </NavLink>
-
-
-                    <NavLink to={'/academia/curso/arotec/2022'} className="link my-2">
-                        <div className="card_curso card-hover">
-                            <div className="card-header">
-                                <img src={arduino} alt="pequeno engenheiro" />
-                            </div>
-                            <div className="corpo-curso text-start">
-                                <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
-                                <b className='b'>Curso de Arduino</b><br />
-                                <span className="spa"><i className="bi bi-watch"></i> 4 semanas</span>
-                                <p className='preco'>
-                                    <b> 30.000 Kz/ Módulo</b>
-                                </p>
-                            </div>
-                        </div>
-                    </NavLink>
-
-                    <div className="item my-2">
-                    <div className="card_curso card-hover">
-                        <div className="card-header">
-                            <img src={eletronica} alt="pequeno engenheiro" />
-                        </div>
-                        <div className="corpo-curso text-start">
-                            <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
-                            <b className='b'>Curso de Eletrônica</b><br />
-                            <span className="spa"><i className="bi bi-watch"></i> 4 semanas</span>
-                            <p className='preco'>
-                                <b> 30.000 Kz</b>
-                            </p>
-                        </div>
-                    </div>
+              <NavLink to={'/academia/curso/arotec/2021'} className="my-2 link">
+                <div className="card_curso card-hover">
+                  <div className="card-header">
+                    <img src={peq_eng} alt="pequeno engenheiro" />
+                  </div>
+                  <div className="corpo-curso text-start">
+                    <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
+                    <b className='b'>Curso de Pequeno Engenheiro</b><br />
+                    <span className="spa"><i className="bi bi-watch"></i> 3 semanas</span>
+                    <p className='preco'>
+                      <b> 15.000 Kz/ Módulo</b>
+                    </p>
+                  </div>
                 </div>
+              </NavLink>
 
-                </OwlCarousel>
-            </div>
+
+              <NavLink to={'/academia/curso/arotec/2022'} className="link my-2">
+                <div className="card_curso card-hover">
+                  <div className="card-header">
+                    <img src={arduino} alt="pequeno engenheiro" />
+                  </div>
+                  <div className="corpo-curso text-start">
+                    <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
+                    <b className='b'>Curso de Arduino</b><br />
+                    <span className="spa"><i className="bi bi-watch"></i> 4 semanas</span>
+                    <p className='preco'>
+                      <b> 30.000 Kz/ Módulo</b>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+
+              <NavLink to={'/academia/curso/arotec/2025'} className="link my-2">
+                <div className="card_curso card-hover">
+                  <div className="card-header">
+                    <img src={eletronica} alt="pequeno engenheiro" />
+                  </div>
+                  <div className="corpo-curso text-start">
+                    <span className="spa1">Últ. actualização: 23 jan, 2023</span> <br />
+                    <b className='b'>Curso de Eletrônica</b><br />
+                    <span className="spa"><i className="bi bi-watch"></i> 4 semanas</span>
+                    <p className='preco'>
+                      <b> 30.000 Kz</b>
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+
+            </OwlCarousel>
+          </div>
 
         </div>
         <br />
@@ -227,10 +227,10 @@ const Home = ({ cart, nomee, emaill }) => {
                 <br />
                 <NavLink to={'/okupalenda'} className="btn mt-auto border-white text-white">Começar o Jogo <i className="bi bi-arrow-right-"></i> </NavLink>
               </div>
-              <div style={{display:'grid', justifyContent:'center'}} className="col-12 col-sm-6 col-lg-4">
+              <div style={{ display: 'grid', justifyContent: 'center' }} className="col-12 col-sm-6 col-lg-4">
                 <img className='w-100  my-auto' src={okupa} alt="" />
               </div>
-            </div> 
+            </div>
           </div>
         </div>
         <br />
@@ -264,9 +264,9 @@ const Home = ({ cart, nomee, emaill }) => {
             {
               !playersL ?
 
-              ""
+                ""
 
-              :
+                :
 
                 <div className="col-12 col-sm-6 col-lg-6">
                   <h4>Ranking Top 3 perdedores</h4>
@@ -291,7 +291,7 @@ const Home = ({ cart, nomee, emaill }) => {
                   </table>
 
                 </div>
-                
+
             }
             {/* <div className="col-12 col-sm-5 text-center col-lg-4">
               <div className="my-auto">
