@@ -102,7 +102,7 @@ const Header = (props) => {
 
                             use.name != '' ? <div className="position-relative" style={{padding:'.09rem 0'}}>
                                 <img src={use.photo} className='rounded-circle' style={{height:'2.5em',border:'1px solid white', width:'2.5em', top:'-.35rem', position: 'absolute'}} alt={use.photo} />
-                                <NavLink className={'text-white  ms-5 navlink'} to={'/meus_cursos'} style={{marginBottom:'.5rem', border:'1px solid white', padding:'.25rem .5rem'}}>Meus Cursos <i className="bi bi-mortarboard-fill"></i></NavLink>
+                                <NavLink className={'text-white  ms-5 navlink'}  style={{marginBottom:'.5rem', border:'1px solid white', padding:'.25rem .5rem'}}>Meus Courses <i className="bi bi-mortarboard-fill"></i></NavLink>
                             </div>
                                 :
                                 <div className="">
