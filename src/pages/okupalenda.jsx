@@ -8,6 +8,7 @@ import _ from 'lodash';
 import axios from 'axios';
 import { WorldFlag } from 'react-world-flags';
 import Bandeira from '../components/bandeira';
+import { NavLink } from 'react-router-dom';
 
 
 const niveis = [
@@ -402,7 +403,7 @@ function Quiz() {
     {renderQuestion()}
     <br /><br />
     <div className='text-start d-flex justify-content-between' style={{ position: 'absolute', top: '1rem', left: '1rem', right: '1rem' }}>
-      <img src={img} height={'18em'} alt="" />
+     <NavLink to={'/'}> <img src={img} height={'18em'} alt="" /></NavLink>
 
       <b className=''>{use.name}</b>
     </div>

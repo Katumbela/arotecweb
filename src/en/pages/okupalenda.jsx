@@ -377,6 +377,7 @@ function Quiz() {
               <table className='table table-striped'>
                 <thead>
                   <tr>
+                    <th></th>
                     <th>Name</th>
                     <th>Score</th>
                   </tr>
