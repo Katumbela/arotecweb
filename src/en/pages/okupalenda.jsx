@@ -11,12 +11,13 @@ import Bandeira from '../../components/bandeira';
 
 
 const niveis = [
-  { nome: 'Bolo fofo', acertosMinimos: 0, acertosMaximos: 40 },
-  { nome: 'Nível Intermediário', acertosMinimos: 41, acertosMaximos: 75 },
-  { nome: 'Pai Grande', acertosMinimos: 76, acertosMaximos: 100 },
+  { nome: 'Fluffy cake', acertosMinimos: 0, acertosMaximos: 40 },
+  { nome: 'Intermediate level', acertosMinimos: 41, acertosMaximos: 75 },
+  { nome: 'Big dad', acertosMinimos: 76, acertosMaximos: 100 },
 ];
 
 function Quiz() {
+  document.title ='Game Started | AROTEC'
 
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
 
@@ -286,12 +287,12 @@ function Quiz() {
           <div className='text-center pt-3 pb-5 my-5'>
             <br />
             <img src={ok} className='' style={{ height: '9em' }} alt="" />
-            <h2 >Bem-vindo ao <b className="text-info">Okupalenda Online</b>!</h2>
-            <p className='w-75 mx-auto mt-3 fs-6 fw-normal'>Agora já podes jogar Online e estar no Ranking dos jogadores do Okupalenda, teste e aprimore suas habilidades em CTEM, o <b className="text-info">Okupalenda</b> irá sugerir ou lhe ajudar a melhorar</p>
-            <button className='btn rounded-0 btn btn-outline-info mt-3' onClick={handleStartGame}>Iniciar Jogo</button>
+            <h2 >Welcome to <b className="text-info">Okupalenda Online</b>!</h2>
+            <p className='w-75 mx-auto mt-3 fs-6 fw-normal'>Now you can play Online and be in Okupalenda Player Ranking, test and improve your STEM skills, <b className="text-info">Okupalenda</b> will suggest or help you to improve</p>
+            <button className='btn rounded-0 btn btn-outline-info mt-3' onClick={handleStartGame}>Start game</button>
             <br />
             <span>
-              Detectamos que seu país é {countryName} <br /><br />
+            We have detected that your country is {countryName} <br /><br />
               <img src={countryFlagUrl} style={{height:'1.7em'}} alt={countryName} />
             </span>
           </div>
@@ -313,10 +314,10 @@ function Quiz() {
             <img src={ok} className='' style={{ height: '9em' }} alt="" />
           </center>
           <div className="container max-w">
-            <h2>Pergunta {currentQuestion + 1}</h2>
-            <p>Tentativas restantes: {attempts} <br />
-              Pontuação: {score} <br />
-              Nível: --------{nivel}</p>
+            <h2>Question {currentQuestion + 1}</h2>
+            <p>Attempts remaining: {attempts} <br />
+              Score: {score} <br />
+              Level: --------{nivel}</p>
             <hr />
             <h3>{question.question}</h3>
             <div className='d-flex flex-column text-start'>
@@ -361,23 +362,23 @@ function Quiz() {
           </center>
           <div className="container max-w">
             <br />
-            <h2>Parabéns {use.name.split(" ")[0]}! Você terminou o jogo.</h2>
+            <h2>Congratulations {use.name.split(" ")[0]}! You've finished the game.</h2>
             <p>Sua pontuação final: <b className='text-info'>{score}</b> <br />
-              Nível alcançado: <b className='text-info'>{nivel}</b></p> <br />
+            Level reached: <b className='text-info'>{nivel}</b></p> <br />
             <center>
-              <button className='btn btn-outline-info' onClick={handleRestart}>Recomeçar</button>
+              <button className='btn btn-outline-info' onClick={handleRestart}>Restart</button>
             </center>
             <hr />
             <br />
             <div className=''>
-              <h4>Ranking Top 5 vencedores</h4>
+              <h4>Ranking Top 5 winners</h4>
               <br />
 
               <table className='table table-striped'>
                 <thead>
                   <tr>
-                    <th>Nome</th>
-                    <th>Pontuação</th>
+                    <th>Name</th>
+                    <th>Score</th>
                   </tr>
                 </thead>
                 <tbody>

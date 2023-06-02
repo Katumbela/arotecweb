@@ -2,174 +2,150 @@
 const questoes = [
     // Array de perguntas e respostas
     {
-        question: "Qual é a capital do Angola?",
-        options: ["Luanda", "Rio de Janeiro", "São Paulo", "Salvador"],
-        answer: 0
-    },
-    {
-        question: "Qual é o maior país do mundo em área territorial?",
-        options: ["Guiné", "Rússia", "China", "Estados Unidos"],
-        answer: 1
-    }, {
-        question: "Quem inventou o telefone?",
-        options: ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Albert Einstein"],
-        answer: 0
-    },
-    {
-        question: "Qual é o símbolo químico do cálcio?",
-        options: ["Ca", "C", "Cl", "Cu"],
-        answer: 2
-    }
-    ,
-    {
-        question: "Quem desenvolveu a teoria da relatividade restrita?",
-        options: ["Albert Einstein", "Isaac Newton", "Nikola Tesla", "Galileu Galilei"],
-        answer: 1
-    }
-    ,
-    {
-        question: "Qual é a fórmula matemática para calcular o volume de um cubo?",
-        options: ["V = l^3", "V = πr^2 * h", "V = 4/3 * πr^3", "V = 1/2 * (b + B) * h"],
-        answer: 3
-    }
-    ,
-    {
-        question: "Quem é considerado o pai da psicanálise?",
-        options: ["Sigmund Freud", "Ivan Pavlov", "B. F. Skinner", "Carl Jung"],
-        answer: 0
-    }
-    ,
-    {
-        question: "Quem inventou a lâmpada elétrica?",
-        options: ["Thomas Edison", "Nikola Tesla", "Benjamin Franklin", "Alexander Graham Bell"],
-        answer: 2
-    }
-    ,
-    {
-        question: "Qual é a fórmula matemática para calcular o volume de um cone?",
-        options: ["V = 1/3 * πr^2 * h", "V = l * w * h", "V = 4/3 * πr^3", "V = 1/2 * (b + B) * h"],
-        answer: 1
-    }
-    ,
-    {
-        question: "Quem é considerado o pai da psicologia behaviorista?",
-        options: ["B. F. Skinner", "Sigmund Freud", "Ivan Pavlov", "Carl Jung"],
-        answer: 3
-    }
-    ,
-    {
-        question: "O que é um loop em programação?",
-        options: ["Uma estrutura de controle que executa repetidamente um bloco de código", "Um tipo de variável que armazena múltiplos valores", "Uma função que converte um tipo de dado em outro", "Uma instrução que verifica uma condição e executa um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um algoritmo?",
-        options: ["Um conjunto de instruções passo a passo para resolver um problema", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro", "Uma estrutura de dados para armazenar informações"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é uma variável em programação?",
-        options: ["Um local na memória usado para armazenar dados", "Um tipo de dado que representa verdadeiro ou falso", "Uma função que converte um tipo de dado em outro", "Uma estrutura de controle que executa repetidamente um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a recursão em programação?",
-        options: ["Um conceito em que uma função chama a si mesma", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a orientação a objetos em programação?",
-        options: ["Um paradigma de programação que organiza dados e comportamentos em objetos", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um array em programação?",
-        options: ["Uma estrutura de dados que armazena uma coleção de elementos", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro", "Uma estrutura de controle que executa repetidamente um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a programação orientada a eventos?",
-        options: ["Um paradigma de programação em que os programas respondem a eventos externos", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é uma função em programação?",
-        options: ["Um bloco de código que realiza uma tarefa específica", "Um tipo de dado que representa verdadeiro ou falso", "Uma linguagem de programação", "Uma estrutura de dados para armazenar informações"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a programação estruturada?",
-        options: ["Um paradigma de programação que utiliza estruturas de controle como sequência, decisão e repetição", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um ponteiro em programação?",
-        options: ["Uma variável que armazena o endereço de memória de outra variável", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a programação funcional?",
-        options: ["Um paradigma de programação baseado em funções puras e imutabilidade", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é uma classe em programação orientada a objetos?",
-        options: ["Uma estrutura que define um objeto com seus atributos e métodos", "Um tipo de dado que representa verdadeiro ou falso", "Uma função que converte um tipo de dado em outro", "Uma estrutura de controle que executa repetidamente um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é uma herança em programação orientada a objetos?",
-        options: ["Um conceito em que uma classe herda características de uma classe pai", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é uma pilha em programação?",
-        options: ["Uma estrutura de dados que segue o princípio LIFO (Last In, First Out)", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro", "Uma estrutura de controle que executa repetidamente um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a programação paralela?",
-        options: ["Um paradigma de programação que executa tarefas simultaneamente em diferentes threads ou processos", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um algoritmo de ordenação?",
-        options: ["Um algoritmo que organiza elementos em uma determinada ordem", "Um tipo de variável que armazena múltiplos valores", "Uma função que converte um tipo de dado em outro", "Uma instrução que verifica uma condição e executa um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um método em programação orientada a objetos?",
-        options: ["Uma função que pertence a uma classe e opera em objetos dessa classe", "Um tipo de dado que representa verdadeiro ou falso", "Uma estrutura de dados para armazenar informações", "Uma estrutura de controle que executa repetidamente um bloco de código"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é um operador em programação?",
-        options: ["Um símbolo que realiza uma operação em um ou mais operandos", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
-    ,
-    {
-        question: "O que é a programação assíncrona?",
-        options: ["Um modelo de programação em que tarefas são executadas de forma não sequencial", "Uma estrutura de controle que executa repetidamente um bloco de código", "Uma linguagem de programação", "Uma função que converte um tipo de dado em outro"],
-        answer: 0
-    }
+        "question": "What is the capital of Angola?",
+        "options": ["Luanda", "Rio de Janeiro", "São Paulo", "Salvador"],
+        "answer": 0
+        },
+        {
+        "question": "What is the largest country in the world by land area?",
+        "options": ["Guinea", "Russia", "China", "United States"],
+        "answer": 1
+        },
+        {
+        "question": "Who invented the telephone?",
+        "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Albert Einstein"],
+        "answer": 0
+        },
+        {
+        "question": "What is the chemical symbol for calcium?",
+        "options": ["Ca", "C", "Cl", "Cu"],
+        "answer": 2
+        },
+        {
+        "question": "Who developed the theory of relativity?",
+        "options": ["Albert Einstein", "Isaac Newton", "Nikola Tesla", "Galileo Galilei"],
+        "answer": 1
+        },
+        {
+        "question": "What is the mathematical formula for calculating the volume of a cube?",
+        "options": ["V = l^3", "V = πr^2 * h", "V = 4/3 * πr^3", "V = 1/2 * (b + B) * h"],
+        "answer": 3
+        },
+        {
+        "question": "Who is considered the father of psychoanalysis?",
+        "options": ["Sigmund Freud", "Ivan Pavlov", "B. F. Skinner", "Carl Jung"],
+        "answer": 0
+        },
+        {
+        "question": "Who invented the electric lamp?",
+        "options": ["Thomas Edison", "Nikola Tesla", "Benjamin Franklin", "Alexander Graham Bell"],
+        "answer": 2
+        },
+        {
+        "question": "What is the mathematical formula for calculating the volume of a cone?",
+        "options": ["V = 1/3 * πr^2 * h", "V = l * w * h", "V = 4/3 * πr^3", "V = 1/2 * (b + B) * h"],
+        "answer": 1
+        },
+        {
+        "question": "Who is considered the father of behaviorist psychology?",
+        "options": ["B. F. Skinner", "Sigmund Freud", "Ivan Pavlov", "Carl Jung"],
+        "answer": 3
+        },
+        {
+        "question": "What is a loop in programming?",
+        "options": ["A control structure that repeatedly executes a block of code", "A data type that stores multiple values", "A function that converts one data type to another", "An instruction that checks a condition and executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is an algorithm?",
+        "options": ["A step-by-step set of instructions for solving a problem", "A programming language", "A function that converts one data type to another", "A data structure for storing information"],
+        "answer": 0
+        },
+        {
+        "question": "What is a variable in programming?",
+        "options": ["A location in memory used to store data", "A data type that represents true or false", "A function that converts one data type to another", "A control structure that repeatedly executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is recursion in programming?",
+        "options": ["A concept in which a function calls itself", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is object-oriented programming?",
+        "options": ["A programming paradigm that organizes data and behaviors into objects", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is an array in programming?",
+        "options": ["A data structure that stores a collection of elements", "A programming language", "A function that converts one data type to another", "A control structure that repeatedly executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is event-driven programming?",
+        "options": ["A programming paradigm in which programs respond to external events", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is a function in programming?",
+        "options": ["A block of code that performs a specific task", "A data type that represents true or false", "A programming language", "A data structure for storing information"],
+        "answer": 0
+        },
+        {
+        "question": "What is structured programming?",
+        "options": ["A programming paradigm that uses control structures like sequence, decision, and repetition", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is a pointer in programming?",
+        "options": ["A variable that stores the memory address of another variable", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is functional programming?",
+        "options": ["A programming paradigm based on pure functions and immutability", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is a class in object-oriented programming?",
+        "options": ["A structure that defines an object with its attributes and methods", "A data type that represents true or false", "A function that converts one data type to another", "A control structure that repeatedly executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is inheritance in object-oriented programming?",
+        "options": ["A concept in which a class inherits characteristics from a parent class", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is a stack in programming?",
+        "options": ["A data structure that follows the LIFO (Last In, First Out) principle", "A programming language", "A function that converts one data type to another", "A control structure that repeatedly executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is parallel programming?",
+        "options": ["A programming paradigm that executes tasks simultaneously in different threads or processes", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is a sorting algorithm?",
+        "options": ["An algorithm that organizes elements in a specific order", "A data type that represents true or false", "A function that converts one data type to another", "An instruction that checks a condition and executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is a method in object-oriented programming?",
+        "options": ["A function that belongs to a class and operates on objects of that class", "A data type that represents true or false", "A data structure for storing information", "A control structure that repeatedly executes a block of code"],
+        "answer": 0
+        },
+        {
+        "question": "What is an operator in programming?",
+        "options": ["A symbol that performs an operation on one or more operands", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        },
+        {
+        "question": "What is asynchronous programming?",
+        "options": ["A programming model in which tasks are executed non-sequentially", "A control structure that repeatedly executes a block of code", "A programming language", "A function that converts one data type to another"],
+        "answer": 0
+        }
     ,
     {
         question: "O que é a programação modular?",
