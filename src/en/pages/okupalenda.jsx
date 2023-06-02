@@ -7,7 +7,7 @@ import { db } from './firebase';
 import _ from 'lodash';
 import axios from 'axios';
 import { WorldFlag } from 'react-world-flags';
-import Bandeira from '../components/bandeira';
+import Bandeira from '../../components/bandeira';
 
 
 const niveis = [

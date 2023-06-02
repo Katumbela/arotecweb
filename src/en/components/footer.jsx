@@ -78,6 +78,7 @@ function Footer() {
                         <li><NavLink className="footerlink" to="/en/carreers">Careers and Internships</NavLink></li>
                         <li><NavLink className="footerlink" to="/en/about">About AROTEC</NavLink></li>
                         <li><NavLink className="footerlink" to="/en/contact">Contact</NavLink></li>
+                        <li><NavLink className="footerlink" to="/en/okupalenda">Okupalenda</NavLink></li>
                     </ul> 
                 </div>
                 <div className="col-12 my-2 my-md-1 col-sm-4 col-md-4 text-start">

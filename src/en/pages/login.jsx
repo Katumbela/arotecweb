@@ -111,7 +111,7 @@ const Login = ({setNomee, setEmaill}) => {
                 <div className="col-12 autoo col-md-6 col-xl-6 col-xxl-6 luanda">
                     <div className="">
                         <img src={logo} style={{ height: '5em' }} alt="Logo Arotec" /> <br />
-                        <span className="text-white">Angola Robotica e Tecnologia</span>
+                        <span className="text-white">Angola Robotic & Tecnology</span>
                     </div>
                 </div>
                 <div className="col-12 col-md-6 autoo col-xl-6 col-xxl-6 ">
@@ -122,7 +122,7 @@ const Login = ({setNomee, setEmaill}) => {
                         <center>
                                {user ? (
                                 <div>
-                                    <p className='text-primary'>Você já está logado como <b> {user.displayName}</b> <br />
+                                    <p className='text-primary'>You are logged in as<b> {user.displayName}</b> <br />
                                     
                                    <span className="text-secondary">
                                    Email: {user.email}
@@ -133,11 +133,11 @@ const Login = ({setNomee, setEmaill}) => {
                                 </div>
                             ) : (
 <>
-                            <b className='text-secondary'>Faça login com Google</b>
+                            <b className='text-secondary'>Use your google account to login or register</b>
                             <br />
                             <br />
                                 <button className='d-flex btn-google btn btn-outline-primary' onClick={handleLoginWithGoogle}>
-                                    <i className="bi bi-google text- me-2"> </i><span>Login com o Google</span>
+                                    <i className="bi bi-google text- me-2"> </i><span>Sign in with Google</span>
                                 </button>
                            
 </> )}
@@ -147,7 +147,7 @@ const Login = ({setNomee, setEmaill}) => {
                     <br />
 <center>
 
-<NavLink className={'btn btn-outline-secondary'} to={'/en'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
+<NavLink className={'btn btn-outline-secondary'} to={'/en'} >Home Page <i className="bi bi-house"></i></NavLink>
 </center>
                 </div>
             </div>

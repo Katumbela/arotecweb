@@ -24,6 +24,8 @@ import Aplicar from "./aplicar_curso";
 import { UserProvider } from "./userContext";
 import AppVaga from "./submit_vaga";
 import SeeP from "./see_project";
+import Jogos from "./jogo";
+import Quiz from "./okupalenda";
 
 
 const RotasEN = (props) => {
@@ -47,6 +49,8 @@ const RotasEN = (props) => {
                     <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/en/carreers" exact />
                     <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/en/unitel_code_robotica_inscricao" exact />
                     <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/en/signin" exact />
+                    <Route element={<Jogos />} path="/en/okupalenda" exact />
+                    <Route element={<Quiz />} path="/en/okupalenda/game" exact />
                     <Route element={<LoginPage />} path="/loginn" exact />
                     <Route element={<SeeP nomee={nomee} emaill={emaill} cart={cart} />} path="/en/see_project/:id" exact />
                     <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />

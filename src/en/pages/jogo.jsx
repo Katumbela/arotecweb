@@ -104,7 +104,7 @@ const Jogos = ({ cart, nomee, emaill }) => {
       </svg>
       <center className="py-5 my-auto" style={{ zIndex: '99999999' }}>
 
-        <img src={ok} className='mt-5' alt="" />
+        <img src={ok} style={{height:'25em'}} className='mt-5' alt="" />
         {/* {
             user != '' ? 
             <div>
@@ -125,16 +125,16 @@ const Jogos = ({ cart, nomee, emaill }) => {
             </button> 
             <br />
             <span className="text-info">
-              Vamos começar o jogo <span style={{textDecoration:'underline'}} >{use.name}</span>
+              Let's start the game <span style={{textDecoration:'underline'}} >{use.name}</span>
             </span>
             <br />
             {countryInfo ? (
         <div>
-          <span>País onde se encontra: {countryName}</span>
+          <span>Country where you are: {countryName}</span>
           {/* Renderizar a bandeira aqui */}
         </div>
       ) : (
-        <h1>Obtendo informações do país...</h1>
+        <h1>Getting country information...</h1>
       )}
             {/* <span>Detectamos que seu país é {countryName} </span> */}
           </div>
@@ -143,7 +143,7 @@ const Jogos = ({ cart, nomee, emaill }) => {
               <center>
                 <i className="bi bi-exclamation-triangle fs-2 text-info"></i>
               </center>
-              Faça <a href="/login"> {use.name} login</a> para continuar o jogo online
+               <a href="/en/signin"> {use.name} Login</a> to continue the game online
             </p> 
             
 

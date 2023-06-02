@@ -516,6 +516,23 @@ footer {
   }
 }
 
+@keyframes okupa {
+  0% {
+    transform: translateY(12px) scale(1.1);
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+  100% {
+    transform: translateY(12px) scale(1.12);
+  }
+}
+.okupa {
+  animation: 2s okupa linear infinite;
+}
+
 
 @media (min-width: 401px) {
   .printing .d1 {
@@ -555,11 +572,11 @@ footer {
   .printing .d1 {
     font-size: 68px;
   }
-  .carousel .row .col-12 div h3 {
+  .jog , .carousel .row .col-12 div h3 {
     font-size: 55px !important;
   }
   
-  .carousel .row .col-12 div p {
+  .j-p, .carousel .row .col-12 div p {
     font-size: 25px !important;
     margin-bottom: 2rem;
   }
@@ -612,7 +629,7 @@ footer {
   .printing .d3 {
     font-size: 25px;
   }
-  .carousel .row .col-12 div h3 {
+  .jog, .carousel .row .col-12 div h3 {
     font-size: 50px!important;
     margin-top: 1vh;
   }
@@ -621,7 +638,7 @@ footer {
     margin-top: 3rem!important;
   }
   
-  .carousel .row .col-12 div p {
+  .j-p, .carousel .row .col-12 div p {
     font-size: 20px!important;
     margin-bottom: 2rem;
   }
@@ -671,7 +688,7 @@ footer {
 
 @media (min-width: 1801px) {
 
-  .carousel .row .col-12 div h3 {
+  .jog, .carousel .row .col-12 div h3 {
     font-size: 120px!important;
     margin-top: 1vh;
   }
