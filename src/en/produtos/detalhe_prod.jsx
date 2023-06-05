@@ -38,7 +38,7 @@ function Arobot (props) {
         <br />
         <div className="container text-start">
 
-        <NavLink to={'/en/store'}><i className="bi bi-arrow-left"></i> Back</NavLink>
+        <NavLink to={'/pten/store'}><i className="bi bi-arrow-left"></i> Back</NavLink>
         </div>
         <br />
         <br />
@@ -63,7 +63,7 @@ function Arobot (props) {
                         </button>
                     </div>
                     <div className="my-2 col-12 col-md-6">
-                        <NavLink to={'/comprar_agora/'+id} className="btn btn-outline-primary" >
+                        <NavLink to={'/pt/comprar_agora/'+id} className="btn btn-outline-primary" >
                         Buy now <i className="bi ms-2 bi-cart"></i>
                         </NavLink>
                     </div>

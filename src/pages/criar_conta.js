@@ -109,7 +109,7 @@ const Login = ({setNomee, setEmaill}) => {
                 <br />
 <center>
 
-<NavLink className={'btn btn-outline-secondary'} to={'/'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
+<NavLink className={'btn btn-outline-secondary'} to={'/pt'} >Pagina Inicial <i className="bi bi-house"></i></NavLink>
 </center>
             </div>
         </div>

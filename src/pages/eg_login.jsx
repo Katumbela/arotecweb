@@ -42,7 +42,7 @@ function PlayLis({ nomee, emaill, cart }) {
                 </center>
                 <div className="row">
                     <div className="col-12 col-sm-4 col-md-3 col-xl-2">
-                        <NavLink to={'/w/'} style={{ background: '', padding: '.5em' }} className="vid-car navlink rounded-3 border-primary text-center">
+                        <NavLink to={'/ptw/'} style={{ background: '', padding: '.5em' }} className="vid-car navlink rounded-3 border-primary text-center">
                             <div className="img">
                                 <img src={vid} style={{ height: '4em' }} alt="" />
                             </div>

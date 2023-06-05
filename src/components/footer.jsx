@@ -68,15 +68,15 @@ function Footer() {
                 <div className="col-12 my-2 my-md-1 col-sm-4 col-md-4 text-start">
                     <h5 className="text-white">Links Rápidos</h5>
                     <ul>
-                        <li><NavLink className="footerlink" to="/academia">Academia</NavLink></li>
-                        <li><NavLink className="footerlink" to="/loja">Loja</NavLink></li>
-                        <li><NavLink className="footerlink" to="/empresas">Empresas</NavLink></li>
-                        <li><NavLink className="footerlink" to="/arotec_robotic_school">Arotec Robotic School</NavLink></li>
-                        <li><NavLink className="footerlink" to="/unitel_code_robotica_inscricao">Unitel Code Robótica</NavLink></li>
-                        <li><NavLink className="footerlink" to="/carreiras">Carreiras e Estagios</NavLink></li>
-                        <li><NavLink className="footerlink" to="/sobre">Sobre a AROTEC</NavLink></li>
-                        <li><NavLink className="footerlink" to="/contactar">Contactar</NavLink></li>
-                        <li><NavLink className="footerlink" to="/okupalenda">Okupalenda</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/academia">Academia</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/loja">Loja</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/empresas">Empresas</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/arotec_robotic_school">Arotec Robotic School</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/unitel_code_robotica_inscricao">Unitel Code Robótica</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/carreiras">Carreiras e Estagios</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/sobre">Sobre a AROTEC</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/contactar">Contactar</NavLink></li>
+                        <li><NavLink className="footerlink" to="/pt/okupalenda">Okupalenda</NavLink></li>
                     </ul> 
                 </div>
                 <div className="col-12 my-2 my-md-1 col-sm-4 col-md-4 text-start">
@@ -102,7 +102,7 @@ function Footer() {
                     <span className=''>&copy; 2023 - AROTEC SU </span>
                 </div>
                 <div className="d1 col-6 col-md-6  text-end">
-                    <span className=''> <NavLink className="link copy" to="/sobre">Sobre</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/politicas_de_privacidade">Políticas de Privacidade</NavLink></span>
+                    <span className=''> <NavLink className="link copy" to="/pt/sobre">Sobre</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/pt/politicas_de_privacidade">Políticas de Privacidade</NavLink></span>
                 </div> 
             </div>
         </div>

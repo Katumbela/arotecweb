@@ -403,7 +403,7 @@ function Quiz() {
     {renderQuestion()}
     <br /><br />
     <div className='text-start d-flex justify-content-between' style={{ position: 'absolute', top: '1rem', left: '1rem', right: '1rem' }}>
-     <NavLink to={'/'}> <img src={img} height={'18em'} alt="" /></NavLink>
+     <NavLink to={'/pt'}> <img src={img} height={'18em'} alt="" /></NavLink>
 
       <b className=''>{use.name}</b>
     </div>

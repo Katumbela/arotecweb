@@ -154,7 +154,7 @@ const Home = ({ cart, nomee, emaill }) => {
             <br />
             <center>
 
-              <NavLink to={'/en/'}><img src={logo} style={{ height: '2.5em' }} alt="" /> </NavLink>
+              <NavLink to={'/pten/'}><img src={logo} style={{ height: '2.5em' }} alt="" /> </NavLink>
 
               <br />
               <br />

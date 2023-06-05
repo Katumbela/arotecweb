@@ -15,8 +15,7 @@ const Carreiras = ({ emaill, nomee, cart }) => {
 
      
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
+    
       <BannerPreto >
         CARREIRAS & ESTÁGIOS
       </BannerPreto>
@@ -33,7 +32,7 @@ const Carreiras = ({ emaill, nomee, cart }) => {
             vagas.map((vg) => (
               <div key={vg.id} className="col-12 my-2 col-sm-6 col-md-4 col-lg-3">
                 <div className="shadow rounded-3 bg-light px-3 pt-2">
-                  <NavLink to={'/application/submit/'+vg.id} className={'navlink p-1 '} >
+                  <NavLink to={'/pt/application/submit/'+vg.id} className={'navlink p-1 '} >
                     <b className="text-primary" style={{ textDecoration: 'underline' }}>{vg.vaga}</b>
                     <span className="text-secondary d-flex flex-column">
                       <span className='f-10'><i className="bi bi-geo"></i>{vg.tipo}</span>

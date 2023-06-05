@@ -141,7 +141,7 @@ function MeusC({ nomee, emaill, cart }) {
                                             <div className="corp text-white">
                                                 <b>{curso.curso}</b>
                                             </div>
-                                            {/* to={'/aulas/'+curso.id_curso} */}
+                                            {/* to={'/pt/aulas/'+curso.id_curso} */}
                                             {
                                                 curso.curso == 'Curso de Pequeno Engenheiro' ?
                                             <NavLink  className="btn rounded-3 border-white text-white ">Acessar às Aulas</NavLink>

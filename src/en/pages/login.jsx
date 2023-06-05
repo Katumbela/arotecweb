@@ -147,7 +147,7 @@ const Login = ({setNomee, setEmaill}) => {
                     <br />
 <center>
 
-<NavLink className={'btn btn-outline-secondary'} to={'/en'} >Home Page <i className="bi bi-house"></i></NavLink>
+<NavLink className={'btn btn-outline-secondary'} to={'/pten'} >Home Page <i className="bi bi-house"></i></NavLink>
 </center>
                 </div>
             </div>

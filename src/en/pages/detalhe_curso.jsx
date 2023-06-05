@@ -66,7 +66,7 @@ function DetalheCurso ({nomee, emaill,cart}) {
                     {cc[0].desc}
                   </p>
                   <br />
-                  <NavLink to={'/en/apply/'+id} className="btn btn-primary w-100">APPLY TO THIS COURSE</NavLink>
+                  <NavLink to={'/pten/apply/'+id} className="btn btn-primary w-100">APPLY TO THIS COURSE</NavLink>
                   <br />
                   <br />
                   <b>Course Materials</b>
@@ -99,7 +99,7 @@ function DetalheCurso ({nomee, emaill,cart}) {
               </div>
             </div>
             <div className="col-12 col-sm-4 col-md-3">
-              <NavLink to={'/en/apply/'+id} className="btn btn-primary w-100">APPLY</NavLink>
+              <NavLink to={'/pten/apply/'+id} className="btn btn-primary w-100">APPLY</NavLink>
               <br />
               <br />
               <b style={{borderLeft: '3px solid #0066be', paddingLeft: '.5rem'}}>Course Details</b>

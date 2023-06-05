@@ -44,7 +44,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
           <li>Formação nas areas de tecnologias.</li>
         </ol>
         </p>
-        <NavLink to={'/contactar'}><button className="btn btn-outline-dark">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
+        <NavLink to={'/pt/contactar'}><button className="btn btn-outline-dark">Contactar <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
         <br />
         <hr />
         <br />

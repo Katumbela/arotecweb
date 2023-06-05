@@ -761,3 +761,15 @@ footer {
   }
 }
 
+.lang {
+  position: fixed;
+  bottom: 3.3rem;
+  right: .5rem;
+}
+
+.lang .en-flag {
+  border-radius: 90px;
+  height: 2em;
+  width: 2em;
+  border: 1px solid #0066be;
+}

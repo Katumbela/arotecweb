@@ -144,7 +144,7 @@ const UnitelCode = ({nomee, emaill,  cart }) => {
                 <span className="text-secondary f-14">vâ para a pagina inicial ou recarregue a pagina para fazer outra candidatura! </span>
                 <br />
                 <br />
-                <NavLink to={'/'} className="btn btn-outline-primary">OK</NavLink>
+                <NavLink to={'/pt'} className="btn btn-outline-primary">OK</NavLink>
               </center>
             </div>
           }

@@ -102,7 +102,7 @@ function Projectos({ nomee, emaill, cart }) {
           <div className="col-9 col-sm-9 printing py-1">
             <b className="proj-tit d1">Serviço de impressão 3D</b><br />
             <p className="text-secondary d2 proj-f">Crie os seus projectos com AROTEC, consulte o orçamento para o seu projeto clicando no botão abaixo.</p>
-            <NavLink to={'/contactar'} className="btn d3 btn-outline-primary proj-f">Solicitar orçamento</NavLink>
+            <NavLink to={'/pt/contactar'} className="btn d3 btn-outline-primary proj-f">Solicitar orçamento</NavLink>
           </div>
 
         </div>
@@ -114,9 +114,9 @@ function Projectos({ nomee, emaill, cart }) {
 
         {
           use.name == '' ?
-            <NavLink className="f-14" to="/login">Faça login para adicionar</NavLink>
+            <NavLink className="f-14" to="/pt/login">Faça login para adicionar</NavLink>
             :
-            <NavLink className="f-14 btn btn-outline-dark" to="/adicionar_projecto">Adicione seu projecto <i className="bi bi-arrow-right-short"></i></NavLink>
+            <NavLink className="f-14 btn btn-outline-dark" to="/pt/adicionar_projecto">Adicione seu projecto <i className="bi bi-arrow-right-short"></i></NavLink>
         }
 
       </div>
@@ -150,7 +150,7 @@ function Projectos({ nomee, emaill, cart }) {
                     De: <span className="text-primary">{projeto.nome}</span>
                   </p>
                   <p>
-                    <NavLink className="btn f-12 btn-outline-dark" to={'/ver_projecto/'+ projeto.refId}>Ver projecto</NavLink>
+                    <NavLink className="btn f-12 btn-outline-dark" to={'/ptver_projecto/'+ projeto.refId}>Ver projecto</NavLink>
                   </p>
                 </div>
               </div>

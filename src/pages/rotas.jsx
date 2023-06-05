@@ -30,6 +30,7 @@ import Jogo from "./okupalenda";
 import Jogos from "./jogo";
 import Quiz from "./okupalenda";
 import VerP from "./ver_project";
+import NotFoundPage from "./notfound";
 
 
 const RotasPT = (props) => {
@@ -40,34 +41,35 @@ const RotasPT = (props) => {
         <BrowserRouter>
             <UserProvider>
                 <Routes >
-                    <Route element={<Home nomee={nomee} emaill={emaill} cart={cart} />} path="/" />
-                    <Route element={<Academia  nomee={nomee} emaill={emaill} cart={cart} />} path="/academia" exact />
-                    <Route element={<Projectos  nomee={nomee} emaill={emaill} cart={cart} />} path="/projectos" exact />
-                    <Route element={<Empresas  nomee={nomee} emaill={emaill} cart={cart} />} path="/empresas" exact />
-                    <Route element={<Loja  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/loja" exact />
-                    <Route element={<Arobot nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/produtos/store/:id" exact />
-                    <Route element={<Cart  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/cart" exact />
-                    <Route element={<RoboticSchool  nomee={nomee} emaill={emaill} cart={cart} />} path="/arotec_robotic_school" exact />
-                    <Route element={<Contactar  nomee={nomee} emaill={emaill} cart={cart} />} path="/contactar" exact />
-                    <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/sobre" exact />
-                    <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/carreiras" exact />
-                    <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/unitel_code_robotica_inscricao" exact />
-                    <Route element={<PlayList  nomee={nomee} emaill={emaill} cart={cart} />} path="/aulas/:curso" exact />
-                    <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/login" exact />
-                    <Route element={<MeusC cart={cart}  emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/meus_cursos" exact />
-                    <Route element={<LoginPage />} path="/loginn" exact />
-                    <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/comprar_agora/:id" exact />
-                    <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/aplicar/:id" exact />
-                    <Route element={<SubmitP  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/adicionar_projecto" exact />
-                    <Route element={<CriarConta />} path="/criar_conta" exact />
-                    <Route element={<Jogos />} path="/okupalenda" exact />
-                    <Route element={<Quiz />} path="/okupalenda/game" exact />
-                    <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/s/" exact />
-                    <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/politicas_de_privacidade" exact />
-                    <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/formulario/curso/:id" exact />
-                    <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/application/submit/:id" exact />
-                    <Route element={<VerP  nomee={nomee} emaill={emaill} cart={cart} />} path="/ver_projecto/:id" exact />
-                    <Route element={<DetalheCurso  nomee={nomee} emaill={emaill} cart={cart} />} path="/academia/curso/arotec/:id" exact />
+                    <Route element={<Home nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/" />
+                    <Route element={<Academia  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/academia" exact />
+                    <Route element={<Projectos  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/projectos" exact />
+                    <Route element={<Empresas  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/empresas" exact />
+                    <Route element={<Loja  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/pt/loja" exact />
+                    <Route element={<Arobot nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/pt/produtos/store/:id" exact />
+                    <Route element={<Cart  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/pt/cart" exact />
+                    <Route element={<RoboticSchool  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/arotec_robotic_school" exact />
+                    <Route element={<Contactar  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/contactar" exact />
+                    <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/sobre" exact />
+                    <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/pt/carreiras" exact />
+                    <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/unitel_code_robotica_inscricao" exact />
+                    <Route element={<PlayList  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/aulas/:curso" exact />
+                    <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/pt/login" exact />
+                    <Route element={<MeusC cart={cart}  emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/pt/meus_cursos" exact />
+                    <Route element={<LoginPage />} path="/pt/loginn" exact />
+                    <Route element={<NotFoundPage/>}/>
+                    <Route element={<BuyNow  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/pt/comprar_agora/:id" exact />
+                    <Route element={<Aplicar  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/pt/aplicar/:id" exact />
+                    <Route element={<SubmitP  nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/pt/adicionar_projecto" exact />
+                    <Route element={<CriarConta />} path="/pt/criar_conta" exact />
+                    <Route element={<Jogos />} path="/pt/okupalenda" exact />
+                    <Route element={<Quiz />} path="/pt/okupalenda/game" exact />
+                    <Route element={<Search  nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/pt/s/" exact />
+                    <Route element={<Politicas  nomee={nomee} emaill={emaill}cart={cart} />} path="/pt/politicas_de_privacidade" exact />
+                    <Route element={<Formulario  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/formulario/curso/:id" exact />
+                    <Route element={<AppVaga  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/application/submit/:id" exact />
+                    <Route element={<VerP  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/ver_projecto/:id" exact />
+                    <Route element={<DetalheCurso  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/academia/curso/arotec/:id" exact />
 
                 </Routes>
             </UserProvider>

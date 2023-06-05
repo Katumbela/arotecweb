@@ -25,7 +25,7 @@ import OwlCarousel from 'react-owl-carousel';
 const Home = ({ cart, nomee, emaill }) => {
 
   const { user, handleLogout } = useContext(UserContext);
-  document.title = 'Inicial | AROTEC';
+  document.title = 'Pagina Inicial | AROTEC';
 
 
   useEffect(() => {
@@ -45,6 +45,7 @@ const Home = ({ cart, nomee, emaill }) => {
         localStorage.setItem('user', JSON.stringify(userData));
 
       }
+
     });
 
 
@@ -69,16 +70,18 @@ const Home = ({ cart, nomee, emaill }) => {
 
   }, []);
 
+
+
   const handleCloseModal = () => {
     setShowModal(false);
   };
+
 
 
   const handleClose = () => setShowModal(false);
 
 
   const [players, setPlayers] = useState([]);
-
 
   // Função para buscar os jogadores ordenados por pontuação
   const fetchPlayers = async () => {
@@ -147,7 +150,7 @@ const Home = ({ cart, nomee, emaill }) => {
           <div className="text-start">
             <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
             <p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
-            <NavLink to="/academia" className="navlink">
+            <NavLink to="/pt/academia" className="navlink">
               <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
             </NavLink>
             <br />
@@ -155,7 +158,7 @@ const Home = ({ cart, nomee, emaill }) => {
           <div className="mt-4">
             <OwlCarousel className='owl-theme' margin={15} autoWidth={true}>
 
-              <NavLink to={'/academia/curso/arotec/2021'} className="my-2 link">
+              <NavLink to={'/pt/academia/curso/arotec/2021'} className="my-2 link">
                 <div className="card_curso card-hover">
                   <div className="card-header">
                     <img src={peq_eng} alt="pequeno engenheiro" />
@@ -172,7 +175,7 @@ const Home = ({ cart, nomee, emaill }) => {
               </NavLink>
 
 
-              <NavLink to={'/academia/curso/arotec/2022'} className="link my-2">
+              <NavLink to={'/pt/academia/curso/arotec/2022'} className="link my-2">
                 <div className="card_curso card-hover">
                   <div className="card-header">
                     <img src={arduino} alt="pequeno engenheiro" />
@@ -188,7 +191,7 @@ const Home = ({ cart, nomee, emaill }) => {
                 </div>
               </NavLink>
 
-              <NavLink to={'/academia/curso/arotec/2025'} className="link my-2">
+              <NavLink to={'/pt/academia/curso/arotec/2025'} className="link my-2">
                 <div className="card_curso card-hover">
                   <div className="card-header">
                     <img src={eletronica} alt="pequeno engenheiro" />
@@ -225,7 +228,7 @@ const Home = ({ cart, nomee, emaill }) => {
                   Okupalenda está online, faça parte da comunidade
                 </p>
                 <br />
-                <NavLink to={'/okupalenda'} className="btn mt-auto border-white text-white">Começar o Jogo <i className="bi bi-arrow-right-"></i> </NavLink>
+                <NavLink to={'/ptokupalenda'} className="btn mt-auto border-white text-white">Começar o Jogo <i className="bi bi-arrow-right-"></i> </NavLink>
               </div>
               <div style={{ display: 'grid', justifyContent: 'center' }} className="col-12 col-sm-6 col-lg-4">
                 <img className='w-100  my-auto' src={okupa} alt="" />

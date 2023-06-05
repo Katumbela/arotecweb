@@ -43,7 +43,7 @@ const Sobre = ({ cart, nomee, emaill }) => {
           <li>Training in the areas of technologies.</li>
         </ol>
         </p>
-        <NavLink to={'/en/contact'}><button className="btn btn-outline-dark">Contact <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
+        <NavLink to={'/pten/contact'}><button className="btn btn-outline-dark">Contact <i className="bi ms-2 bi-arrow-right"></i></button></NavLink>
         <br />
         <hr />
         <br />

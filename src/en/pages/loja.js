@@ -14,8 +14,8 @@ const Loja = ({handleClick,nomee, emaill, cart}) => {
     <div className=" bg-light">
       
       < Header  nomee={nomee} emaill={emaill} cart={cart} />
-      <BannerPreto>
-         AROTEC STORE
+      <BannerPreto style={{marginTop:'-1.5rem'}}>
+         AROTEC STORE 
       </BannerPreto>
       <br />
       <br />

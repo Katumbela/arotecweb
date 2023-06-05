@@ -41,7 +41,7 @@ function AppVaga(props) {
                 <br />
                 <div className="container text-start">
 
-                    <NavLink to={'/en/carreiras'}><i className="bi bi-arrow-left"></i> Back</NavLink>
+                    <NavLink to={'/pten/carreiras'}><i className="bi bi-arrow-left"></i> Back</NavLink>
                 </div>
                 <br />
                 <br />

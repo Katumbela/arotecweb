@@ -33,7 +33,7 @@ function App() {
       setCart([...cart, {...item, qty: 1}]);
 
       toast.success('Seu produto foi adicionado com sucesso!')
-      
+    
     }
   }
 
@@ -65,55 +65,80 @@ function App() {
      console.log(cart);
     }
     else {
-
       setCart([...cart, {...item, qty: 1}]);
       console.log(cart);
     }
   }
 
-  const [country, setCountry] = useState('');
+  const [language, setLanguage] = useState('');
+
+
+  const handleLanguageChange = (lang) => {
+    // Atualize a URL para refletir a escolha do usuário
+    const currentPath = window.location.pathname;
+
+    if (lang === 'en' && !currentPath.startsWith('/en')) {
+      const newPath = '/en' + currentPath;
+      window.location.pathname = newPath;
+    } else if (lang === 'pt' && currentPath.startsWith('/en')) {
+      const newPath = currentPath.slice(3);
+      window.location.pathname = newPath;
+    }
+  };
+
+  const redirecionarURL = () => {
+    const currentPath = window.location.pathname;
+
+    if (currentPath === '/') {
+      window.location.pathname = '/pt';
+    }
+  };
 
   useEffect(() => {
-    fetch('https://ipapi.co/json/')
-      .then(response => response.json())
-      .then(data => setCountry(data.country_name))
-      .catch(error => console.error(error));
+    redirecionarURL();
+
+    // Defina o idioma inicial com base na rota atual
+    const currentPath = window.location.pathname;
+    if (currentPath.startsWith('/en')) {
+      setLanguage('en');
+    } else {
+      setLanguage('pt');
+    }
   }, []);
-
-  // useEffect(() => {
-  //   const redirectToLanguage = () => {
-  //     const currentPath = window.location.pathname;
-  //     const isEnglish = currentPath.startsWith('/en');
-  //     const isPortuguese = currentPath.startsWith('/');
-
-  //     if (country !== 'Angola' && !isEnglish) {
-  //       window.location.href = '/en' // redireciona para a versão em inglês
-  //     } 
-  //   }
-
-  //   redirectToLanguage(); // apenas na primeira renderização
-
-  // }, [])
-  // const redirectToLanguage = () => {
-  //   const currentPath = window.location.pathname;
-  //   const isEnglish = currentPath.startsWith('/en');
-  //   const isPortuguese = currentPath.startsWith('/');
-  
-  //   if (country !== 'Angola' && !isEnglish) {
-  //     window.history.pushState(null, null, '/en' + currentPath);
-  //   } else if (country === 'Angola' && !isPortuguese) {
-  //     window.history.pushState(null, null, '/' + currentPath);
-  //   }
-  // }
-  
-  // redirectToLanguage(); // apenas na primeira renderização
-
+ 
   return (
     <React.Fragment>
       <ToastContainer />
-      {country == 'Angola' ? <RotasPT emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>
-      : <RotasEN emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee} adicionar={adicionar} remover = {remover}  handleClick={handleClick} cart={cart}/>}
+      {/* <div className='lang'>
+        <button className='bt' onClick={() => handleLanguageChange('pt')}>Português</button>
+        <button clas onClick={() => handleLanguageChange('en')}>English</button>
+      </div> */}
 
+      {(language === 'pt' || window.location.pathname.startsWith('/pt')) && (
+        <RotasPT
+          emaill={emaill}
+          setEmaill={setEmaill}
+          nomee={nomee}
+          setNomee={setNomee}
+          adicionar={adicionar}
+          remover={remover}
+          handleClick={handleClick}
+          cart={cart}
+        />
+      )}
+
+      {language === 'en' && window.location.pathname.startsWith('/en') && (
+        <RotasEN
+          emaill={emaill}
+          setEmaill={setEmaill}
+          nomee={nomee}
+          setNomee={setNomee}
+          adicionar={adicionar}
+          remover={remover}
+          handleClick={handleClick}
+          cart={cart}
+        />
+      )}
     </React.Fragment>
   
   );

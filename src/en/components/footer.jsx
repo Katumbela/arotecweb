@@ -104,7 +104,7 @@ function Footer() {
                     <span className=''>&copy; 2023 - AROTEC SU </span>
                 </div>
                 <div className="d1 col-6 col-md-6  text-end">
-                    <span className=''> <NavLink className="link copy" to="/sobre">About</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/politicas_de_privacidade">Privacy Policy</NavLink></span>
+                    <span className=''> <NavLink className="link copy" to="/pt/sobre">About</NavLink></span> &middot; <span className=" "><NavLink className="link copy" to="/pt/politicas_de_privacidade">Privacy Policy</NavLink></span>
                 </div> 
             </div>
         </div>

@@ -101,7 +101,7 @@ function Projectos({ nomee, emaill, cart }) {
           <div className="col-9 col-sm-9 py-1 printing">
             <b className="proj-tit d1">3D printing service</b><br />
             <p className="text-secondary d2 proj-f">Create your projects with AROTEC, consult the budget for your project by clicking on the button below.</p>
-            <NavLink to={'/en/contact'} className="btn d3 btn-outline-primary proj-f">Request quote</NavLink>
+            <NavLink to={'/pten/contact'} className="btn d3 btn-outline-primary proj-f">Request quote</NavLink>
           </div>
 
         </div>
@@ -115,7 +115,7 @@ function Projectos({ nomee, emaill, cart }) {
           use.name == '' ?
             <NavLink className="f-14" to="/en/signin">Login to add</NavLink>
             :
-            <NavLink className="f-14 btn btn-outline-dark" to="/adicionar_projecto">add your project <i className="bi bi-arrow-right-short"></i></NavLink>
+            <NavLink className="f-14 btn btn-outline-dark" to="/pt/adicionar_projecto">add your project <i className="bi bi-arrow-right-short"></i></NavLink>
         }
 
       </div>
@@ -149,7 +149,7 @@ function Projectos({ nomee, emaill, cart }) {
                     By: <span className="text-primary">{projeto.nome}</span>
                   </p>
                   <p>
-                    <NavLink className="btn f-12 btn-outline-dark" to={'/en/see_project/'+ projeto.refId}>See project</NavLink>
+                    <NavLink className="btn f-12 btn-outline-dark" to={'/pten/see_project/'+ projeto.refId}>See project</NavLink>
                   </p>
                 </div>
               </div>
