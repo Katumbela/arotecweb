@@ -177,14 +177,14 @@ function AppVaga(props) {
                                     <center className='my-auto'>
                                         <i className="bi bi-exclamation-triangle text-warning f-50"></i>
                                         <br />
-                                        <p className="text-warning">Vaga temporariamente indisponível, volte mais tarde!</p>
+                                        <p className="text-warning">A vaga de {vaga[0].vaga} está temporariamente indisponível, volte mais tarde!</p>
                                     </center>
                                 </div>
                             )}
                         </div>
                         <div className="col-12 col-sm-6">
                             <center className="my-auto">
-                                <img src={b} className='w-50 mx-auto' alt="" />
+                                <img src={b} className='w-50 mt-auto mx-auto' alt="" />
                             </center>
                         </div>
                     </div>
