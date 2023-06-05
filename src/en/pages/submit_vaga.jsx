@@ -17,6 +17,7 @@ function AppVaga(props) {
     const vaga = vagas.filter((p) => p.id == id);
     const [hoveredImage, setHoveredImage] = useState(null);
 
+    document.title = 'Careers and Internships | AROTEC';
 
     function handleMouseEnter(e) {
         setHoveredImage(e.target.src);
