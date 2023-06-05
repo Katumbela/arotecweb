@@ -107,9 +107,7 @@ function Aplicar({ emaill, nomee, cart }) {
 
                
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
-                <BannerPreto >
+     <BannerPreto >
                     {cc[0].curso}
                 </BannerPreto>
                 <br />

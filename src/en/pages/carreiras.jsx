@@ -15,17 +15,16 @@ const Carreiras = ({ emaill, nomee, cart }) => {
 
      
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
+     
       <BannerPreto >
-        CARREIRAS & ESTÁGIOS
+      CAREERS & INTERNSHIPS
       </BannerPreto>
       <br />
       <div className="container">
 
-        <h3 className="text-primary">Vagas de estágio (Não Remunerado) </h3>
+        <h3 className="text-primary">Internship vacancies (Unpaid) </h3>
         <hr />
-        <span className="text-secondary f-12">Abertas em 31 Jan. 2023</span>
+        <span className="text-secondary f-12">Opened on 31 Jan. 2023</span>
         <br />
         <br />
         <div className="row">
@@ -33,7 +32,7 @@ const Carreiras = ({ emaill, nomee, cart }) => {
             vagas.map((vg) => (
               <div key={vg.id} className="col-12 my-2 col-sm-6 col-md-4 col-lg-3">
                 <div className="shadow rounded-3 bg-light px-3 pt-2">
-                  <NavLink to={'/application/submit/'+vg.id} className={'navlink p-1 '} >
+                  <NavLink to={'/en/application/submit/'+vg.id} className={'navlink p-1 '} >
                     <b className="text-primary" style={{ textDecoration: 'underline' }}>{vg.vaga}</b>
                     <span className="text-secondary d-flex flex-column">
                       <span className='f-10'><i className="bi bi-geo"></i>{vg.tipo}</span>

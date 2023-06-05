@@ -37,7 +37,7 @@ const cursos = [
         curso: "Arduino Course",
         duracao: "4 weeks",
         preco: "30.000 Kz",
-        img: eletronica,
+        img: arduino,
         desc: "The Robotics Module 1 course gives an introduction to what robotics itself is, focusing on its application and various techniques.",
         tools1: "Slides",
         tools2: "Control Hub",

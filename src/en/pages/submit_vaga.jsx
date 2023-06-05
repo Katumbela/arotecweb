@@ -33,16 +33,14 @@ function AppVaga(props) {
 
                
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
-                <BannerPreto >
+     <BannerPreto >
                     {vaga[0].vaga}
                 </BannerPreto>
                 <br />
                 <br />
                 <div className="container text-start">
 
-                    <NavLink to={'/carreiras'}><i className="bi bi-arrow-left"></i> Voltar</NavLink>
+                    <NavLink to={'/en/carreiras'}><i className="bi bi-arrow-left"></i> Back</NavLink>
                 </div>
                 <br />
                 <br />
@@ -52,15 +50,15 @@ function AppVaga(props) {
                     <div className="row">
                         <div className="col-12 col-sm-6">
                             <h5 className="text-primary">
-                                Aplicar para vaga de {vaga[0].vaga}
+                            Apply for vacancy {vaga[0].vaga}
 
                             </h5>
                             <hr />
-                            <span>Formulário indisponível</span>
+                            <span>Form unavailable</span>
                             <center className='my-auto'>
                                 <i className="bi bi-exclamation-triangle text-warning f-50"></i>
                                 <br />
-                                <p className="text-warning">Serviço indisponível no momento, estamos em actualização, volte mais tarde!</p>
+                                <p className="text-warning">Service currently unavailable, we are updating, come back later!</p>
                             </center>
                         </div>
 
