@@ -94,16 +94,15 @@ function App() {
   //   redirectToLanguage(); // apenas na primeira renderização
 
   // }, [])
-
   const redirectToLanguage = () => {
     const currentPath = window.location.pathname;
     const isEnglish = currentPath.startsWith('/en');
-    const isPortuguese = currentPath.startsWith('/pt');
+    const isPortuguese = currentPath.startsWith('/');
   
     if (country !== 'Angola' && !isEnglish) {
-      window.history.pushState(null, null, '/en');
+      window.history.pushState(null, null, '/en' + currentPath);
     } else if (country === 'Angola' && !isPortuguese) {
-      window.history.pushState(null, null, '/');
+      window.history.pushState(null, null, '/' + currentPath);
     }
   }
   
