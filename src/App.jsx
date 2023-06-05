@@ -94,19 +94,19 @@ function App() {
   //   redirectToLanguage(); // apenas na primeira renderização
 
   // }, [])
-  const redirectToLanguage = () => {
-    const currentPath = window.location.pathname;
-    const isEnglish = currentPath.startsWith('/en');
-    const isPortuguese = currentPath.startsWith('/');
+  // const redirectToLanguage = () => {
+  //   const currentPath = window.location.pathname;
+  //   const isEnglish = currentPath.startsWith('/en');
+  //   const isPortuguese = currentPath.startsWith('/');
   
-    if (country !== 'Angola' && !isEnglish) {
-      window.history.pushState(null, null, '/en' + currentPath);
-    } else if (country === 'Angola' && !isPortuguese) {
-      window.history.pushState(null, null, '/' + currentPath);
-    }
-  }
+  //   if (country !== 'Angola' && !isEnglish) {
+  //     window.history.pushState(null, null, '/en' + currentPath);
+  //   } else if (country === 'Angola' && !isPortuguese) {
+  //     window.history.pushState(null, null, '/' + currentPath);
+  //   }
+  // }
   
-  redirectToLanguage(); // apenas na primeira renderização
+  // redirectToLanguage(); // apenas na primeira renderização
 
   return (
     <React.Fragment>
