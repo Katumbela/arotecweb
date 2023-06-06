@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { db } from '../pages/firebase';
 import Swal from 'sweetalert';
 import Loader from './loader';
-import sendEmail from '../pages/server';
+// import sendEmail from '../pages/server';
 
 
 function Footer() {
@@ -32,7 +32,7 @@ function Footer() {
       setEmail('');
       setLoad(false);
       toast.success('Seu email foi adicionado a nossa newsletter com sucesso, obrigado!');
-      sendEmail(email, "NewsLetter Arotec", "Adicionado com sucesso!")
+    //   sendEmail(email, "NewsLetter Arotec", "Adicionado com sucesso!")
     })
     .catch((error) => {
       setLoad(false);
