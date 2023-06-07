@@ -13,7 +13,7 @@ import { useContext, useEffect, useState } from 'react';
 import { UserContext } from './userContext';
 import firebase from 'firebase/compat/app';
 import { db } from './firebase';
-import okupa from '../imgs/okupalenda.png'
+import okupa from '../imgs/arobot.png'
 import axios from 'axios';
 import Bandeira from '../components/bandeira';
 import { NavLink } from 'react-router-dom';
@@ -27,6 +27,7 @@ import a1 from '../imgs/anims/a1.jpg'
 import a2 from '../imgs/anims/a2.jpg'
 import a3 from '../imgs/anims/a3.jpg'
 import { Fade } from 'react-awesome-reveal';
+import video from '../video/av1.mp4'
 
 
 const Home = ({ cart, nomee, emaill }) => {
@@ -156,12 +157,12 @@ const Home = ({ cart, nomee, emaill }) => {
     backgroundImage: `url(${process.env.PUBLIC_URL}/images/${images[backgroundImage]})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    filter: 'brightness(30%)',
+    filter: 'brightness(35%)',
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
-    height: '70%',
+    height: '70vh',
   };
 
 
@@ -247,7 +248,53 @@ const Home = ({ cart, nomee, emaill }) => {
         <br />
 
         <br />
-        <BannerLoja />
+        {/* <BannerLoja /> */}
+        <br />
+        <div className="video-container">
+          <video autoPlay loop muted className="video-background">
+            <source src={video} type="video/mp4" />
+          </video>
+          <div className="background-overlay" style={{ display: 'grid', placeContent: 'center' }}>
+
+            <div className="row w-100 my-auto flex-row-reverse">
+              <div className="col-12 py-4 px-2 col-sm-6">
+                <div className="b-loja py-5 container shadow-lg border-white">
+                  <h1 className='text-white'>Loja Arotec</h1>
+                  <p className='text-white fs-5'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
+                  <br />
+                  <NavLink style={{zIndex: '9999999999'}} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
+ 
+                </div>
+              </div>
+              <div className="col-12 col-sm-6">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-primary py-3">
+          <div className="row container position-relative">
+            <div className="col-12 text-center col-md-12 position-relative col-lg-3 col-xl-2 col-xxl-2">
+
+              <img src={okupa} className='mx-auto' style={{ height: '10em', position: 'relative', zIndex: '9999' }} alt="Banner arobot" />
+
+            </div>
+            <div className="col-12 container px-2  col-md-12 col-lg-9 col-xl-10 col-xxl-10">
+              <div className="d-flex">
+                <div>
+                  <h2 className='text-white'>Kit de Robotica Arobot</h2>
+                  <p className='text-white fs-5'>
+                    O arobot é um kit de robotica educacional direcionado ou projetado para menores e usado para a formação de pequenos engenheiros.
+                  </p>
+                </div>
+                <div className='my-auto'> 
+                   <NavLink to={'/pt/produtos/store/3'} style={{zIndex: '9999999999'}} className="btn d-flex my-auto gap-3 border-white text-white bb btn-outline-white"> Encomendar <i className="bi bi-arrow-right"></i> </NavLink>
+ 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="overlay-container" style={{ display: 'grid', placeContent: 'center' }}>
           <div className="background-image" style={backgroundStyle}></div>
           <div className="content " >
@@ -266,14 +313,24 @@ const Home = ({ cart, nomee, emaill }) => {
           </div>
         </div>
         <div className=" b-cc row">
-          <div className="col-12 col-md-6 col-lg-6 col-xl-4 b-c">
+          <div className="col-12 col-md-6 col-lg-5 col-xl-4 b-c">
 
           </div>
-          <div className="col-12 container bg-secondary px-2 py-2 col-md-6 col-lg-6 col-xl-8">
-            <h1>Cursos Práticos</h1>
+          <div style={{ display: 'grid', placeContent: 'center' }} className="col-12 container ddd px-4 position-relative py-4 col-md-6 col-lg-7 col-xl-8">
+            <div className='b-c2'></div>
+            <div className=" text-center">
+              <Fade direction='right'>
+                <h1 className='text-white w-75 mx-auto'>Aprenda a projetar, montar e programar robôs com foco em eletrônica avançada.</h1>
+
+              </Fade>
+            </div>
+
+
+
+
           </div>
         </div>
-        <div className="bg-primary py-5">
+        {/* <div className="bg-primary py-5">
           <div className="container ">
             <div className="row">
               <div className="col-12 text-start car col-sm-6 col-lg-8">
@@ -291,10 +348,8 @@ const Home = ({ cart, nomee, emaill }) => {
               </div>
             </div>
           </div>
-        </div>
-        <br />
-        <br />
-        <div className='container'>
+        </div> */}
+        {/* <div className='container'>
           <div className="row">
             <div className="col-12 col-sm-6 col-lg-6">
               <h4>Ranking Top 5 vencedores</h4>
@@ -352,17 +407,13 @@ const Home = ({ cart, nomee, emaill }) => {
                 </div>
 
             }
-            {/* <div className="col-12 col-sm-5 text-center col-lg-4">
+            <div className="col-12 col-sm-5 text-center col-lg-4">
               <div className="my-auto">
                 <img className='w-100 okupa my-auto' src={okupa} alt="" />
               </div>
-            </div> */}
+            </div>
           </div>
-        </div>
-        <br />
-        <br />
-        <br />
-
+        </div> */}
         < Footer />
       </div>
       <CookieConsent
