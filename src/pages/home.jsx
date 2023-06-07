@@ -17,11 +17,18 @@ import okupa from '../imgs/okupalenda.png'
 import axios from 'axios';
 import Bandeira from '../components/bandeira';
 import { NavLink } from 'react-router-dom';
-
+import v1 from '../imgs/anims/av1.mp4'
 import peq_eng from '../imgs/banner-p.png';
 import arduino from '../imgs/arduino.jpeg';
 import eletronica from '../imgs/eletronica.jpeg';
 import OwlCarousel from 'react-owl-carousel';
+import Animat from '../components/animations';
+import a1 from '../imgs/anims/a1.jpg'
+import a2 from '../imgs/anims/a2.jpg'
+import a3 from '../imgs/anims/a3.jpg'
+import { Fade } from 'react-awesome-reveal';
+
+
 const Home = ({ cart, nomee, emaill }) => {
 
   const { user, handleLogout } = useContext(UserContext);
@@ -132,6 +139,32 @@ const Home = ({ cart, nomee, emaill }) => {
       setUser(userData);
     }
   }, []);
+  const [backgroundImage, setBackgroundImage] = useState(0);
+  const images = ['a1.jpg', 'a7.jpg', 'a3.jpg'];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBackgroundImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const backgroundStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/images/${images[backgroundImage]})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    filter: 'brightness(30%)',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '70%',
+  };
+
+
 
   return (
     <div className="w-100">
@@ -215,8 +248,31 @@ const Home = ({ cart, nomee, emaill }) => {
 
         <br />
         <BannerLoja />
-        <br />
-        <br />
+        <div className="overlay-container" style={{ display: 'grid', placeContent: 'center' }}>
+          <div className="background-image" style={backgroundStyle}></div>
+          <div className="content " >
+            <div className='my-auto'>
+              <Fade direction='up'>
+                <h1>ACADEMIA DE ROBOTICA</h1>
+              </Fade>
+
+              <Fade direction='up'>
+                <p className='w-md-75 mx-auto'>Explore a fascinante área da robótica através de nossos cursos online e presenciais.
+                  <br />
+                  Prepare-se para uma carreira emocionante e inovadora, dominando os conceitos e as técnicas mais recentes da indústria robótica.</p>
+                <button className='btn btn-outline-white'>ir para academia <i className="bi bi-arrow-right-short"></i></button>
+              </Fade>
+            </div>
+          </div>
+        </div>
+        <div className=" b-cc row">
+          <div className="col-12 col-md-6 col-lg-6 col-xl-4 b-c">
+
+          </div>
+          <div className="col-12 container bg-secondary px-2 py-2 col-md-6 col-lg-6 col-xl-8">
+            <h1>Cursos Práticos</h1>
+          </div>
+        </div>
         <div className="bg-primary py-5">
           <div className="container ">
             <div className="row">
@@ -228,7 +284,7 @@ const Home = ({ cart, nomee, emaill }) => {
                   Okupalenda está online, faça parte da comunidade
                 </p>
                 <br />
-                <NavLink to={'/ptokupalenda'} className="btn mt-auto border-white text-white">Começar o Jogo <i className="bi bi-arrow-right-"></i> </NavLink>
+                <NavLink to={'/pt/okupalenda'} className="btn mt-auto border-white text-white">Começar o Jogo <i className="bi bi-arrow-right-"></i> </NavLink>
               </div>
               <div style={{ display: 'grid', justifyContent: 'center' }} className="col-12 col-sm-6 col-lg-4">
                 <img className='w-100  my-auto' src={okupa} alt="" />

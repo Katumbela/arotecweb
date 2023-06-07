@@ -121,7 +121,7 @@ const Jogos = ({ cart, nomee, emaill }) => {
           use.name != '' ?
           
           <div>
-            <button className="btn rounded-3 btn-outline-info"><NavLink to={'/ptokupalenda/game'} className={'navlink text-dark'}>Start The Game</NavLink>
+            <button className="btn rounded-3 btn-outline-info"><NavLink to={'/pt/okupalenda/game'} className={'navlink text-dark'}>Start The Game</NavLink>
             </button> 
             <br />
             <span className="text-info">

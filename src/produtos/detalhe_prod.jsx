@@ -38,7 +38,7 @@ function Arobot (props) {
         <br />
         <div className="container text-start">
 
-        <NavLink to={'/ptloja'}><i className="bi bi-arrow-left"></i> Voltar</NavLink>
+        <NavLink to={'/pt/loja'}><i className="bi bi-arrow-left"></i> Voltar</NavLink>
         </div>
         <br />
         <br />

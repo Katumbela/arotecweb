@@ -99,7 +99,7 @@ const Header = (props) => {
     const currentPath = window.location.pathname;
 
     if (lang === 'en' && !currentPath.startsWith('/en')) {
-      const newPath = '/en' + currentPath;
+      const newPath = '/en';
       window.location.pathname = newPath;
     } else if (lang === 'pt' && currentPath.startsWith('/en')) {
       const newPath = currentPath.slice(3);
@@ -177,12 +177,14 @@ const Header = (props) => {
                     <div className="px-4 c-pointer f-26 text-primary" onClick={() => fecharMenu()}>
                         <span>&times;</span>
                     </div>
+                    
                     <ul>
                         <li><NavLink className="link d-flex justify-content-between" to="/pt/academia" style={({ isActive }) => isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}> Academia  <i className="bi bi-arrow-right-short"></i></NavLink></li>
                         <li><NavLink className="link d-flex justify-content-between" to="/pt/projectos" style={({ isActive }) => isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}> Projectos DIY <i className="bi bi-arrow-right-short"></i></NavLink></li>
                         <li><NavLink className="link d-flex justify-content-between" to="/pt/loja" style={({ isActive }) => isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}>Loja <i className="bi bi-arrow-right-short"></i></NavLink></li>
                         <li><NavLink className="link d-flex justify-content-between" to="/pt/empresas" style={({ isActive }) => isActive ? { color: '#0066be', borderBottom: '2px solid #0066be', paddingBottom: '6px' } : undefined}>Empresas <i className="bi bi-arrow-right-short"></i></NavLink></li>
                     </ul>
+
                     <div className="btns gap-3 ms-4 justify-content-between d-flex">
                         <NavLink to={'/pt/login'} className={'w-100'}>
                             <button className="btn w-100 btn-outline-primary">

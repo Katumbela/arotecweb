@@ -529,6 +529,7 @@ footer {
     transform: translateY(12px) scale(1.12);
   }
 }
+
 .okupa {
   animation: 2s okupa linear infinite;
 }
@@ -564,182 +565,197 @@ footer {
 
   .printing .d2 {
     font-size: 20px;
-    color: black!important;
+    color: black !important;
   }
+
   .printing .d3 {
     font-size: 18px;
   }
+
   .printing .d1 {
     font-size: 68px;
   }
-  .jog , .carousel .row .col-12 div h3 {
+
+  .jog,
+  .carousel .row .col-12 div h3 {
     font-size: 55px !important;
   }
-  
-  .j-p, .carousel .row .col-12 div p {
+
+  .j-p,
+  .carousel .row .col-12 div p {
     font-size: 25px !important;
     margin-bottom: 2rem;
   }
-  
+
   .b_code .row .col-12 div h3 {
-    font-size: 40px!important;
+    font-size: 40px !important;
   }
 
   .b_code .row .col-12 div p {
-    font-size: 20px!important;
+    font-size: 20px !important;
   }
 
-.emp {
-  background: url(./imgs/img1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 31em!important;
-  margin-top: 0rem!important;
+  .emp {
+    background: url(./imgs/img1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 31em !important;
+    margin-top: 0rem !important;
+  }
+
+  .acad {
+    background: url(./imgs/img_b1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 30em !important;
+    margin-top: 0rem !important;
+  }
+
+  .loja {
+    background: url(./imgs/img3.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 30em !important;
+    margin-top: 0rem !important;
+  }
+
+
 }
 
-.acad {
-  background: url(./imgs/img_b1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 30em!important;
-  margin-top: 0rem!important;
-}
-
-.loja {
-  background: url(./imgs/img3.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 30em!important;
-  margin-top: 0rem!important;
-}
-
-
-}
 @media (min-width: 1501px) {
 
   .printing .d1 {
     font-size: 90px;
   }
+
   .printing .d2 {
     font-size: 25px;
   }
+
   .printing .d3 {
     font-size: 25px;
   }
-  .jog, .carousel .row .col-12 div h3 {
-    font-size: 50px!important;
+
+  .jog,
+  .carousel .row .col-12 div h3 {
+    font-size: 50px !important;
     margin-top: 1vh;
   }
+
   .carousel .row .col-12 div button {
-    font-size: 20px!important;
-    margin-top: 3rem!important;
+    font-size: 20px !important;
+    margin-top: 3rem !important;
   }
-  
-  .j-p, .carousel .row .col-12 div p {
-    font-size: 20px!important;
+
+  .j-p,
+  .carousel .row .col-12 div p {
+    font-size: 20px !important;
     margin-bottom: 2rem;
   }
-  
-.emp {
-  background: url(./imgs/img1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 30em!important;
-  margin-top: 0rem!important;
+
+  .emp {
+    background: url(./imgs/img1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 30em !important;
+    margin-top: 0rem !important;
+  }
+
+  .acad {
+    background: url(./imgs/img_b1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 30em !important;
+    margin-top: 0rem !important;
+  }
+
+  .loja {
+    background: url(./imgs/img3.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 30em !important;
+    margin-top: 0rem !important;
+  }
+
+
+  .b_code {
+    background: linear-gradient(0deg, #df8b03fe, #df8b03cc, #df8b03cc, transparent, transparent), url(./imgs/unitel1.jpg) center center;
+    background-size: cover;
+  }
+
+
+  .b_code .bb {
+    font-size: 20px !important;
+
+  }
 }
 
-.acad {
-  background: url(./imgs/img_b1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 30em!important;
-  margin-top: 0rem!important;
-}
-
-.loja {
-  background: url(./imgs/img3.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 30em!important;
-  margin-top: 0rem!important;
-}
-
-
-.b_code {
-  background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(./imgs/unitel1.jpg) center center; 
-  background-size: cover;
-}
-
-
-.b_code .bb {
-  font-size: 20px !important;
-
-}
-}
 .bg-primary {
-  background: linear-gradient(to right, #289bff, #003d82e9) ;
+  background: linear-gradient(to right, #289bff, #003d82e9);
 }
 
 @media (min-width: 1801px) {
 
-  .jog, .carousel .row .col-12 div h3 {
-    font-size: 120px!important;
+  .jog,
+  .carousel .row .col-12 div h3 {
+    font-size: 120px !important;
     margin-top: 1vh;
   }
+
   .carousel .row .col-12 div button {
-    font-size: 50px!important;
-    margin-top: 3rem!important;
+    font-size: 50px !important;
+    margin-top: 3rem !important;
   }
-  
+
   .carousel .row .col-12 div p {
-    font-size: 50px!important;
+    font-size: 50px !important;
     margin-bottom: 2rem;
   }
-  
-.emp {
-  background: url(./imgs/img1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 80em!important;
-  margin-top: 0rem!important;
-}
 
-.acad {
-  background: url(./imgs/img_b1.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 80em!important;
-  margin-top: 0rem!important;
-}
+  .emp {
+    background: url(./imgs/img1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 80em !important;
+    margin-top: 0rem !important;
+  }
 
-.loja {
-  background: url(./imgs/img3.png);
-  background-position: center!important;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 80em!important;
-  margin-top: 0rem!important;
-}
+  .acad {
+    background: url(./imgs/img_b1.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 80em !important;
+    margin-top: 0rem !important;
+  }
 
-
-.b_code {
-  background: linear-gradient(0deg, #df8b03fe,#df8b03cc,#df8b03cc, transparent,transparent), url(./imgs/unitel1.jpg) center center; 
-  background-size: cover;
-}
+  .loja {
+    background: url(./imgs/img3.png);
+    background-position: center !important;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    height: 80em !important;
+    margin-top: 0rem !important;
+  }
 
 
-.b_code .bb {
-  font-size: 50px;
+  .b_code {
+    background: linear-gradient(0deg, #df8b03fe, #df8b03cc, #df8b03cc, transparent, transparent), url(./imgs/unitel1.jpg) center center;
+    background-size: cover;
+  }
 
-}
+
+  .b_code .bb {
+    font-size: 50px;
+
+  }
 }
 
 .car .bg-primary {
@@ -753,9 +769,11 @@ footer {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -772,4 +790,76 @@ footer {
   height: 2em;
   width: 2em;
   border: 1px solid #0066be;
+}
+
+
+
+h1 {
+  font-size: 3.2vw;
+  /* Tamanho da fonte para o cabeçalho h1 */
+}
+
+p {
+  font-size: 1.4vw;
+  /* Tamanho da fonte para parágrafos */
+}
+
+.button {
+  font-size: 1.6vw;
+  /* Tamanho da fonte para botões */
+}
+
+
+.overlay-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-image: url('./imgs/anims/a7.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(30%);
+
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #d3d2d2;
+  padding: 20px;
+  display: grid;
+  place-content: center !important;
+}
+
+
+@media (min-width: 766px) {
+  .w-md-75 {
+    width: 70%;
+  }
+
+  .w-md-75 p {
+    color: gray;
+  }
+}
+
+.b-cc {
+  height: 70vh;
+
+}
+
+.b-c {
+  background: url('./imgs/anims/a4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+  filter: brightness(60%);
+
 }
