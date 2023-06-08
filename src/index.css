@@ -853,6 +853,19 @@ p {
 
 @media (max-width: 750px) {
 
+  .w-75 {
+    width: 90%;
+  }
+
+
+.b-loja {
+  background: #006dcd !important;
+  height: 75vh;
+  width: 50vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
   h1 {
     font-size: 7.2vw;
     /* Tamanho da fonte para o cabeçalho h1 */
