@@ -140,6 +140,8 @@ const Home = ({ cart, nomee, emaill }) => {
       setUser(userData);
     }
   }, []);
+
+  
   const [backgroundImage, setBackgroundImage] = useState(0);
   const images = ['a1.jpg', 'a7.jpg', 'a3.jpg'];
 
@@ -258,13 +260,16 @@ const Home = ({ cart, nomee, emaill }) => {
 
             <div className="row w-100 my-auto flex-row-reverse">
               <div className="col-12 py-4 px-2 col-sm-6">
-                <div className="b-loja py-5 container shadow-lg border-white">
-                  <h1 className='text-white'>Loja Arotec</h1>
-                  <p className='text-white fs-5'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
-                  <br />
-                  <NavLink style={{zIndex: '9999999999'}} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
- 
-                </div>
+                <Fade direction='right' delay={2000}>
+
+                  <div className="b-loja py-5 container shadow-lg border-white">
+                    <h1 className='text-white'>Loja Arotec</h1>
+                    <p className='text-white fs-5'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
+                    <br />
+                    <NavLink style={{ zIndex: '9999999999' }} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
+
+                  </div>
+                </Fade>
               </div>
               <div className="col-12 col-sm-6">
 
@@ -279,17 +284,17 @@ const Home = ({ cart, nomee, emaill }) => {
               <img src={okupa} className='mx-auto' style={{ height: '10em', position: 'relative', zIndex: '9999' }} alt="Banner arobot" />
 
             </div>
-            <div className="col-12 container px-2  col-md-12 col-lg-9 col-xl-10 col-xxl-10">
-              <div className="d-flex">
+            <div className="col-12 container ps-2  col-md-12 col-lg-9 col-xl-10 col-xxl-10">
+              <div className="d-flex justify-content-between">
                 <div>
                   <h2 className='text-white'>Kit de Robotica Arobot</h2>
                   <p className='text-white fs-5'>
                     O arobot é um kit de robotica educacional direcionado ou projetado para menores e usado para a formação de pequenos engenheiros.
                   </p>
                 </div>
-                <div className='my-auto'> 
-                   <NavLink to={'/pt/produtos/store/3'} style={{zIndex: '9999999999'}} className="btn d-flex my-auto gap-3 border-white text-white bb btn-outline-white"> Encomendar <i className="bi bi-arrow-right"></i> </NavLink>
- 
+                <div className='my-auto'>
+                  <NavLink to={'/pt/produtos/store/3'} style={{ zIndex: '9999999999' }} className="btn d-flex my-auto gap-3 border-white text-white bb btn-outline-white"> Encomendar <i className="bi bi-arrow-right"></i> </NavLink>
+
                 </div>
               </div>
             </div>
@@ -324,12 +329,26 @@ const Home = ({ cart, nomee, emaill }) => {
 
               </Fade>
             </div>
-
-
-
-
           </div>
         </div>
+
+        <div style={{ display: 'grid', placeContent: 'center' }} className="col-12  ddd px-4 position-relative py-4">
+          <div className='b-c3'></div>
+          <div className=" text-center">
+            <Fade direction='up' >
+              <h1 className='text-primary  fs-1 '>Projectos DIY</h1>
+            </Fade>
+            <Fade direction='up'>
+              <div className="line"></div>
+            </Fade>
+            <Fade direction='up'>
+              <p className='w-75 fs-3 mx-auto'>Encontre projectos relacionados à robótica e tecnologia em projectos diy da arotec, você tambem pode adicionar seu projecto.</p>
+              <NavLink to={'/pt/projectos'} className="btn btn-outline-primary">Ver projectos <i className="bi bi-arrow-right-short"></i></NavLink>
+            </Fade>
+          </div>
+        </div>
+
+
         {/* <div className="bg-primary py-5">
           <div className="container ">
             <div className="row">

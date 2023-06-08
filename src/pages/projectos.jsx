@@ -85,8 +85,7 @@ function Projectos({ nomee, emaill, cart }) {
 
      
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
+     
       <BannerPreto>
         PROJECTOS DIY | AROTEC
       </BannerPreto>
