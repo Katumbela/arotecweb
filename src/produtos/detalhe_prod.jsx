@@ -25,7 +25,7 @@ function Arobot (props) {
         setHoveredImage(null);
       }
             
-
+document.title =`Encomenda de ${pp[0].tit}`
     return (
         <>
   <div className='destaque '>

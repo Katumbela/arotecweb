@@ -18,14 +18,20 @@ const Search = (props) => {
 const filteredItems = produtos.filter(item => item.tit.toString().toLowerCase().indexOf(searchTerm.toString().toLowerCase()) !== -1);
 const filteredCursos = cursos.filter(curso => curso.curso.toString().toLowerCase().indexOf(searchTerm.toString().toLowerCase()) !== -1);
 
+
+document.title = 'Search Products & Courses | AROTEC'
     return (
       <div className='bg-light'>
       <Header   nomee={nomee} emaill={emaill} cart={cart} />
       <div className="container">
         <br />
-        <h4 className='mb-3'>Procura por algo ?</h4>
+        <br />
+        <br />
+        <br />
+        <br />
+        <h4 className='mb-3'>Looking for something?</h4>
         <div className="d-flex">
-        <input type="search" name="" value={searchTerm} onChange={handleSearchInputChange} id="" placeholder='Faça uma pesquisa' className=" form-control" />
+        <input type="search" name="" value={searchTerm} onChange={handleSearchInputChange} id="" placeholder='Search for something' className=" form-control" />
        <button className="btn btn-primary">
         <i className="bi bi-search"></i>
        </button>
@@ -51,11 +57,11 @@ const filteredCursos = cursos.filter(curso => curso.curso.toString().toLowerCase
           }
 {/* || filteredCursos == 0 */}
 
-      {filteredItems == 0  && <center><span className='mx-auto text-secondary'>Não foi encontrado um outro resultado</span></center>}
+      {filteredItems == 0  && <center><span className='mx-auto text-secondary'>No other result found</span></center>}
         
       {searchTerm.length == '' && <center><span className='mx-auto text-secondary'>
         <br />
-        <center><span className='mx-auto text-primary'>Olá, faça uma pesquisa!</span></center>
+        <center><span className='mx-auto text-primary'>Hello, do a search!</span></center>
         <br /><br /><br /><br /><br /><br /><br /><br /><br />
       </span></center>}
         

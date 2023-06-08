@@ -39,7 +39,7 @@ const Destaque = () => {
       title: 'Industrial Mechanics Course',
       image: mecanica,
       update: 'Last Update: Jun 06, 2023',
-      duration: '3 weeks',
+      duration: '4 weeks',
       price: '30.000 AOA',
       link: '/en/academy/course/arotec/2026'
     },

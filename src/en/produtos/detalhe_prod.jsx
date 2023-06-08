@@ -24,6 +24,9 @@ function Arobot (props) {
       function handleMouseLeave(e) {
         setHoveredImage(null);
       }
+
+
+      document.title =`Order of ${pp[0].tit}`
             
 
     return (

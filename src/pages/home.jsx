@@ -141,7 +141,7 @@ const Home = ({ cart, nomee, emaill }) => {
     }
   }, []);
 
-  
+
   const [backgroundImage, setBackgroundImage] = useState(0);
   const images = ['a1.jpg', 'a7.jpg', 'a3.jpg'];
 
@@ -180,9 +180,9 @@ const Home = ({ cart, nomee, emaill }) => {
         < Banners />
         <br />
         <br />
-        {/* <Destaque /> */}
+        <Destaque />
 
-        <div className='destaque container text-center'>
+        {/* <div className='destaque container text-center'>
           <div className="text-start">
             <h1 claxssName='text-primary'>Explore os cursos na academia </h1>
             <p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias AROTEC e on-line em nossa plataforma</p>
@@ -246,7 +246,7 @@ const Home = ({ cart, nomee, emaill }) => {
             </OwlCarousel>
           </div>
 
-        </div>
+        </div> */}
         <br />
 
         <br />

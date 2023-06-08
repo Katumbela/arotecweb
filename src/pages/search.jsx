@@ -23,6 +23,10 @@ const filteredCursos = cursos.filter(curso => curso.curso.toString().toLowerCase
       <Header   nomee={nomee} emaill={emaill} cart={cart} />
       <div className="container">
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h4 className='mb-3'>Procura por algo ?</h4>
         <div className="d-flex">
         <input type="search" name="" value={searchTerm} onChange={handleSearchInputChange} id="" placeholder='Faça uma pesquisa' className=" form-control" />

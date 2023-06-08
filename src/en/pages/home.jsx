@@ -163,13 +163,13 @@ const Home = ({ cart, nomee, emaill }) => {
 
             <div className="row w-100 my-auto flex-row-reverse">
               <div className="col-12 py-4 px-2 col-sm-6">
-                <Fade direction='right' delay={2000}>
+                <Fade direction='right' delay={3000}>
 
                   <div className="b-loja py-5 container shadow-lg border-white">
-                    <h1 className='text-white'>Loja Arotec</h1>
-                    <p className='text-white fs-5'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
+                    <h1 className='text-white'>Arotec Store</h1>
+                    <p className='text-white fs-5'>Devices and electronics available for project development and support. From electronic components to assembled devices.</p>
                     <br />
-                    <NavLink style={{ zIndex: '9999999999' }} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
+                    <NavLink style={{ zIndex: '9999999999' }} to={'/en/store'} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> See All Products</NavLink>
 
                   </div>
                 </Fade>
@@ -190,13 +190,13 @@ const Home = ({ cart, nomee, emaill }) => {
             <div className="col-12 container ps-2  col-md-12 col-lg-9 col-xl-10 col-xxl-10">
               <div className="d-flex justify-content-between">
                 <div>
-                  <h2 className='text-white'>Kit de Robotica Arobot</h2>
+                  <h2 className='text-white'>Arobot Robotics Kit</h2>
                   <p className='text-white fs-5'>
-                    O arobot é um kit de robotica educacional direcionado ou projetado para menores e usado para a formação de pequenos engenheiros.
+                  The arobot is an educational robotics kit targeted or designed for minors and used for training young engineers.
                   </p>
                 </div>
                 <div className='my-auto'>
-                  <NavLink to={'/pt/produtos/store/3'} style={{ zIndex: '9999999999' }} className="btn d-flex my-auto gap-3 border-white text-white bb btn-outline-white"> Encomendar <i className="bi bi-arrow-right"></i> </NavLink>
+                  <NavLink to={'/en/products/store/3'} style={{ zIndex: '9999999999' }} className="btn d-flex my-auto gap-3 border-white text-white bb btn-outline-white"> Order <i className="bi bi-arrow-right"></i> </NavLink>
 
                 </div>
               </div>
@@ -208,14 +208,14 @@ const Home = ({ cart, nomee, emaill }) => {
           <div className="content " >
             <div className='my-auto'>
               <Fade direction='up'>
-                <h1>ACADEMIA DE ROBOTICA</h1>
+                <h1>ROBOTIC ACADEMY</h1>
               </Fade>
 
               <Fade direction='up'>
-                <p className='w-md-75 mx-auto'>Explore a fascinante área da robótica através de nossos cursos online e presenciais.
+                <p className='w-md-75 mx-auto'>Explore the fascinating field of robotics through our online and face-to-face courses.
                   <br />
-                  Prepare-se para uma carreira emocionante e inovadora, dominando os conceitos e as técnicas mais recentes da indústria robótica.</p>
-                <button className='btn btn-outline-white'>ir para academia <i className="bi bi-arrow-right-short"></i></button>
+                  Prepare for an exciting and innovative career by mastering the latest concepts and techniques in the robotics industry.</p>
+                <NavLink to={'/pt/academia'} className='btn btn-outline-white'>Go to academy <i className="bi bi-arrow-right-short"></i></NavLink>
               </Fade>
             </div>
           </div>
@@ -228,7 +228,7 @@ const Home = ({ cart, nomee, emaill }) => {
             <div className='b-c2'></div>
             <div className=" text-center">
               <Fade direction='right'>
-                <h1 className='text-white w-75 mx-auto'>Aprenda a projetar, montar e programar robôs com foco em eletrônica avançada.</h1>
+                <h1 className='text-white w-75 mx-auto'>Learn to design, assemble and program robots with a focus on advanced electronics.</h1>
 
               </Fade>
             </div>
@@ -239,14 +239,14 @@ const Home = ({ cart, nomee, emaill }) => {
           <div className='b-c3'></div>
           <div className=" text-center">
             <Fade direction='up' >
-              <h1 className='text-primary  fs-1 '>Projectos DIY</h1>
+              <h1 className='text-primary  fs-1 '> DIY Projects</h1>
             </Fade>
             <Fade direction='up'>
               <div className="line"></div>
             </Fade>
             <Fade direction='up'>
-              <p className='w-75 fs-3 mx-auto'>Encontre projectos relacionados à robótica e tecnologia em projectos diy da arotec, você tambem pode adicionar seu projecto.</p>
-              <NavLink to={'/pt/projectos'} className="btn btn-outline-primary">Ver projectos <i className="bi bi-arrow-right-short"></i></NavLink>
+              <p className='w-75 fs-3 mx-auto'>Find projects related to robotics and technology in arotec diy projects, you can also add your project.</p>
+              <NavLink to={'/en/projects'} className="btn btn-outline-primary">See the projects <i className="bi bi-arrow-right-short"></i></NavLink>
             </Fade>
           </div>
         </div>

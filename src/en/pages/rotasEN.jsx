@@ -58,7 +58,7 @@ const RotasEN = (props) => {
                     <Route element={<BuyNow nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/comprar_agora/:id" exact />
                     <Route element={<Aplicar nomee={nomee} emaill={emaill} cart={cart} handleClick={handleClick} />} path="/en/apply/:id" exact />
                     <Route element={<CriarConta />} path="/en/signup" exact />
-                    <Route element={<Search nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/ens/" exact />
+                    <Route element={<Search nomee={nomee} emaill={emaill} adicionar={adicionar} remover={remover} handleClick={handleClick} cart={cart} />} path="/en/s/" exact />
                     <Route element={<Politicas nomee={nomee} emaill={emaill} cart={cart} />} path="/en/politicas_de_privacidade" exact />
                     <Route element={<Formulario nomee={nomee} emaill={emaill} cart={cart} />} path="/en/formulario/curso/:id" exact />
                     <Route element={<AppVaga nomee={nomee} emaill={emaill} cart={cart} />} path="/en/application/submit/:id" exact />

@@ -157,7 +157,7 @@ const Header = (props) => {
                                 <i style={{ fontSize: "21px" }} className="bi bi-cart text-secondary"></i>
                             </div>
                         </NavLink>
-                        <NavLink to={'/pts/'}>
+                        <NavLink to={'/en/s/'}>
                             <i className="bi bi-search mt-2 f-1 text-secondary"></i>
                         </NavLink>
                     </div>
