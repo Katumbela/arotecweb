@@ -181,8 +181,7 @@ const Home = ({ cart, nomee, emaill }) => {
 
 
       < Header style={{ marginBottom: '5rem' }} nomee={nomee} emaill={emaill} cart={cart} />
-      <br />
-      <br />
+     
       <div className="s">
         < Banners />
         <br />
@@ -273,7 +272,7 @@ const Home = ({ cart, nomee, emaill }) => {
                     <h1 className='text-white'>Loja Arotec</h1>
                     <p className='text-white fs-5'>Dispositivos e eletrônicos disponíveis para desenvolvimento e suporte de projetos. De componentes eletrônicos a dispositivos montados.</p>
                     <br />
-                    <NavLink style={{ zIndex: '9999999999' }} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
+                    <NavLink to={'/pt/loja'} style={{ zIndex: '9999999999' }} className="btn border-white text-white bb btn-outline-white"> <i className="bi bi-shop"></i> Ver Todos Produtos</NavLink>
 
                   </div>
                 </Fade>
@@ -319,7 +318,7 @@ const Home = ({ cart, nomee, emaill }) => {
                 <p className='w-md-75 mx-auto'>Explore a fascinante área da robótica através de nossos cursos online e presenciais.
                   <br />
                   Prepare-se para uma carreira emocionante e inovadora, dominando os conceitos e as técnicas mais recentes da indústria robótica.</p>
-                <button className='btn btn-outline-white'>ir para academia <i className="bi bi-arrow-right-short"></i></button>
+                <NavLink to={'/pt/academia'} className='btn btn-outline-white'>ir para academia <i className="bi bi-arrow-right-short"></i></NavLink>
               </Fade>
             </div>
           </div>
@@ -375,6 +374,7 @@ const Home = ({ cart, nomee, emaill }) => {
             </div>
           </div>
         </div> */}
+
         {/* <div className='container'>
           <div className="row">
             <div className="col-12 col-sm-6 col-lg-6">

@@ -88,6 +88,7 @@ const Destaque = () => {
         <br />
         <br />
       </div>
+      
       <div className="slide-container o-auto d-flex gap-3">
         {slides.map((slide, index) => (
           <div key={index} className={`slide ${index === currentSlide ? 'active' : ''}`}>
