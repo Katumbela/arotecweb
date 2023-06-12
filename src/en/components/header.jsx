@@ -105,7 +105,7 @@ const Header = (props) => {
     
 
     return (
-        <div className={`navbar`}>
+        <div className={``}>
             <header className='bg-white w-100 position-relative'>
                 <div className=" bg-primary ">
                     <div className="d-flex dados py-2 container justify-content-between f-12 text-white">
