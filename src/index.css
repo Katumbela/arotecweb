@@ -1011,5 +1011,5 @@ p {
 }
 
 .o-auto {
-  overflow-x: auto !important;
+  overflow-x: scroll !important;
 }
