@@ -9,7 +9,7 @@ import Banners from '../components/banners';
 import Destaque from '../components/cursos_destaque';
 import BannerLoja from '../components/banner_loja';
 import CookieConsent from 'react-cookie-consent';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { UserContext } from './userContext';
 import firebase from 'firebase/compat/app';
 import { db } from './firebase';
@@ -167,6 +167,13 @@ const Home = ({ cart, nomee, emaill }) => {
     height: '70vh',
   };
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  }, []);
 
 
   return (
@@ -253,7 +260,7 @@ const Home = ({ cart, nomee, emaill }) => {
         {/* <BannerLoja /> */}
         <br />
         <div className="video-container">
-          <video autoPlay loop muted className="video-background">
+          <video ref={videoRef} autoPlay loop muted className="video-background">
             <source src={video} type="video/mp4" />
           </video>
           <div className="background-overlay" style={{ display: 'grid', placeContent: 'center' }}>

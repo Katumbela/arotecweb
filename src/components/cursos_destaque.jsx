@@ -79,16 +79,16 @@ const Destaque = () => {
     <div className="carousel container">
       <div className="text-start">
 
-<h1 claxssName='text-primary'>Explore os cursos disponíveis na academia </h1>
-<p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias arotec e online em nossa plataforma.</p>
-<NavLink to="/en/academy" className="navlink">
-  <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
-</NavLink>
-<br />
-<br />
-<br />
-</div>
-      <div className="slide-container d-flex gap-3">
+        <h1 claxssName='text-primary'>Explore os cursos disponíveis na academia </h1>
+        <p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias arotec e online em nossa plataforma.</p>
+        <NavLink to="/en/academy" className="navlink">
+          <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
+        </NavLink>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div className="slide-container o-auto d-flex gap-3">
         {slides.map((slide, index) => (
           <div key={index} className={`slide ${index === currentSlide ? 'active' : ''}`}>
             <NavLink to={slide.link} className="link">
@@ -108,9 +108,6 @@ const Destaque = () => {
             </NavLink>
           </div>
         ))}
-      </div>
-      <div className="controls">
-      
       </div>
       <br /><br />
     </div>
