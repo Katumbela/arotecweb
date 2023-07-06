@@ -81,7 +81,7 @@ const Destaque = () => {
 
         <h1 claxssName='text-primary'>Explore os cursos disponíveis na academia </h1>
         <p className='text-secondary'>{use.name != '' ? use.name + ' veja os' : ""} Cursos disponíveis presencialmente nas academias arotec e online em nossa plataforma.</p>
-        <NavLink to="/en/academy" className="navlink">
+        <NavLink to="/pt/academia" className="navlink">
           <button className="btn btn-outline-primary bb"> <i className="bi bi-mortarboard"></i> Ir para academia</button>
         </NavLink>
         <br />

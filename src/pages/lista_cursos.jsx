@@ -15,9 +15,9 @@ import ia from '../imgs/ia2.webp'
 const cursos = [
     {
         id: 2021,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Pequeno Engenheiro",
-        duracao: "2 semanas cada Módulo",
+        duracao: "2 semanas/ Módulo",
         preco: "15.000 Kz / Módulo",
         img: peq_eng,
         desc: "O curso pequeno engenheiro permite a crianças dos 7 aos 14 anos ter uma boa introdução ao mundo de ctem (ciência, tecnologias, engenharia e matemáticas).A criança vai ter experencia pratica com várias tecnologias como robótica, impressão 3d, drones e outros.",
@@ -31,7 +31,7 @@ const cursos = [
     },
     {
         id: 2022,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Robótica módulo 1",
         duracao: "4 semanas",
         preco: "30.000 Kz ",
@@ -47,7 +47,7 @@ const cursos = [
     },
     {
         id: 2023,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Robótica módulo 2",
         duracao: "4 semanas",
         preco: "35.000 Kz",
@@ -63,7 +63,7 @@ const cursos = [
     },
     {
         id: 2024,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Arduíno",
         duracao: "4 semanas",
         preco: "30.000 Kz ",
@@ -80,7 +80,7 @@ const cursos = [
     },
     {
         id: 2025,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Electrônica",
         duracao: "4 semanas",
         preco: "30.000 Kz ",
@@ -96,7 +96,7 @@ const cursos = [
     },
     {
         id: 2026,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Mecânica e Electrônica Industrial",
         duracao: "4 semanas",
         preco: "30.000 Kz ", 
@@ -111,28 +111,12 @@ const cursos = [
         review: 5
     },
     {
-        id: 2027,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
-        curso: "Introdução a Inteligência artificial",
-        duracao: "4 semanas",
-        preco: "50.000 Kz ",
-        img: sec,
-        desc: "O curso de inteligência artificial da uma introdução nas áreas de inteligência artificial com foco em sua aplicação e diversas técnicas como logica fuzzy, regressão.",
-        tools1: "Computador",
-        tools2: "Internet",
-        tools3: "Projectora",
-        tools4: "Outrem",
-        teacher: "",
-        categoria: "IT & Tecnologia",
-        review: 5
-    },
-    {
         id: 2028,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 23 jun. 2023",
         curso: "Curso de Programação em Python",
         duracao: "4 semanas",
         preco: "30.000 Kz",
-        img: web,
+        img: python,
         desc: "Este curso é direcionado para aqueles que possam ter conhecimento algum na matéria e queiram aprofundar mais o seu conhecimento e dar suporte nos seus projectos",
         tools1: "Computador",
         tools2: "slides",
@@ -144,7 +128,7 @@ const cursos = [
     },
     {
         id: 2029,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Criação de Jogos em Scracth",
         duracao: "4 semanas",
         preco: "15.000 Kz ",
@@ -160,10 +144,10 @@ const cursos = [
     },
     {
         id: 2030,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Criação de Aplicativos",
         duracao: "4 semanas",
-        preco: "30.000 Kz ",
+        preco: "15.000 Kz ",
         img: app,
         desc: "Um curso que enisina a base por tras da criação dos aplicativos e dá o conhecimento necessário para que o formando no fim do curso esteja capacitado de criar os seus próprios aplicativos",
         tools1: "Computador",
@@ -175,12 +159,12 @@ const cursos = [
         review: 5
     },
     {
-        id: 2030,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        id: 2031,
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Criacão do meu primeiro site",
         duracao: "4 semanas",
         preco: "30.000 Kz ",
-        img: app,
+        img: web,
         desc: "Um curso que enisina a base por tras da criação de sites e dá o conhecimento necessário para que o formando no fim do curso esteja capacitado de criar os seus próprios aplicativos web e derivados",
         tools1: "Computador",
         tools2: "Internet",
@@ -192,8 +176,8 @@ const cursos = [
     },
     
     {
-        id: 2031,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        id: 2032,
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Inteligencia artificial com Python ",
         duracao: "4 semanas",
         preco: "50.000 Kz ",
@@ -209,8 +193,8 @@ const cursos = [
     },
     
     {
-        id: 2032,
-        lastUpdate: "Últ. actualização: 23 jan. 2023",
+        id: 2033,
+        lastUpdate: "Últ. actualização: 04 jul. 2023",
         curso: "Curso de Impressão 3D",
         duracao: "1 semana",
         preco: "15.000 Kz ",

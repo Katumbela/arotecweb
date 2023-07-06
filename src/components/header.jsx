@@ -3,9 +3,10 @@ import logo from '../imgs/icone.png';
 import cart from '../imgs/carrinho.png';
 import '../css/header.css';
 import { NavLink } from 'react-router-dom';
-import { UserContext } from '../pages/userContext';
 import firebase from 'firebase/compat/app';
 import en from '../en/imgs/uk.png'
+
+
 const Header = (props) => {
     const [use, setUser] = useState([]);
 
@@ -58,7 +59,6 @@ const Header = (props) => {
         }
     }, []);
 
-    const { user, handleLogout, push } = useContext(UserContext);
     const { nomee, emaill, cart } = props;
 
     let preco = 0;

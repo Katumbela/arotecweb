@@ -31,6 +31,7 @@ import Jogos from "./jogo";
 import Quiz from "./okupalenda";
 import VerP from "./ver_project";
 import NotFoundPage from "./notfound";
+import Watch from "./watchList";
 
 
 const RotasPT = (props) => {
@@ -53,7 +54,8 @@ const RotasPT = (props) => {
                     <Route element={<Sobre  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/sobre" exact />
                     <Route element={<Carreiras emaill={emaill} nomee={nomee} cart={cart} />} path="/pt/carreiras" exact />
                     <Route element={<UnitelCode  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/unitel_code_robotica_inscricao" exact />
-                    <Route element={<PlayList  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/aulas/:curso" exact />
+                    <Route element={<PlayList  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/cursos/arotec/pequeno_engenheiro" exact />
+                    <Route element={<Watch  nomee={nomee} emaill={emaill} cart={cart} />} path="/pt/curso/arotec/watch/aula" exact />
                     <Route element={<Login emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/pt/login" exact />
                     <Route element={<MeusC cart={cart}  emaill={emaill} setEmaill = {setEmaill} nomee={nomee} setNomee={setNomee}  />} path="/pt/meus_cursos" exact />
                     <Route element={<LoginPage />} path="/pt/loginn" exact />

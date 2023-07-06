@@ -1,41 +1,186 @@
-import React, { useState, useEffect } from 'react';
-import { db, storage } from './firebase';
+import '../App.css';
+// Bootstrap CSS
+// Bootstrap Bundle JS
+import Header from '../components/header';
+import bb from '../imgs/logo.png';
+import esc from '../imgs/escola.png';
+import Footer from '../components/footer';
+import Cursos from '../components/academia/cursos_disponiveis';
+import { useEffect, useState } from 'react';
+import firebase from 'firebase/compat/app';
+import { NavLink } from 'react-router-dom';
+import { db } from './firebase';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import Grafico from '../components/grafico';
+import DonutChart from '../components/grafico';
 
-const storageRef = storage.ref();
+function PlayList({ nomee, emaill, cart }) {
+  document.title = 'Meu Dashboard | AROTEC';
+  const [use, setUser] = useState([]);
 
-function PlayList() {
-  const [videos, setVideos] = useState([]);
+  const [ph, setPh] = useState('')
+
+
 
   useEffect(() => {
+    // Adicione um listener para o estado da autenticação
+    const unsubscribe = firebase.auth().onAuthStateChanged((user) => {
+      if (!user) {
+        // Se não houver usuário autenticado, redirecione para a página de login
+
+        const userData = {
+          name: '',
+          email: '',
+          pictureUrl: '',
+          tel: '',
+          uid: '',
+        }
+
+        localStorage.setItem('user', JSON.stringify(userData));
+
+      }
+    });
 
 
-    const directoryRef = storageRef.child('projectos');
-
-
-    directoryRef.listAll()
-      .then(res => {
-        const videoFiles = res.items.filter(itemRef => itemRef.contentType.startsWith('video/'));
-        setVideos(videoFiles);
-      })
-      .catch(error => {
-        console.error(error);
-      });
+    // Retorne uma função de limpeza para remover o listener quando o componente for desmontado
+    return unsubscribe;
   }, []);
 
 
+  useEffect(() => {
+    // Obtém o valor de 'user' do local storage quando o componente for montado
+    const userString = localStorage.getItem('user');
+    if (userString) {
+      const user = JSON.parse(userString);
+      setUser(user);
+      setPh(user.photo);
+    }
+    else {
+      const userData = {
+        name: '',
+        email: '',
+        pictureUrl: '',
+        tel: '',
+        uid: '',
+      }
+      setUser(userData);
+    }
+  }, []);
+
+
+  const [cursos, setCursos] = useState([]);
+
+  useEffect(() => {
+    const getProjetos = async () => {
+      try {
+        const projetosCollection = collection(db, 'inscricao');
+        const projetosQuery = query(projetosCollection, where('email', '==', 'ja3328173@gmail.com'));
+        const projetosSnapshot = await getDocs(projetosQuery);
+        const projetosData = projetosSnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setCursos(projetosData);
+
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getProjetos();
+  }, []);
+
+
+  const aproveitamento = 75; // Porcentagem de aproveitamento do estudante
+
+
+
   return (
-    <div>
-      <h1>Vídeos no Storage do Firebase:</h1>
-      <ul>
-        {videos.map((video, index) => (
-          <li key={index}>
-            {/* <video width="320" height="240" controls> */}
-              <img src={video.getDownloadURL()} type={video.contentType} />
-              Your browser does not support the video tag.
-            {/* </video> */}
-          </li>
-        ))}
-      </ul>
+    <div className="bg-light w-100">
+
+
+      < Header style={{ marginBottom: '5rem' }} nomee={nomee} emaill={emaill} cart={cart} />
+
+
+      <main className="container">
+        <br />
+        <a href="/pt/meus_cursos"> <i className="bi bi-arrow-left-short"></i> Voltar</a>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+            <div className="card-cur">
+              <NavLink to={'/pt/curso/arotec/watch/aula'} style={{textDecoration:'none'}} className="card w-100">
+                <img src={esc} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <p className="card-text">
+                    <h5 style={{textDecoration:'underline'}} >Aula 1: Introdução ao curso</h5>
+                  </p>
+                  <span className="text-secondary f-12">Aula de introdução ao curso de pequenos engenheiros</span>
+                </div>
+              </NavLink>
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+            <div className="card-cur">
+              <NavLink to={'/pt/curso/arotec/watch/aula'} style={{textDecoration:'none'}} className="card w-100">
+                <img src={esc} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <p className="card-text">
+                    <h5 style={{textDecoration:'underline'}} >Aula 2: Introdução ao curso</h5>
+                  </p>
+                  <span className="text-secondary f-12">Aula de introdução ao curso de pequenos engenheiros</span>
+                </div>
+              </NavLink>
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+            <div className="card-cur">
+              <NavLink to={'/pt/curso/arotec/watch/aula'} style={{textDecoration:'none'}} className="card w-100">
+                <img src={esc} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <p className="card-text">
+                    <h5 style={{textDecoration:'underline'}} >Aula 3: Introdução ao curso</h5>
+                  </p>
+                  <span className="text-secondary f-12">Aula de introdução ao curso de pequenos engenheiros</span>
+                </div>
+              </NavLink>
+            </div>
+          </div>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+            <div className="card-cur">
+              <NavLink to={'/pt/curso/arotec/watch/aula'} style={{textDecoration:'none'}} className="card w-100">
+                <img src={esc} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <p className="card-text">
+                    <h5 style={{textDecoration:'underline'}} >Aula 4: Introdução ao curso</h5>
+                  </p>
+                  <span className="text-secondary f-12">Aula de introdução ao curso de pequenos engenheiros</span>
+                </div>
+              </NavLink>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+      </main>
+      < Footer />
+
     </div>
   );
 }

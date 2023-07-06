@@ -15,48 +15,21 @@ function Watch({ nomee, emaill, cart }) {
       < Header style={{marginBottom:'5rem'}} nomee={nomee} emaill={emaill} cart={cart} />
       <br />
       <br />
+            
+            <main className="container">
             <br />
-            <br />
-
-
-            <div className="custom-video-area" itemID="custom-popout-video">
-
-                <div className="video-controls control">
-                    <div className="top-wrapper">
-                        <div className="progress-bar">
-                            <span className="buffer-bar"></span>
-                            <span className="time-bar"></span>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="column">
-                            <div className="bottom-wrapper">
-                                <div className="play-button mini" title="Reproduzir/Parar Video"><i
-                                    className="bi text-xl text-white bi-play-circle"></i></div>
-                                <div className="time">
-                                    <span className="current">00:00</span> / <span className="duration">00:00</span>
-                                </div>
-                                <div className="sound-button sound-med" title="Silenciar">
-                                    <i className="bi text-xl text-white bi-volume-up"></i>
-                                </div>
-                                <div className="volume" title="Configurar volume">
-                                    <span className="span volume-bar"></span>
-                                </div>
-                                <div style={{right: '1rem', top: '.8rem'}} className="logo position-absolute right-14 top-4">
-                                    <img src={bb} className="h-6" alt="" /></div>
-                                <div className="btnFS btn" title="Mudar para tela cheia"><i
-                                    className="bi text-xl text-white bi-fullscreen"></i></div>
-                            </div>
-                        </div>
-                    </div>
+            <div className="row">
+                <div className="col-12 col-md-6 col-lg-8 container-md col-xxl-7">
+                     {/* <div style={{padding:'56.25% 0 0 0',position:'relative'}}><iframe src="https://player.vimeo.com/video/842220614?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style={{position:'absolute',top:'0',left:'0',width:'100%',height:'100%'}} ></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> */}
+                     <iframe className='w-100 ' height="415" src="https://www.youtube.com/embed/HldS5r_v52U?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-
-                <video className="video-element" id itemID="video-element" preload={bb}>
-                    {/* <source src="./img/v1.mp4"> */}
-                </video>
-
+                <div className="col-12 col-md-6 col-lg-4 col-xxl-5">
+                    <h2>Titulo do video </h2>
+                </div>
             </div>
+            <br />
+            </main>
+            
             <br />
             <br />
 

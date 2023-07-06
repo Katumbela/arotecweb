@@ -133,7 +133,7 @@ function MeusC({ nomee, emaill, cart }) {
                         <div className="row">
                             {
                                 cursos.map((curso) => (
-                                    <div className='col-12 col-sm-6' key={curso.id}>
+                                    <div className='col-12 col-sm-6 col-lg-4 col-xxl-2 col-xl-3' key={curso.id}>
                                         <div className="course rounded-3 shadow-lg bg-primary text-center p-2">
                                             <div className="head py-3">
                                                 <img src={bb} className='' style={{ height: '2em' }} alt="" />
@@ -141,10 +141,11 @@ function MeusC({ nomee, emaill, cart }) {
                                             <div className="corp text-white">
                                                 <b>{curso.curso}</b>
                                             </div>
+                                            <br />
                                             {/* to={'/pt/aulas/'+curso.id_curso} */}
                                             {
                                                 curso.curso == 'Curso de Pequeno Engenheiro' ?
-                                            <NavLink  className="btn rounded-3 border-white text-white ">Acessar às Aulas</NavLink>
+                                            <NavLink to={'/pt/cursos/arotec/pequeno_engenheiro'} className="btn rounded-3 border-white text-white ">Acessar às Aulas</NavLink>
                                             :
                                             <button className="btn rounded-3 border-white text-white ">Curso Presencial</button>
                                             

@@ -149,7 +149,7 @@ function Projectos({ nomee, emaill, cart }) {
                     De: <span className="text-primary">{projeto.nome}</span>
                   </p>
                   <p>
-                    <NavLink className="btn f-12 btn-outline-dark" to={'/ptver_projecto/'+ projeto.refId}>Ver projecto</NavLink>
+                    <NavLink className="btn f-12 btn-outline-dark" to={'/pt/ver_projecto/'+ projeto.refId}>Ver projecto</NavLink>
                   </p>
                 </div>
               </div>
